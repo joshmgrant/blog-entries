@@ -1,0 +1,5 @@
+-As a native English speaker who's lived his whole life in North America (Canada, particularly), I've had a hard time with character encoding issues like UTF-8 vs ANSI. I haven't had to learn it, so I didn't. 
+
+-Developing a web app for a regular desktop/laptop browser then simply making sure "it works" on a tablet is a bad development decision. Tablets aren't just slimmer, less powerful laptops; they are a fundamentally different form.
+
+   

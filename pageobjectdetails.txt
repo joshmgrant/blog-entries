@@ -1,0 +1,86 @@
+One thing that all test developers can agree on is that the *Page Object* design pattern has greatly benefitted automated testing. I endorse this view, since *I love page objects* myself. As a Selenium developer, I can't think of a better way to organize test logic. 
+
+Clearly, test developers should make use of this pattern. Just create a base page class, add a constructor call that checks the pages title and throws an error if it's not correct, and then start building specific pages from there, right? 
+
+I'm sure about half the test devs reading that last part nodded along without any concern. The other half just threw up in their mouths a little bit. 
+
+Here's what I've noticed about the PO design: everyone thinks it's great, but no one agrees on the details. 
+
+For example, let's take return types. One popular convention in for POs is that POs return POs. It's a simple premise that has a host of benefits like method chanining and easy method synchronization among others. An example would be as follows: 
+--
+class WidgetsPage extends BasePage {
+
+       // using the "POs return POs" approach
+       public WidgetsPage createWidget(){
+       	      // details
+
+	      return this;
+       }
+
+       public SprocketsPage editSprocket() {
+       	      return new SprocketsPage();
+       }
+}     
+--
+Contrast this to the view *endorsed by others* to not return POs and return nothing instead:
+--
+class WidgetsPage extends BasePage {
+
+       // not returning POs
+       public void createWidget(){
+       	      // details
+
+	      return;
+       }
+
+       public void editSprocket() {
+       	      return;
+       }
+}
+--
+At first glance, this may not seem like a dramatic difference. Once you start to work with such POs, which form your POs take can greatly affect what you can do with your test code. For example, code like
+--
+int getSprocketNumberFromWidget(){
+    return new WidgetPage()
+    	.createWidget()
+	.editSprocket()
+	.getSprocketNumber()
+} 
+--
+can't be written as such without methods that return POs. It must be re-worked to look like
+--
+int getSprocketNumberFromWidget(){
+    widgetPage = new WidgetPage()
+    widgetPage.createWidget()
+    sprocketPage = widgetPage.editSprocket()
+    return sprocketPage.getSprocketNumber()
+}
+--
+Which you prefer may depend on readability and language, or just plain coding style preference (even though the former approach produces a bunch of great beneficial side effects). The problem can be when those styles are mixed and matched, since one does not necessarily play well with the other. When some POs return POs and others don't, strange test code can appear. 
+
+Another controversial topic is error handling within POs. Should POs throw errors, or not? You could construct methods like this:
+--
+int getSprocketNumber(){
+    if (listOfSprockets == 0){
+       assert.fail("No Sprockets Found");
+    }
+
+    // continue with getting the value 
+}
+--
+or you could construct methods like this:
+--
+int getSprocketNumber() {
+     if (listOfSprockets == 0){
+     	// no sprockets found, return a value indicating such 
+	return -1;
+    }
+
+    // continue with getting the value
+}
+--
+Some test developers like putting asserts in POs under the theory that failures should be detected as soon as possible and that some functionality should "always" work. In my opinion putting asserts into POs breaks the separation between test logic and application logic, making POs harder to build upon. One of the more interesting aspects of the PO pattern is that you can reuse POs not just in additional tests but elsewhere as well. Still, both patterns are in active use by test developers.    
+I'm sure there's other variants of the PO pattern out there. Just thinking about how languages like Java and Python differ themselves is reason enough to consider different approaches. What I've found more important than choosing the "correct" way of using POs is being consistent about your methods. Certain patterns that work great alone work much less effectively together. And vice versa.   
+
+Overall I don't think this is a bad thing at all. After all, test development is still testing. What works in one setting may not work in another. It's not like there's a standard, One True Way when it comes to POs. It's also a relatively new idea on the software development block, so it's still evolving. Good ideas should appear and displace bad ones over time.  
+ 

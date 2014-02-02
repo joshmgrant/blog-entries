@@ -1,0 +1,19 @@
+I've been thinking about test development lately, and I think it's missing something. 
+
+Earlier this week I picked up The "A" Word by Alan Page. It's a collection of thoughts on test automation. It's a great read, and I definitely recommend it. Particularly notable is its novelty; I don't know many sources that discuss test automation in software at such a high level. It's really great to see so many aspects of automation discussed based on actual experience.    
+
+While there's plenty of good ideas comimg out of the book, here's one that I'd like to focus a bit on: test automation is hard. After working on desktop and web UI automation for the past while, and learning about test development approaches more generally, I have to a agree. I definitely think fairly easy to write automated tests; it's much, much more difficult to write <i>good</i> automated tests. Good tests mean tests that are helpful (actually produce usable information for the app under test), maintainable, reusable (good for version 2.0 and beyond) and don't take a dog's age to develop. 
+
+Sounds easy. But it's not. 
+
+One of the big roadblocks to this is, I think, is that test development <i>is development</i> but it's not always seen as such. Writing tests doesn't just mean writing production code with some extra asserts. Nor is it just UI automation. Test development is becoming legitimate area of software development, if it isn't already. I'll agree that not all automated tests that have been written should have been written. On the other hand, maybe some these tests could have been saved by better coding. Much like areas like performance and security, test development is arguably a speciality within of development with its own subtleties. In other words, it's an area in which developers could specialize.         
+
+Based on this, here's my main argument: test development needs a (decent) reference. Like the Gang of Four did for design patterns and Michael Feathers did for legacy development and working with legacy code, test development would benefit from a semi-canonical guide for developers. This would contain some possible ideas for good test dev practices, as well as collecting ideas and concepts related to writing good test code. 
+
+On top of this, a refence could provide some concrete legitimacy for test development. After all, people don't just write about books about anything. It would make test development a "thing", much like the previous books and authors did. A reference on test development would get people in various aspects of software talking and thinking about test development. Even a crappy starting point is still a starting point. 
+
+These ideas have been brewing for a while, so it seems a bit half-baked. I think I'll fill in some gaps in my next few posts.    
+
+  
+
+                         

@@ -1,0 +1,7 @@
+Thanks for the feedback! I think you're right, I meant "infer" instead of assume. I suppose you could use assume, but infer seems more correct. 
+
+The main idea I'm getting at is this: creating checks and check processes can help make inferences and provide helpful information. It allows you ask more and more specific questions as you gain more confidence in other areas you're exploring. If the checks are particularly good, you can then start to make assumptions about the product at different points (ie you may assume that a piece of code has has attribute X).  
+
+Lately I've been thinking about automation approaches to improving code quality. In other words, how automated approaches can help increase quality at the code level. This is where the tooling comes in. Unit checks can help you infer things about a particular method or class, which then you can put through integration tests to infer about how different methods or classes interact together, which then you can put through end-to-end checks to infer what the final application is like. Speeding up these checks can shorten feedback looks to be fast enough to help a single developer while writing code for an application, for example. 
+
+Of course, these ideas don't depend on tooling or automation. Nor do these checks have to be static or constant. But it's just where my head is at.

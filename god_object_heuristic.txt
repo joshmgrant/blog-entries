@@ -1,0 +1,1 @@
+In programming, the **God Object** is a well-known anti-pattern where there is a single monolithic class or object that is present in an application. Usually, the God Object in question contains too much information or too centralized. For example, writing a non-trivial application using a single, giant class is probably a sign of a God Object in action.  

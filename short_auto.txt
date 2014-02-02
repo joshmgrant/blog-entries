@@ -1,0 +1,13 @@
+You're in walking around Toronto. You meet someone and he says "Hi, I'm John Smith". What can you say about him? 
+
+Probably not too much. Perhaps name and probable gender. Not too helpful. 
+
+Now suppose you're walking around Toronto. You meet someone and says "Hi, I'm John Smith, Chartered Accountant". Now what you can say about him? 
+
+You now can *assume* that he's met **all the requirements** of being a chartered accountant. 
+
+This is helpful, and it gives you some direction for more questions. You could ask about his experience with taxation, if he works with one of the Big Four, whether he's assisted with any large scale corporate embezzlement, and so on.   
+
+In other words, *you've set the bar a bit higher* for what you can assume about this person. Instead of asking just basic questions, you can start to ask more advanced, interesting questions.  
+
+For me, this is the way to think about automated test suites of unit, integration and UI tests. 

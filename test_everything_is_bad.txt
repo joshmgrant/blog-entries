@@ -1,0 +1,25 @@
+When it comes to testing, I think it's important to have a strategy. That is, come up with a plan of action of what and how to test, preferably with input from all individuals involved in the project.
+
+"Test Everything" is such a strategy. And it's a bad one. 
+
+I've seen this strategy executed in practice, usually at the request of a product manager. I've also heard similar stories from other testers. The results I've seen have been less than optimal.
+
+There's a few reasons why I think this. 
+
+Test Everything is intellectually lazy. It requires no thinking, since it can apply to any product or feature in any team on any project. It also completely neglects team priorities and dynamics. But because it's so general, it totally neglects context. Risk analysis is completely neglected; every aspect of the app is seen as equally risky.  Is a given bug or issue that's raised of high or low importance? We don't know, we're just to test everything. Are there any regressions or outstanding issues that we should be aware of? We don't know, we're just to test everything. Yes, people can be difficult and unpredictable but you can't use that as a excuse to be lazy with test planning and strategy. It robs testers of opportunities to do some interesting and valuable testing. 
+
+Test Everything also difficult for testers cognitively. Since there's not many details to go on, it can be daunting to start. Even simple apps or features can generate lots of possible directions for testing. Without any concepts of risky areas or priorities, it may take additional work to determine starting points or goals. For novice testers, this can be highly intimidating, even stressful. Again, not a great situation for helping testers do their jobs well.
+
+One of the more insidious results of Test Everything approaches is that it contributes to cover-you-ass and "blame QA" culture. When one individual or team can make a such a request on another team, it can also shifts the responsibility of this testing. If bugs "get through" and into production, it's because the testers didn't test everything as expected. This is despite the earlier problems I've noted which is due to "testing everything" in the first place. The original individual or team can't be blamed, however, because they asked for the app or feature to be tested. While this may all be fair, it sucks for testers.
+
+I think this is the main problem I have with Test Everything: it doesn't really contribute much to product quality, but can hard test and development teams. It's a testing anti-pattern.
+
+So what can be done in situations like this? 
+
+First, you could take the task at face value. Test everything. Come up with a plan, analyse the app or feature and determine some timelines. After coming up with some estimates for time and resources, provide the individuals who asked for the testing the estimates. Usually this provokes some discussion, particularly if this "simple" task of testing the app could now take weeks or even months. It also helps testers get a grasp on what kind of valuable testing may be done instead of going crazy trying to cover all the bases. 
+
+Similarly, you could start a dialogue with the original team. Ask: are there any particularly risky areas that should be tested first? Where are some strong areas that may have been tested mostly by developers? What are some weak areas that need more attention? and so on. Dialogue can be good, and help both teams figure out what's really needed for the testing task. It also may help break down walls and silos between test teams and others, which is a *good direction for development teams and companies to go in*. I think this is a good thing. 
+
+Also, one way to avoid this whole situation completely is get *testers involved in the development process early*. This also seems to have a bunch of benefits, such as preventing bugs from happening in the first place instead of simply finding them and fixing them after the fact. It also prevents problems from "handing off" work from one team to another such a the Test Everything mindset. I think this is a win for everyone.  
+
+Test Everything can lead to bad situations, but it doesn't have to. 

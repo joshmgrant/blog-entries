@@ -1,0 +1,4 @@
+Git is hard. I understand this. 
+
+I don't understand why people are so obsessed with how hard Git is to use. 
+

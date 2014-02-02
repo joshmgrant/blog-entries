@@ -1,0 +1,17 @@
+ I recently read a post by Daniel Leimre on the /usage of C++ and Java in software development/ [http://lemire.me/blog/archives/2014/01/21/are-c-and-java-declining/]. It was an interesting post, but it got me thinking about how languages are used in different kinds of projects. After all, not all languages are built equally.
+ 
+ Then I started thinking about "industrial" software, and what that could mean. I think it relates to size, scope and access of a piece of software. One heuristic to capture these qualities is openness of the software - that is, the degree to which software is open to the outside world. 
+ 
+ Here is a possible scale of openness: open, semi-open, closed and highly closed. 
+ 
+ My conjecture: most software written is highly closed.
+ 
+ What these mean are as follows:
+ 
+ /Open Software:/
+ 
+ /Semi-Open Software:/
+ 
+ /Closed Software:/
+ 
+ /Highly Closed:/

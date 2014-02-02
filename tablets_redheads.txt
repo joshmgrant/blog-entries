@@ -1,0 +1,24 @@
+Are tablets the redheaded step-children of software development?
+
+Tablets are quite popular at the moment, in part because they appeal to a large audience. My not technophile wife just bought a Surface. My mom has one. Even *big geeks* are into them. 
+
+And what's not to like? Tablets are portable, easy to use thanks to touch screen technology, and accessible. No complicated hardware issues. No strange operating system mumbo jumbo. No *cryptic commands* that do scary things. Just a screen apps and decent boot times.
+
+And yet, I feel like tablets are becoming a missed opportunity. 
+
+I have a friend who bought an Android tablet about a year ago. He uses it all the time, taking it with him most places. I asked him what he uses it for, and he said it's mostly for reading newspapers and books, playing games and watching Netflix. This aligns with what I've seen him use it for. Also notable is the fact that all of these activities are things that can be done on other devices. Then I asked if there's any apps that he uses exclusively on his tablet and not, say, on his laptop. After thinking for a moment, he said no. And there's the rub. 
+
+Tablets are a different platform than phones or computers but aren't treated as such. At at my enterprise-level accounting software job, we've been working on a Sharepoint-like content management web app. We are currently working with the strategy of having a full version for desktop browsers and a mobile version for phones. Tablets so far will use the full desktop version. As a test developer, here are a few things I've noticed: 
+
+-Keyboard inputs: some of our automated tests for the desktop version make use of CTRL keys. While this is perfectly natural for a desktop-based app, iPads don't even have such a key, breaking the tests. 
+-Size of controls: buttons and text inputs that are optimized for mouse and keyboards are small and slightly awkward for gesture-based tablets
+-Browsers differences: desktop browsers *are not identical* to their tablet counterparts.
+
+While these are test development issues, they are evidence that tablets aren't laptops. 
+
+Most people use tablets for consumption activities, not really creation. There are lot of apps for content consumption, like Flipboard or Netflix. But these apps aren't native tablet apps. Unlike mobile-first apps like Songza and Instagram or PC-first web apps like Facebook or Github, there aren't a lot of killer tablet-first apps. Games tend to be derivatives of Bejewelled or Angry Birds. There are even social conventions appearing around *how not to use tablets*. 
+
+All of this doesn't exactly suggest tablet development is a hotbed for cutting-edge hackers. 
+
+Still, tablets remain popular. I wonder if a killer tablet-native app will present itself.              
+

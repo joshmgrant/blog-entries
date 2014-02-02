@@ -1,0 +1,34 @@
+1. What are debug IDs?
+Debug IDs are HTML ID attributes that can be set in the GWT framework to help tools like Selenium identify elements for UI tests and automation.
+
+2. Why these required?
+Browser automation tools like Selenium use the DOM to identify elements. Such tools are often optimized for using the standard ID attribute. Unique, stable ID attributes are needed to distinguish elements for reliable, repeatable test scripts.
+
+3. Are these really necessary?
+It is possible to use other approaches to identify elements, such as using other standard HTML attributes such as class or CSS. Elements can also be found parsing the DOM using xpath queries. However, such approaches are not as stable as setting debug IDs and lead to brittle tests and locators.
+
+4. Ok, I'll add these debug IDs for you even though you don't really need them. How are these IDs set?
+Debug IDs for UIObjects are set using the ensureDebugId() method, to whatever string is passed as an argument. This method was added to GWT specifically to assist with browser automation using Selenium. 
+
+5. I am a busy developer with several things on her plate. Are there alternatives to me doing this?
+Debug IDs are designed to be turned on and off at compile time for a GWT application. An alternative to using them is to set permanent ID attributes within the application itself.
+
+6. Development has made the decision to not set ID attributes in the end user application for [insert reasons here]. What other options are there?
+The ensureDebugId() method is a standard method in the GWT toolbox. Testers can also set these atttributes in the source.
+
+7. Development is concerned with security and quality control, and do not want non-developers working with our code. What other options are there?
+If both debug IDs and permanent IDs cannot be set in an application for test purposes, alternatives to UI automation may not be preferrable. Non-UI based testing using HTTP-based approaches such as REST-style APIs, native APIs for your app, or even direct database scripting for test development may be more beneficial.
+
+8. This sounds like a lot of extra work. See #5 
+I have read #5, as well as #7. If done well, these automation approaches  will increase overall application quality. It will also increase development velocity and reduce risk. 
+
+9. But we have a backlog of manual tests to automate to free up manual testers' time. Can't we just get that stuff done?
+You could, but I'm not sure that's really a good use of automation.
+
+10. So you'll automate those tasks? You can just use the xpath locators or whatever you mentioned earlier, right?
+...
+Just as long as I get to leave at 5 PM as usual tonight.             
+
+         
+     
+

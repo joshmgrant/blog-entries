@@ -1,0 +1,34 @@
+In a previous life, I was pretty interested in *Operations Research* (OR for short). In a nutshell, this is the practice of applying mathematical methods to resource allocation problems. It includes things like optimization, scheduling and cost modelling. It's kind of cool in a mathy, nerdy way. 
+
+So when I read a recent post by John D Cook on *how hospitals make operational decisions*, I took interest. I always like seeing business decisions from mathematician's perspective. The point of that post is that hospitals can be inefficient environments from an operational perspective. Ancedotally, I've also talked to hospital employees (past and present) who would back such claims up. (Partly (mostly?), this can be attributed to institutional politics.) As such, healthcare and hospitals are a prime area for OR. As proof of this, when I attended a major international conference on mathematical biology I found an *entire morning symposium on optimization problems in radiology*. 
+
+People have obviously been looking into such things. 
+
+In my younger days, I would've simply accepted this as a great approach. Apply sophisticated mathematical approaches to complicated problems for the best result. Now I'm rethinking this opinion. 
+
+One thing I'm learning lately is that some of the highest impact interventions (for lack of a better word) are also the simplest. As well, often the most complicated approaches to solving a problem are also the least effective. This isn't an absolute truth, but it's a pretty good general guideline. 
+
+Unfortunately, most mathematical optimization approaches aren't typically simple. At least, they're not the simplest solutions around to most problems. Even though I'm someone who understands and even appreciates math, I'm inclined to look for other solutions to a given problem. Then a real light bulb that went off in my head a while after reading John D Cook's post: what if the real reason that OR approaches "work" in practice is because they focus on greatly ineffcient systems already? 
+
+Take hospitals for example. If these are already organizationally inefficient, how can we be sure that OR approaches are better than just <i>any</i> approach? In some cases, it's pretty easy to find ways of making things more effective. Just looking naively at a situation could result in some good insights. 
+
+Based on this, here's a thought experiment. A hospital wants to study how to make its practices more effective, so it considers two options: 1) contract some OR researchers for a 12 month study of its operations, then implement changes based on the results, 2) take the first person off the street with a university degree, give them $1000 and ask them to observe the hospital's operations for a week, then implement changes based on the results. 
+
+Obviously option 2 is much cheaper, in terms of actual money costs but also in administrative costs. This is nothing to sneeze at for modern hospitals. Also, a random observer may simply ask questions and make recommendations regardless of what hospital politics say. The OR researchers may not even acknowledge this, since they are developing technical "objective" models. The big question is: What if option 2 is also at least as effective at finding efficiencies, or more? Of course, we'd have to try out such an experiment to see what the results would be. But even the notion that option 2 could compete with option 1 should give OR researchers a bit of pause.
+
+Even more interesting is the possible ethical implications of this experiment. If OR is really about efficiently allocating resources, wouldn't a cheaper, faster option be preferable? In other words, what if applying OR principles is less efficient than not applying them? Again, this could be slightly difficult for OR researchers to digest. 
+
+To be clear, I have a lot of respect for OR practioners. It's an fascinating field that has likely yielded some great results, in healthcare or elsewhere. There's some *really cool people* in OR as well. I'm just being slightly skeptical, mainly due to my experience with mathematics outside of academia. There just doesn't seem to be a lot of interest in positions that involve large amounts of sophisticated mathematics, such as in OR. One reason for this could be that mathematical work just doesn't have a high benefit-cost ratio in industry in general. 
+
+Sometimes more sophisticated approaches aren't better, even if they appear so. Simpler may be better.     
+
+
+ 
+
+    
+
+ 
+
+
+
+  

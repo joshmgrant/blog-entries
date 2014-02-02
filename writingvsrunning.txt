@@ -1,0 +1,28 @@
+Writing automated tests is fundamentally a different task than running automated tests. Writing tests is a development activity with all the trimmings, while running tests is grunt work that should be done by machines. More complex tests may require dedicated resources to run properly. 
+
+Seems pretty clear.
+
+Until it's not. 
+
+Lately I've been thinking about this distinction, and realizing that there's more than meets the eye. At work, my team has been working toward getting our WebDriver-based UI tests running as part of a continuous integration (CI) process. This is great, and it's has me realizing what it really takes to get tests running smoothly. 
+
+So where's the subtlety here? Don't you just put your tests on Jenkins and you're off to the races? 
+
+Let's follow this line of reasoning. Suppose you're writing some solid tests. As part of writing these tests you need a server with the app under test. You get one set up, built as necessary with the given app for testing. You write your tests based on it, debug them to get them working correctly, then push them to your CI server for running. However, this creates a small problem: running tests continually on a single app server will likely cause problems if you are writing tests using the same server. It's an easy trap to fall into; spending so much time writing tests you may even forget you even use a particular server specifically for testing. Factor in multiple teammates working on different aspects of the same app and things get sticky quickly.
+
+So there's the first lesson: set up separate apps/servers for running tests and for test development.
+
+Once you learn that lesson, suppose you set up separate test servers for running and developing tests. You even establish some conventions on your team using such servers. Tests are added to CI to be run. Things look rosy, except for one tiny detail: your test running server is part of a CI process, while your development server is not. At first, this might seem like an inconsequential detail. Actually it can turn out to be kind of a big deal.
+
+If a server is part of a CI process, that means it could be rebuilt and re-deployed several times over the course of a day. Further, it could be rebuilt at unpredictable intervals as new builds become available. Meanwhile, you likely want your development server to be a bit more stable. Even if it is rebuilt on a regular basis, say daily, it wouldn't be too much use if it were constantly being torn down and reset so you keep it constant at least on a daily basis. Keen observers may see the problem. You're developing tests on a more stable version of your app than the test servers on which you're running tests. This can lead your tests to not take into account certain requirements for running in these two different environments. Writing tests assuming your app is rebuilt daily might conflict when the app begins to be rebuilt hourly. 
+
+There's the second lesson: make sure your tests are written to take into account how they will ultimately be run, and have them be able to be run beyond the test development environment.
+Taking this lesson into account, you develop your tests with the running environment in mind. At this point, you start to see tests that can truly be called part of CI. Such tests run properly against builds throughout the day, providing results. Now, you think to yourself, things are really looking good. 
+
+But what happens when things start to go wrong? After all, tests need maintenance. Not all failing tests are true bugs with the app under test. Some failures are due to bad tests that need updating or removal. How you identify such tests? Again, here be dragons. When writing tests, you will likely have much information available to you such as logger output, call stack traces, debugger information, test framework output, and so on. All of this information allows to identify exactly which parts of your tests are doing what. When running tests, you may not get such information. In fact, you might get very limited information, such a list of passed and failed tests, error messages associated with the failed tests, and that's it. Reproducing failed tests in development could be time consuming, if mostly impractical. Plus, you might have to make fast decisions. You need to act on what's in front of you. 
+
+And then there's the fact that developers and managers may also see such results and have to act on them. They will likely only be paying attention to the red failed tests and nothing else.
+
+In light of this, here's the last lesson I've seen: as much as possible, make pass/fail information from test output as useful as possible. Don't depend too heavily on extensive development output to determine test quality. 
+These are just some things I've noticed in getting our automated tests up and running. Writing tests may be fun and interesting and running tests may be grunt work, but they're both still work. Getting them to work nicely together is a job in itself.
+

@@ -1,0 +1,21 @@
+"The unexamined life is not worth living for a human being." ~Socrates
+
+I was going to make my next post about topics for a test development book, but I've become inspired (or distracted). 
+
+Today, I had a discussion with a collegue about how to setup a new project we are working on. My take was to integrate into our existing test code project, while his was to separate into a new project altogether. 
+
+After talking for a bit, I realized that we both had different philosophies of how to develop software. 
+
+He took the view that developers should really need to know inputs and outputs on projects they are not directly working on; details are irrelevant and should be as hidden away as much as possible. This makes projects to be modular and simplifies root cause analysis when things go wrong. I take the view that projects should be more open, with developers seeing as much detail as possible, with the ability to work on (potentially) any component of the project. This allows for flexiblity in development, and helps removes roadblocks to actually making commits to the underlying code. 
+
+Both philosophies have their benefits, and it's actually not very important which one is "better". What is important is that each one is well-defined and well-articulated. 
+
+When a lot of people think about philosophy, their minds fill up with difficult-to-read books and teachers who give grades for vague reasons. They think about quotes like the one that began this post. People often don't think about <i>why</i> they have the thoughts and opinions that they do, which to me is really what philosophy is all about. 
+
+A famous example of philosophy in software development is the UNIX Philosophy, which was behind the development of the UNIX OS. The basic idea was for programs to "do one thing and do it well". This was a fairly well-founded idea, even if UNIX doesn't really follow its own philosophy. But the underlying notion explains a lot of how *nix OSs work. It provides some handy intellectual guidance as to why some things (emacs, Bash, text-based tools, etc) work they way they do.
+
+Why am spilling so much digital ink over this? Because philosophy matters more to development than some developers realize. It's easy to overlook and difficult to retrofit when it goes wrong. An underlying philosophy is important because it can greatly affect what actually happens in a project. It can greatly affect how a project grows and is maintained. Since maintenance and frequent change are big parts of test development, test devs should pay attention.
+
+I think test developers should take some time to think about their personal philosophies of development. There's both aestetic and pratical reasons for this. Asetically, it can help create a consistent approach to how you view testing projects. More pratically, it can help you help explain to other folks within software like managers and customers what you do and why it's important. A lot of what test developers do falls into the "behind the scenes" category of work, so any way that helps explain why test development is valuable is huge. Testers cannot always simply point to a "finished" product; we have to provide value and then show off this extra value. 
+
+So, you might as well think about it.      

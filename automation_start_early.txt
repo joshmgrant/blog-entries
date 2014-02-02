@@ -1,0 +1,12 @@
+People have had various experiences with automation in software testing. Some experiences have been more positive than others. I myself have seen good and bad automated testing. (Spoiler: I was responsible for some of the bad.)
+
+I do think there's one thing that will help any automation effort: /start automating as soon as possible/. 
+
+This advice is independent of whatever the automated testing effort entails. UI tests, unit test suites, specialized automation efforts: they all benefit from starting sooner than later. 
+
+Remember that automated testing is testing. Good testing is all about providing information, and the same goes for automation. Test developers often need time to get familiar with how automation will work in the context of the app under test, in addition to getting familiar with the tools. Automated tests don't just appear out of thin air: they require development just like other code.
+
+Waiting too late in the development process will result in rushed automation efforts. This could lead to taking shortcuts and fragile tests. It also gives other team members less time to see what feedback tests provide. I'm generally not a fan of leaving testing to the end, and even more so with automation. 
+
+Not all automation efforts will work out, but giving them a head start always helps.          
+

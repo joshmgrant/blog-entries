@@ -1,0 +1,5 @@
+Here's a subtlety of test development: writing tests and running tests are different activities. As such, they shouldn't be treated in the same way. 
+
+This is something that seems to come up periodically, so I thought I get some of my ideas down.
+
+    

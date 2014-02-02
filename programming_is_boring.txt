@@ -1,0 +1,19 @@
+Here's a possibly radical opinion about software development: programming is usually not the bottleneck. In fact, sometimes programming the easy part of the software development process. The hard(est) part is usually somewhere else.  
+
+Somewhere I recently noticed that someone wrote that **Python is a bit boring reliable**. This may have come out as sort of an insult to the language but to me, this is a strength. It shows that Python is a well-made tool that has been proven time and again. Really this is a good thing for a language because it means it's ready for the prime-time. And this means that the language itself can't be a roadblock. It's boring like a monkey wrench is boring.
+
+Furthermore, the past decade or so has been a boon for coding in general. Code is everywhere. People blog about coding practises and algorithms all over the place. Code hosting services like Github make fully working code samples a few commands away. Stack Overflow provides specific answers answers context. And of course, there's plenty of readily available utilities available for download and free as in beer. Programming may still take skill, but you can get a surprising distance just on online sources. At the very least, it's possible to get something thrown together that kind of works. 
+
+But if coding isn't the bottleneck in software development, what is?  
+
+I've seen some discussion this week about the role of testing in the software development process. This tweet by Alan Page sums things up nicely; 
+
+**insert tweet**
+
+Basically, this goes along with the idea that testing is more of an activity than a phase or checkbox. Testing should take into account the fluid nature of software projects and provide what is actually needed instead of ideal of what should be needed. This could mean getting rid of testing/QA departments, or other radical ideas.
+
+But then I thought, "This might be hard in some places because people won't like such changes". 
+
+Then it hit me: software problems *are* people problems. That's the bottleneck. Deciding **what kind of programmer you are** is fairly straightforward. Communicating between teams with different perspectives and biases isn't. 
+
+This is where the bottleneck is, and where teams should focus their attention. 

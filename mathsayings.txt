@@ -1,0 +1,53 @@
+Today, I had a small conversation with Tim Hopper on Twitter about using language skills picked up from math classes.
+
+It was fun, particularly since I haven't been in a math class for quite a while. I think what made it enjoyable was the fact that, in my experience anyway, being a math student comes with a lot of social downsides. 
+
+When I was in school and people asked me what I was studying or what my major was, the responses to "math" or "applied math" were pretty consistent. About eighty percent were along the lines of "Ugh, I hated calculus/I hated statistics", fifteen percent were "oh, that's different/we have that program here?", and the lowly five percent of "that's interesting". It's a tough row to hoe studying math. It's also not something one gets to discuss much outside of university settings. 
+
+One other thing that math people appreciate is how mathematicians communicate. It's a formal way of communicating that's quite prevelant in math and academia but not done much elsewhere. It can be both a bit pretenious and snidely funny at times, so it kind of sticks with you after a while. 
+
+In light of this, I propose a way for math folks to have some fun with this trait: The Math Phrase Sneaking Challenge. 
+
+It goes like this: 
+-Go to a social setting like a cocktail party
+-Have math-inclined people agree to a game
+-Each person tries to sneak a "math phrase" into conversation without any hiccups
+-Each phrase has a given point value ("points" may be subsituted for "drinks")
+-At the end of the event, whoever has the most points wins 
+
+Without further ado, here's the phrase scoring:
+
+One Point:        
+-"Clearly, X is..."
+-"Obviously, X is..."
+-"It turns out that..."
+
+Two points:
+-"Henceforth, ..."
+-"It is trivial to see that..."
+-"It can be shown that..."
+-"Probabilastically..."
+
+Four points:
+-"Suppose... then by contradiction, ..."
+-"As a corollary, we find..."
+-"Bifurcation"
+
+Eight points:
+-"...up to isomorphism."
+-"Proceeding inductively, we find..."
+-"Quo est demonstratum" 
+
+Sixteen points:
+-"...up to homeomorphism"
+-"..all but finitely many points..."
+-"Without loss of generality, suppose that..."
+
+Thirty-Two points:
+-"...iteratively applying the previous lemma..."
+-"Assuming this process is Markovian, then..."
+"...by a diagonalization argument..."   
+
+Sixty-Four points:
+-"...applying the same techniques as Wiles did, we find..."
+-""

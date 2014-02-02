@@ -1,0 +1,40 @@
+Right now, I write test code for a living. I mostly write UI tests using Selenium. I rather enjoy it, and try to improve my abilities, a little at a time. 
+
+So when I read an article about *writing good unit tests* [http://blog.8thlight.com/uncle-bob/2013/09/23/Test-first.html], it got me thinking about the test code that I write. Specifically, I thought about UI tests versus unit tests. Unit tests should be short and easy to write. Why can't UI tests be the same? 
+
+In the link above, *Bob Martin* [http://twitter.com/unclebobmartin] describes writing unit tests that have /exactly/ three lines of code. He further goes on to argue that /all/ unit tests should be exactly three lines of code. An example he gives, for testing a stack object, looks something like this: 
+
+//
+Stack stack = makeEmptyStack();
+stack.push(0);
+assertThat(stack.size(), equalTo(1));
+//
+
+There's obviously some benefits to writing tests in this way. Each line has a specific meaning (initialize/instantiate, perform the action, check), making tests more easily understandable. Tests become simpler to write because they're more structured. Plus the code is easier to maintain, which is a big win for making tests usable. These kind of considerations turn unit tests into something closer to code specs. In short, there's lots to like. 
+
+So why not write UI tests in the same way? Instead of code like this
+
+//
+PageObject testPage = new AccountsPage();
+testPage.clickNewAccountButton();
+testPage.setNewAcountNumber("101");
+testPage.setNewAccountMemo("abc");
+testPage.clickOK();
+testPage.closeBrowser();
+//
+
+take a look at code like this
+
+//
+PageObject testPage = new WebPage();
+testPage.createNewAccount("101", "abc");
+assert testPage.isAccountPresent("101", "abc");
+//
+Code is cleaner, intentions are clear, and it's easier to extend tests to be data-driven. Imagine replacing the hard-coded strings above with a AccountData object. These can then be pre-populated and tests run based on this data. This functionality is built-in to some test frameworks like *TestNG* [http://testng.org/doc/documentation-main.html#parameters-dataproviders]. Plus we get the benefits mentioned above. 
+
+Code like this also gets us thinking of UI tests in terms of unit tests. In other words, instead of just stringing together UI actions, tests can represent single cohesive units of functionality within the app. This could assist in nailing down acceptance checks when building an application, in addition to helping translate acceptance criteria into automated tests and vice versa. 
+
+Of course, there are some hurdles to writing code like this (hat tip *here* [https://twitter.com/HannesLindblom] and *here* [https://twitter.com/Dan_Bzz]). Unlike creating and destroying objects, starting and stopping an app can be costly, and in turn opening and/or closing the app after every individual test may not be desirable. This can also increase overall test execution time, making long tests yet longer. Of course, there are ways around this, usually making judicious use of setup and teardown methods. In our case, where I work we have methods that open and close a browser once per set of tests in the case of web UI tests instead of after every tests. This particularly helps when tests are run on weaker VMs with limited processing. But with other aspects of UI tests, it's all about making it work behind the scenes in the *page object* [http://simplythetest.tumblr.com/post/44193189491/page-objects-are-great-part-1] layer. 
+
+Above all, in my opinion, thinking about UI tests like unit tests put both on the same level of importance (or at least helps). Unit tests can assist building classes and methods, and in a similar way, UI tests can help build a final application, at least from the UI perspective. If nothing else, these ideas might make writing and maintaining UI tests a little more helpful and less fragile. 
+

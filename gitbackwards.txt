@@ -1,0 +1,26 @@
+Git is a great source control system. It's also frequently misunderstood. 
+
+Here are two concepts that I think are central to using Git well:
+
+-Branching should be taken lightly. Creating, manipulating and deleting branches is easy and fast. Even merging, which can be tricky, is still a normal part of the Git workflow.
+-Pushing should be taken seriously. Changes that are pushed to a remote repository should be considered permanent. Keeping track of where and when changes are pulled is difficult, and undoing pushed changes is not always easy.
+
+From what I've seen on my team, which is transitioning to using Git, folks starting out with Git get these exactly backwards. 
+
+Everyone wants to commit and push as soon as possible regardless of the state of the code. At the same time, branching is completely ignored. This means that people aren't taking advantage of some great Git workflow patterns. 
+
+I think there's a couple of reasons for this. 
+
+First, there's the perception that branching is hard. Branching can be involved in other source control systems. It can require multiple steps and decisions, such as choosing specific files to branch and where to place them. On a moderately-sized code-base, this can be a fairly daunting task. Such experiences can make using branching in other source control systems off-putting.  
+
+And then there's merging. I have never used Subversion, but I've read that merging in svn can be awkward and difficult. Even Git has a hard time resolving conflicts automatically sometimes, throwing up merge conflicts where there actually are none. Bad merges can result in lost files, lost work, and lost patience. As a result, since branching generally leads to merging, a lot of novices using Git avoid branching as well.    
+
+As far as pushing goes, when properly configured pushing can be simple to do as ``git push''. This helps with the perception that pushing is something that should be done quite often. Combine this with the subtly-deceiving commands of ``git pull --rebase'' and ``git push --force'', which make pushing and pulling seem much less dangerous than they really are, and you may have the recipe for a push-crazy team.    
+
+Teams also tend to like sharing their work with co-workers. Pushing more often appears to mean individuals are getting lots done, since code changes are available to everyone. There is definitely evidence for this with teams that are coming from a check-out/lock/check-in source control system, as folks are used to everyone gettingcommunal changes quite quickly.
+
+In my opinion, branches in Git should be considered almost disposable. Make a bunch. If you're ever in doubt at a particular point in your project, make a new branch. 
+Pushing, on the other hand, should be considered equivalent to a software release or patch. Assume that once it happens, it's forever and everyone knows about it.
+
+But that could just be me.          
+                  

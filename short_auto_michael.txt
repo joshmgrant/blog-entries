@@ -1,0 +1,9 @@
+You've definitely nailed some great points in my sloppy thinking. 
+
+First of all, yes, I do mean "checks" instead of "tests" here. I recall you tweeted a while ago something along the lines of acceptance tests are really rejection checks. I agree that I'm really talking about checks here.
+
+As well, you're completely correct that some random, generically named person telling you something about himself is not the same as having hard proof of that trait. Of course, saying you're a chartered accountant and providing your accounting degree, CPAO certification papers, and list of past employers are two different things. It also matters if I provide this info to, say, a random person on the streets of Toronto versus a registered CPA responsible for setting some of the accounting tests themselves. 
+
+Part of what makes tests like I describe beneficial is having confidence in their meaning and value. I glossed over this part for the sake of brevity, but it's an important point. 
+
+  

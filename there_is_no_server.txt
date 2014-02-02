@@ -1,0 +1,4 @@
+Git is a pretty great source control system. There's a lot to like, but also a  lot to learn. 
+
+One concept that is touted as a killer feature is that it's a *distributed* source control system. At first this seems like no big deal, but after a while, you find the true beauty of this feature, and why it's so great. 
+

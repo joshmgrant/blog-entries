@@ -1,0 +1,132 @@
+Writing automated tests is pretty easy. Writing good and maintainable tests is much, much tougher. This is especially true as test projects grow in size and complexity. 
+
+Here, I'm going to outline one approach which helps reduce test duplication and complexity while making tests easier to organize. This will lean heavily on object-oriented programming (OOP) principles, which I think lend themselves pretty well to writing tests in a not-small project. 
+
+In this approach, there's essentially two guidelines: 
+-One test case per class
+-Make smart use of inheritance 
+
+The first point is the important one. Since we're trying to use OOP ideas, focus on the class level. Think of each class as a test case, focusing on a particular aspect of a given area or feature to test. This provides an easy way to add new test cases (create a new class) and modify and update existing tests (remove/disable test methods within a class). It also can greatly help organize test suites by allowing existing (single specific) tests to be easily combined together. 
+
+The second point is fairly straightforward. Inheritance is key feature of OOP, and thinking of tests as objects can make sense as tests are usually well-defined. 
+
+Essentially, there are three levels of test classes: a single base class (common aspects of all tests), zero or more intermediate test classes (common aspects for related groups of tests), and lastly, actual test classes (where tests actually are run). Note the first two kinds of classes don't consist of tests as such; they're more for grouping common elements like setup and teardown methods. 
+
+Let's see an example. 
+
+Suppose you're testing a *forum app* [http://www.reddit.com] and one of the main aspects under test is post functionality. A post is an initial entry with some comments and additional information. Let's say that some basic actions for working with posts are creating a post and deleting a post. This may be simplistic, but it covers the basic ideas.
+
+A base test class would look something like this:
+
+class Test {
+	
+	// basic PageObject that will used in each test
+	protected PageObject testPage; 
+	
+	// constants and objects needed in any test
+	
+	protected setUpBeforeTestClass(){
+		// initialize a browser driver, connect to servers
+	}
+	
+	protected setUpBeforeTestMethod() {
+		// initialize testPage
+		// login to the app, if necessary
+	}
+	
+	protected tearDownAfterTestMethod() {
+		// logout of the app, if necessary
+	}
+	
+	protected tearDownAfterTestClass() {
+		// close connections, close browser as needed
+	}
+}
+
+Here, some things become clear. Each test method starts with a initializing a page object and logging in and ends with a log out, and each test class starts by opening a browser driver and ends with closing a browser driver. Of course, these are assumptions. Opening and closing the driver could be moved to occur for every test method, for example. In that case, some lines just get moved from class setup/teardown methods to another. 
+
+As a side note, if we were in the Java or C# world, this class would be an abstract class, since we don't ever want to run a base test with generic operators. This assures that this class would be only ever be inherited from instead of used directly. 
+
+Since we're looking at posts, here's an example of a post test class: 
+
+class PostTest extends Test {
+
+	protected setUpBeforeTestClass(){
+		// no changes needed
+		super.setUpBeforeTestClass();
+	}
+	
+	protected setUpBeforeTestMethod() {
+		// do the parent actions, then add some post-specific actions
+		super.setUpBeforeTestMethod();
+		testPage.goToPostPage();
+		
+	}
+	
+	protected tearDownAfterTestMethod() {
+		// logout of the app, if necessary
+	}
+	
+	protected tearDownAfterTestClass() {
+		// close connections, close browser as needed
+	}
+}
+
+Notice that the only thing we've changed is setUpBeforeTestMethod, which now directs the browser to the posts page (which we're assuming exists, is unique enough for testing, and so on). Other methods could be overridden as well as needed, if they related to specifically to posts. Of course other methods could be added here beyond setup and teardown methods, and again, if the language were so inclined, this class could be abstract. 
+
+Looking at the two guiding principles above, we make good use of inheritance since a PostTest *is a* [http://en.wikipedia.org/wiki/Is-a] Test.  
+
+Now, we can write some test classes. This is where we specify the actual tests that get run. 
+
+Remember that there's three post operations we'd like to focus on: creating a post and deleting a post. These sound like good candidates for individual test classes, which will encapsulate each test case. 
+
+Here's a create post test class:
+
+class CreateNewPostTest extends PostTest {
+	
+	public testCreateValidNewPost(){
+		// test is ready to go!
+		testPage.createNewPost(postDetails);
+		assert testPage.isPostPresent(postDetails);
+	}
+	
+	public testCreateInvalidNewPost() {
+		// test is ready to go!
+		testPage.createNewPost(invalidPostDetails);
+		assert !testPage.isPostPresent(invalidPostDetails);
+	}
+	
+	// and so on
+}
+
+This class shows both guiding principles stated above. This class neatly defines the test case of creating a new post, with variations (which can be added or subtracted). It also makes good use of inheritance, since a CreateNewPostTest is a PostTest. One other benefit: this class is short and simple! All of the messy details are abstracted away somewhere else, so this class can do its job. 
+
+Let's look at a delete test class now: 
+
+class DeleteNewPostTest extends PostTest {
+	
+	public setUpBeforeTestMethod(){
+		// create a post so we can delete it
+		super.setUpBeforeTestMethod();
+		testPage.createNewPost(postDetails);
+	}
+	
+	public testDeleteNewPost(){
+		// test is ready to go!
+		testPage.deletePost(postDetails);
+		assert !testPage.isPostPresent(postDetails);
+	}
+	
+	// and so on
+}
+
+Here, we're able to modify the setup methods for delete to create an object for deleting. This helps us isolate test methods to focus on a particular aspect of posts (deleting) without having to add unnecessary steps in the test itself. 
+
+Now, you may be thinking at this point, "This looks like a lot of work upfront", and you might be correct. For small test projects, this approach might be overkill. However, for projects that are not small, you can see some scaling advantages that OOP provides. If more functionality is added to the app (moderating posts, closing posts), you can just add some more classes since basic setup and teardown are done for you. As well, this approach helps isolate tests from one another so tests can be run independently. Lastly, this approach helps teams (beyond one or two people) break up tasks and responsibilities so large projects can be worked on efficiently.  
+
+Go ahead, use OOP for writing tests. s
+
+
+
+
+

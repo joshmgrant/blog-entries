@@ -1,0 +1,17 @@
+One of the most beneficial aspects of automation is the process of /actually/ automating testing of an app. In my experience, I've found just as many bugs and issues while going through the steps in automating a test as when the finished automated tests are run. In a way, automation is just another context in which to explore an app. This might sound a bit trivial, but it can be kind of a big deal. Automation can reveal a lot about an app's testibility and usability, even if the automated tests and checks that are produced never get run.        
+
+In particular, sometimes tasks are expected to be automated that are difficult or awkward to automate. This can lead to some testy situations (pun intended) where test developers either implicitly or explicitly voice negative opinions about such cases. In some cases, this feedback can be quite valuable if it is interpreted correctly. 
+
+In light of this, I've come up with a possible testing heuristic called the Grumpy Automator heuristic (disclaimer: this may or may not be an original idea).
+
+As an example, suppose a method has to be tested in an application's API. For clarity, suppose this API method is called RestoreMSSqlDatabaseFromBackup(). If you're automating the testing of this app, here are some possible scenarios that could occur:
+
+-Tests are difficult to repeat: perhaps calling RestoreMSSqlDatabaseFromBackup() is difficult to do more than once without intervention, such as in a loop. Is this intentional? Is repeatability important? Sometimes being able to call a method multiple times in a row is beneficial, sometimes not. 
+
+-Test setup/teardown is fairly involved: suppose that calling RestoreMSSqlDatabaseFromBackup() is easy to automate but setting up automated tests isn't. What does this say about the underlying application or feature? If restoring a database is easy but creating one is not, is there a problem here? This could also suggest that the focus of testing efforts may need to be reconsidered.
+
+-Tests are complicated: Suppose that RestoreMSSqlDatabaseFromBackup() requires a lot of steps and error handling, leading to complicated but functional automated test code. What does this say about the method logic? Is this intentional? It could be complicated for security reasons, for example. 
+
+-Tests that are just plain hard to automate: some tests are just difficult to automate. Does this suggest problems with overall testibility of the feature/app? What does this say about testing priorities on your team? What does it say about development? 
+
+Again, these aren't Earth-shattering ideas for a test heuristic, but sometimes automation can provide insight in somewhat unexpected ways.  

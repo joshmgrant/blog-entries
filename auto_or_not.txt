@@ -1,0 +1,11 @@
+When different individuals talk about test automation, they mean different things. 
+
+When a production developer talks about automated tests, she is typically referring to unit tests and unit test suites, or code-level integration tests. Such tests are generally checks in nature, to confirm nothing is broken at the code level of production. These tests are fast (on the order of seconds), and designed to be run often and on demand (pre-commit, pre-push, etc).
+
+When an unenlightened test developer (or sometimes manager) talks about automated tests, he's likely talking about automated UI tests. These tests run at the application-level, basically driving the application via the UI. These tests generally try to replicate manual test cases. While they theoretically could be run regularly, they also tend to be slow (order of hours) because they are limited by the OS/application meaning these tests usually get run on an "as-needed" basis. 
+
+When an enlightened test developer talks about automated tests, she's probably talking about code written to <i>assist</i> testing by humans. This code could test directly, such as UI tests. Or it could be code to help automate part of the testing process, such as generating large amounts of test data easily. Or it could be code that provides helpful information while testing, such as a test runner/controller that's part of a CI process. These tools are purpose-designed, and could take any amount of time to run from seconds to days. 
+
+As you can see, different developers have different experiences with automation. This can lead to some confusion about roles and expectations, which in turn can lead to problems. I think a good start when it comes to automated tests on any project is to decide what automated tests <i>mean</i> to different individuals, and to set expectations accordingly.          
+
+I think this is just a part of the evolution of test development and test automation. As test development becomes a legit specialty within software development, it just means developers will have to talk to each a bit more often.  

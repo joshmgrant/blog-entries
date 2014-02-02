@@ -1,0 +1,45 @@
+*****Dave's Ideas*****
+->How To Identify Reliable Locators
+-framework specific ideas
+-hierarchy of locators
+-cooperation with developers
+-tricks and shortcuts
+
+Tagging Strategy
+
+->Reporting (e.g. JUnit XML Reporting, HTML reporting, Sauce Lab reports) 
+-TestNG?
+
+Test Data Management
+
+CI Workflow and Configuration
+
+->Debugging Your Tests
+-synchronization vs debugging
+-using waits
+-local vs selenium grid vs parallel
+
+How To Test Apps That Are Behind Your Firewall
+
+Add'l proxy functionality
+
+Add'l HTTP Status Code cases (e.g. Capture status codes on redirects)
+
+x Working with test credit cards at scale (a.k.a. avoiding intermittent failures due to simultaneous CC transactions)
+
+x Selenium User Google Group & Issue Tracker 
+
+Advanced IRC Chatting (bot, logs, etc)
+
+x Controlling Which A/B Test You’re In
+ 
+Capybara/ChromeDriver/Selenium, what’s the difference and pros and cons (re: Mike Williamson)
+
+Headless options (e.g. xvfb, PhantomJS, etc)
+
+Other Selenium resources
+
+*****My Ideas*****
+Mobile browser testing
+
+"Frameworkless" Tests

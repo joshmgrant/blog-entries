@@ -1,0 +1,23 @@
+Like Rodney Dangerfield, I feel like source control don't get no respect. 
+
+Good source control systems (Git, Subversion, Mercurial and so on) are widely used in software development. These are generally used, as the name implies, to keep track of changes made to the source by different team members at different times. That allows developers to see the progress of new changes and potentially roll back bad code to avoid problems. 
+
+Developers widely understand source control as this, and only this. It's tool to use but a simple, limited one. Some feel that source control can get in the way of producing good code by breaking the "flow".  Others feel that source control is something only professional developers on professional projects need to use.
+
+Modern source control is so, so much more than that.
+
+I've been working with Git for about a year now, and I think it's an excellent tool for any developer. In fact, I'd say it's an excellent tool for anyone working with text of any sort. Source control tools can do handy things, if you only learn how to use it. Source control tools don't just save your work; they make actually producing good code easier and more efficient. For some reason, some programmers just don't feel this way, so I'm going to give some examples of what source control like Git can do for you. 
+
+Conduct small, one-off experiments: Sometimes looking at code, you might want to try out something small. Maybe it's not even directly relevant to what you're working on or just a nagging question about the language you're working with. What happens if I make x a float instead of an int? What if I delete this line of code? What does that decorator actually do? Does this  With good source control, you can easily undertake these experiments. Just make the change, figure out whatever you want to know, and repeat as necessary. Once you're done, you may end up with something irrelevant to your work. To get rid of it and go back to things before your experiment, with git just do something like 
+
+git checkout .
+
+and you're back to where you've started from. You've now avoided losing your place while coding and avoided introducing annoying errors with superfluous code.  
+
+Conduct large, complex experiments: Suppose you want to re-write a large chunk of code but you're not sure how it will turn out. Or you want to start a "test-first" approach to writing code for some existing project. These experiments could take days or weeks, and affect significant parts of your code base. How do you do this while not breaking current work? Again, there are good approaches to doing this. Workflows like *feature branching* [http://martinfowler.com/bliki/FeatureBranch.html] allows parallel development between the mainline of a project and an experimental subproject. Feature branches can also be used to share such subprojects among team members for commenting or additional work, again without disrupting the mainline of development. 
+
+Portability: This one seems basic but can be quite helpful. Having a repository in a central location makes getting source code a breeze. Setting up a machine for a new developer? How about working with your code on an arbitrary test machine? Getting code is as easy as a pull command. 
+
+Basic Continuous Integration: CI is all the rage these days, and for good reason. 
+
+  

@@ -1,0 +1,17 @@
+This past week, among all the holiday cheer and seeing good friends and family, I had an interesting thought: learning to code is important *even if you don't actually ever write code*. 
+
+Here's what triggered this epiphany. 
+
+I was talking to a university friend I haven't seen in a while. He did an arts undergrad (history, I think) and it pretty well spoken and well written. This past year, he started a web development dipolma program in Ottawa. He has no previous coding experience. He said he's finding some parts challenging but overall he likes it and it looking forward to getting more into the development side of things. 
+
+As he was talking, I thought about my opinions on what he was saying. He mentioned learning Java ("in a web dev program? weird") and JavaScript ("have fun with that"). Then he mentioned how now he looks at even simple web apps and marvels at what goes on in the background. He said he has a new appreciation for what it takes to just get a modern web app up and running, let alone looking good and performing well. And from the sounds of it, he hasn't even done anything high tech yet like develop a web app himself from scratch. 
+
+So here we have an intelligent person who previously had no idea what went into building computer applications suddenly understanding the complexity of simply logging into Reddit. This would also give some apprecation of the processes behind creating and maintaning web applications. It may even provide some appreciation for software quality.  
+
+That's when I started to understand the importance of learning to code. Some have suggested *not eveyone should learn coding* [http://www.codinghorror.com/blog/2012/05/please-dont-learn-to-code.html] because not everyone needs to code as part of their daily life, but I think this is a bit backwards. Knowing how to code means you know a bit of how apps are created. It means knowing the difference between a 404 error and a 500 error when you try accessing a web page. It means not getting scared when you *accidentally look at the page source* [http://cheezburger.com/7974345216]. And this is just the web; the same principles would apply to desktop or mobile apps. 
+
+As computers become more of a regular part of life, it's important to understand how they work. Learning coding is one way to do this. 
+
+Happy 2014 Everyone!  
+
+  

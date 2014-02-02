@@ -1,0 +1,15 @@
+When should a team start using automation and automated testing in a software project? I'd say as early as possible. Waiting too late can render automation much less effective. On the other hand, getting automated tools integrated into a project early gives everyone time to evaluate how well such tools will work. 
+
+To illustrate, imagine you are going on a trip somewhere you've never been to. You want to make the most of your trip, meaning you don't want to spend time being lost (assume being lost is a negative). One way to help with this is to get a GPS which will show you maps of your locations. 
+
+The GPS in this story is a bit like automated testing. It's a tool that can help you solve a problem (avoiding being lost) but doesn't actually do the work for you (going where you want to go). Hopefully you'll see some parallels with automated testing. 
+
+The question is: when would you like to get your GPS?
+
+You could get your GPS early on, maybe even before you leave for your trip. This gives you some time to get familiar with the benefits and the shortcommings of the GPS. You can see what it can do, and how you might want to use it. You may even try it out and decide you don't need it after all; it may have some fatal shortcomings such as not having the correct maps for your trip. Mostly, it gives you a chance to start your trip with a plan to avoid getting lost.
+
+Contrast this getting a GPS shortly after you arrive in your destination. Here, you have less time to get familiar with your GPS since you probably don't want to waste time on your trip. You may also have fewer options based on where you are. It still might help your bigger problem of getting lost but it might come at a cost. 
+
+Worst of all: getting lost and wishing you had a GPS. You might not even find one at this point, or only be able to get one sent to your hotel. Obviously, a GPS isn't very effective in this case even if everyone you know tells you how great it is having a GPS.
+
+The lesson here is that automation and automated tools might be great, but they should be used wisely. Don't miss out on an opportunity to solve a problem ahead of time. 
