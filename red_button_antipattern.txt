@@ -1,0 +1,4 @@
+If you've ever watched a James Bond film or similar, you've probably seen a scene that involves the villain pushing a big (usually red) button causing an underground lair to self-destruct. The villain usually pushes the button toward the end of the movie, giving only a few seconds for the hero and others to escape certain death.  Pretty dramatic. 
+
+This technique works great for the likes of Dr No. It works much less effectively for software development teams.
+
