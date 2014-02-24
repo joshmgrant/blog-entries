@@ -1,0 +1,13 @@
+This may be an unpopular opinion. However, I think it needs to be said. 
+
+I currently work as a test developer. As a test developer, I am a developer. I am a not tester. 
+
+Let me explain. 
+
+Test developers write test code. This includes (but is not limited to): writing automated tests, developing test frameworks, building automated tools for production developers and/or testers, recording and reporting automated test results and working on Continuous Integration-related projects. I've seen at least a little bit of each of these things in my work. These are activities that are beneficial for building good software. I'd also say these activities help improve the overall quality of a piece of software if done appropriately. 
+
+But it's not testing, at least in the way I think of *what testing is* [http://www.developsense.com/blog/2009/08/testing-vs-checking/]. 
+
+I don't sit down and perform exploratory testing of an app, nor do I thoroughly investigate the app under test. That's not to say that I shouldn't do these things, especially since *testing is an activity* [http://angryweasel.com/blog/death-and-testing/] should be done by everyone on a team. I do report bugs and work with automating test cases, which could be considered testing activities, so in that sense I'm a tester at least some of the time. 
+
+This mirrors my opinion on what test development is (and isn't), which has been bugging me for the past while. I think this is the start of sorting out the value and benefit of automation in software development.
