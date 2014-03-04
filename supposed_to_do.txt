@@ -8,7 +8,7 @@ In other words, these tests were designed to look for issues in the UI and busin
 
 However, one day we found it revealed something else. 
 
-One morning we came in to find all of our tests skipped. All of them. Puzzled, we checked the test servers with the recent build of the app under test. They were up but not connecting to the app correctly. It turns out the databases for these test servers were taken down. Why? Because they blew up. There was a surge of data sent into them, causing them to crash. The underlying cause of the crashes was a bug in the client-side that caused large stacktraces to be recorded to the database with every login attempt, valid or not. Essentially, the app was experiencing a sort of denial-of-service attack. 
+One morning we came in to find all of our tests skipped. All of them. Puzzled, we checked the test servers with the recent build of the app under test. They were up but not connecting to the back-end correctly. It turns out the databases for these test servers were taken down. Why? Because they blew up. There was a surge of data sent into them, causing them to crash. The underlying cause of the crashes was a bug in the client-side that caused large stacktraces to be recorded to the database with every login attempt, valid or not. Essentially, the app was experiencing a sort of denial-of-service attack. 
 
 Definitely not expected. 
 
