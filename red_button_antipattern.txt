@@ -2,3 +2,7 @@ If you've ever watched a James Bond film or similar, you've probably seen a scen
 
 This technique works great for the likes of Dr No. It works much less effectively for software development teams.
 
+Automated tests are great tools for providing feedback for developers. They can also be good tools for assisting with testing efforts. But they can also be misused. For example, at the time 
+
+
+
