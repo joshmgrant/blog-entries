@@ -4,13 +4,15 @@ Here's one such story.
 
 At my company, we have a team of test developers who write and maintain WebDriver-based functional tests, which I'm a part of. These tests focus on basic functional aspects of the web app under test, such as logging in and straightforward business logic. There's a fair number of tests that cover different areas of the app which run both nightly and on-demand. Results are reported after tests are run, providing information on the overall functionality.
 
-In other words, these tests were designed to look for issues in the UI and business logic aspects of the app. However, one day we found it revealed something else. 
+In other words, these tests were designed to look for issues in the UI and business logic aspects of the app. 
+
+However, one day we found it revealed something else. 
 
 One morning we came in to find all of our tests skipped. All of them. Puzzled, we checked the test servers with the recent build of the app under test. They were up but not connecting to the app correctly. It turns out the databases for these test servers were taken down. Why? Because they blew up. There was a surge of data sent into them, causing them to crash. The underlying cause of the crashes was a bug in the client-side that caused large stacktraces to be recorded to the database with every login attempt, valid or not. Essentially, the app was experiencing a sort of denial-of-service attack. 
 
 Definitely not expected. 
 
-The key to this story is that our WebDriver tests make use of (SOAP) server APIs and parallelization. Using APIs allows for quick and easy data generation, while parallelization helps speed up test execution time. These are both good approaches that I fully recommend for UI test suites. In this case, however, they combined together to crease a situation where there are lots of login attempts happening in a short period of time, resulting in a database crash. This was not something our tests were designed to do, nor was it something we considered when we started parallelizing. 
+The key to this story is that our WebDriver tests make use of (SOAP) server APIs and parallelization. Using APIs allows for quick and easy data generation, while parallelization helps speed up test execution time. These are both good approaches that I recommend considering for UI test suites. In this case, however, they combined together to crease a situation where there are lots of login attempts happening in a short period of time, resulting in a database crash. This was not something our tests were designed to do, nor was it something we considered when we started parallelizing. 
 
 The bug was obviously identified, and eventually fixed. 
 
