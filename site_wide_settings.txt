@@ -1,0 +1,19 @@
+Continuing on an *earlier theme* [http://simplythetest.tumblr.com/post/51772689802/what-not-to-do-with-selenium-testing-login-pages], here's a situation I've been thinking of recently. 
+
+Suppose you're testing a web app that has some site-wide setting like a date format. For example, a field in the app may allow the user to change a date format from "01/02/2014" to "Jan 2, 2014" across the app. Test cases here are fairly straightforward; login to the app, change the site-wide setting, navigate to a page with fields that employ this setting, and verify the format changes accordingly. Being a good test developer, you think to yourself, "This could be a good place to use Selenium! Simple and quick.". It's all good, right? 
+
+Not so fast. 
+
+Automating testing of site-wide settings might seem like an easy win but there's some subtle problems that arise. 
+
+The main one I've seen is interference with other tests. In the case above, if your automated tests /only/ tested these site-wide settings, there's really no problem. However, once you add any other sort of tests to the mix, you might run into problems. Tests may begin to fail unexpectedly because checks fail due to formatting. For example, consider checking a post on a blogging app appears as expected for a given date. Posting might functionally work as expected, but checks might fail when checking the posted date if the formats don't match up and are not reset properly. The expected date may be correct but its format might not be. 
+
+This problem can be compounded further if test are run concurrently. If one test changes a site-wide setting at some point during a run, other tests could be affected. At this point, debugging might get pretty tricky and test results may be skewed to false failures.
+
+One way around these problems is to set formatting to a known, fixed format before every non-formatting test. The downsides are additional test setup and potentially longer test execution time, not to mention that you are now implicitly assuming that the site-wide formatting works correctly in some cases. Another approach would be to isolate the site formatting tests so that they do not interfere with other tests. Isolating these tests may limit their utility in addition to being difficult to do effectively. Lastly, you could convert all fields that are formatted to some common format, removing formatting from the picture entirely. This might work but could also mask bugs and may require quite a bit of upkeep.
+
+Not so simple and quick. 
+
+I'm going to outright say that Selenium isn't the right tool for checking site-wide formatting, but I would consider it with caution. As test suites grow, such issues can cause headaches for the maintainers, especially when tests seem to randomly fail. Things may make sense in your context, so just be aware of what can go wrong. 
+
+ 
