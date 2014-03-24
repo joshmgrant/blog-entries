@@ -12,30 +12,49 @@ Abstract -
 -And That's It!
 -Noodle bar
 -"Not the same thing!"
--Patrons, Menus, Decor, Staffing, Budgets
+-Patrons, Menus, Decor, Staffing, Budgets  (*)
 -Lots of things don't even apply
 -Cup of soup 
 
 -Complexity
--Users, Approaches, App Under Test, Platforms,
-- growth
+-Little complexity in the cup of soup
+-Lots of complexy in noodle bar
+-Users, Approaches, App Under Test, Platforms (same as (*))
 - changing requirements
-- test code is code
+- to automate or not?
 - automation is development
+- test code is code, should be developed as such
 
 -Value
+-value is clear in cup of soup
+-what value does noodle bar provide? why do people go? 
 -Budgets
+-again, to automate or not
+-what adds value to your product
+-time and resources
 
 -Maintenance
+-no maintenance in cup of tea
+-dirty tables, dish washer
 - Steve Ballmer
+-easily the biggest consideration
+-tests rot like code
+-technical debt (like code)
 
 -Tooling
+-No tooling in cup of tea (mug or cup? add salt or pepper?)
+-Lots of tools in noodle bar (noodle cooker if possible)
+-some tools make more sense (sushi counter, rice cooker) than others (not appliciable tools)
 - source control/history
 - editors/languages
 - 3rd party considerations
 - other utilities
 
 -Teamwork
-- "It's always a people problem" 
+-Cup of soup is designed for one person
+-Noodle bar is not
+-"It's always a people problem" 
+-One person or several?
+-Existing team or new team?
 
--Conclusion
+-Conclusion (blank slide?)
