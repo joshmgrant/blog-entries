@@ -12,14 +12,14 @@ Abstract -
 -And That's It!
 -Noodle bar
 -"Not the same thing!"
--Patrons, Menus, Decor, Staffing, Budgets  (*)
+-Patrons, Menus, Décor, Staffing, Budgets
 -Lots of things don't even apply
 -Cup of soup 
 
 -Complexity
 -Little complexity in the cup of soup
--Lots of complexy in noodle bar
--Users, Approaches, App Under Test, Platforms (same as (*))
+-Lots of complexity in noodle bar
+-Users, Approaches, App Under Test, Platforms
 - changing requirements
 - to automate or not?
 - automation is development
@@ -34,7 +34,7 @@ Abstract -
 -time and resources
 
 -Maintenance
--no maintenance in cup of tea
+-no maintenance in cup of soup
 -dirty tables, dish washer
 - Steve Ballmer
 -easily the biggest consideration
