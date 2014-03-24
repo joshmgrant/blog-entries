@@ -1,32 +1,41 @@
-Title: 
+Title - Not Even Close: Single Use Tests Vs Test Frameworks
 
-Abstract: 
+Abstract - 
 
-Rough Ideas: 
+-Opening Slide, thanks to SmartBear, other (Ron, Adam, Lorinda)
 
-print "Hello world"
+-Tweet: "Not the same thing..."
 
-test print "Hello world"
+-Instant Cup of Soup vs Noodle Bar
+-Not the same thing!
+-Cup of Soup, Hot Water, Bowl
+-And That's It!
+-Noodle bar
+-"Not the same thing!"
+-Patrons, Menus, Decor, Staffing, Budgets
+-Lots of things don't even apply
+-Cup of soup 
 
-Not the same thing!
-
-Complexity
+-Complexity
+-Users, Approaches, App Under Test, Platforms,
 - growth
 - changing requirements
 - test code is code
 - automation is development
 
-Maintenance
+-Value
+-Budgets
+
+-Maintenance
 - Steve Ballmer
 
-Tooling
+-Tooling
 - source control/history
 - editors/languages
 - 3rd party considerations
 - other utilities
 
-Teamwork
-- "It's always a people problem"
-- 
+-Teamwork
+- "It's always a people problem" 
 
 -Conclusion
