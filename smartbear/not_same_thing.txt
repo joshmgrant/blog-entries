@@ -1,0 +1,32 @@
+Title: 
+
+Abstract: 
+
+Rough Ideas: 
+
+print "Hello world"
+
+test print "Hello world"
+
+Not the same thing!
+
+Complexity
+- growth
+- changing requirements
+- test code is code
+- automation is development
+
+Maintenance
+- Steve Ballmer
+
+Tooling
+- source control/history
+- editors/languages
+- 3rd party considerations
+- other utilities
+
+Teamwork
+- "It's always a people problem"
+- 
+
+-Conclusion
