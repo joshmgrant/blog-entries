@@ -1,4 +1,4 @@
-Title - Not Even Close: Single Use Tests Vs Test Frameworks
+Title - Automated Test Design: Single Use vs Reusable Tests
 
 Abstract - 
 
