@@ -1,0 +1,3 @@
+Today I was reading *this post* [http://programmers.stackexchange.com/questions/233770/automated-gui-tests-take-too-long-because-of-doing-same-steps-before-the-main-t] about issues with automated tests taking to long. It finally got me to write this post. 
+
+Here's the 
