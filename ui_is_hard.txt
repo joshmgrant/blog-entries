@@ -1,3 +1,9 @@
 Today I was reading *this post* [http://programmers.stackexchange.com/questions/233770/automated-gui-tests-take-too-long-because-of-doing-same-steps-before-the-main-t] about issues with automated tests taking to long. It finally got me to write this post. 
 
-Here's the 
+Here's the dirty secret of UI automation: it's very difficult. Difficult as in "finding a needle in haystack", not difficult as in "solving the *Riemann Hypothesis* [http://en.wikipedia.org/wiki/Riemann_hypothesis]". 
+
+What makes UI automation so difficult? The U in UI stands for "User". This typically means "person using the application". By trying to automate an app through its UI, you're making a machine interface with something meant for a person. Machines are generally good at things people aren't, and vice versa, making this task very difficult. 
+
+This is the core reason why UI automation efforts require so much maintenance, take so long to prepare and execute, and lead to complex set-ups. It means using a tool to for a task it is not designed for.
+
+I'm not saying UI automation isn't beneficial. It can be in many contexts. But it's also a challenging problem with a possibly low benefit-cost ratio. UI automation often isn't the right tool for the job. Testers, developers and other individuals in tech would do well to keep this in mind.

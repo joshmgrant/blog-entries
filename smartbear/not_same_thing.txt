@@ -18,6 +18,8 @@ Abstract -
 
 -Complexity
 -Little complexity in the cup of soup
+-First idea: lots of cups of soup!
+-Bad idea for many reasons
 -Lots of complexity in noodle bar
 -Users, Approaches, App Under Test, Platforms
 - changing requirements
