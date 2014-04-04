@@ -1,0 +1,36 @@
+One of the first concepts developers encounter when working with Selenium scripts are element locators. Working with locators is a core skill when it comes to Selenium, but it's also one with a surprising amount of subtlety. 
+
+A little while ago, I was part of a nice discussion of *good ideas for defining locators in scripts* [https://twitter.com/noahsussman/status/449178343670554624].  There's some good ideas there from everyone, but I thought I could elaborate here.
+
+Let's assume you've found a good attribute to locate an element by (which is a topic covered here) and you want to write a script working with this element. This may sound pretty specific but something like 95% of all Selenium tests and scripts involve doing this so it's fairly important. How would you code this up?
+
+To click an  element with an id locator, here's a first approximation in Python: 
+
+`driver.find_element_by_id("good_element_id").click()`
+
+Looks innocent enough but this actually isn't very good. The biggest problem is that there's no easy way to identify the element again. This may seem like a quibble, but in my experience an element is rarely worked with only once in a test or script. Finding the element using a hard-coded locator value means copy-pasting similar code for multiple actions. This means you're repeating yourself, making maintenance and refactoring more difficult.
+
+A big improvement is put the locator in a variable which is set ahead of time. In our case, that could look like this:
+`
+good_element_locator = "good_element_id"
+driver.find_element_by_id(good_element_locator).click()
+`
+Now, it's easy to add other find_element calls as well as easy to change your locator in one place instead of several places. This is a big win for maintenance of scripts which should never be underestimated. You can also move around the locator as needed now, meaning more options for organizing your scripts. Again, a big win for maintenance.
+
+This is going so well, you might go a step further and define the entire element in a variable instead of just the locator. So you write this: 
+`
+good_element = driver.find_element_by_id("good_element_id")
+good_element.click()
+`
+Seems good right? Saving even more typing and making things even less redundant. 
+
+However, you've hit a pitfall.
+
+When a find_element() call is made, the webdriver will try to find that element in the current DOM. Sometimes you're intersted in working with elements that are not in the DOM, such as confirming an element is not displayed or present. Defining the element instead of just the locator leads to problematic situations. Consider this test:
+`
+good_element = driver.find_element_by_id("good_element_id")
+assert !good_element.isDisplayed()
+`
+If the element is not displayed, this test will fail. It doesn't fail at the assert, however, but at the previous line. Since the element is not present, the webdriver does not find it and raises an error, which is what fails the test. For beginners this can seem counter-intuitive, particularly since the element doesn't appear, which is the expected result. Subtle but deadly. 
+
+I might have a second part to this post, but for now the essential idea is here. When it comes to locators, use variables and use them well. 
