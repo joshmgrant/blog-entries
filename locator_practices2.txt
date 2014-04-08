@@ -1,0 +1,2 @@
+In my previous post, I introduced some good practices around defining locators in Selenium scripts. The moral of that story was to put locators into variables instead of hard-coding them into webdriver method calls. This is a simple practice but will make scripts much more robust in the long run. 
+
