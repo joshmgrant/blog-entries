@@ -1,0 +1,6 @@
+Test design is a critical consideration when working with automated tests. Some tests are written for single use to solve a one-time task quickly and easily while other tests written for repeated use over time. As it turns out, writing a single use tests and reusable test are almost nothing alike, differing in significant ways. This webinar will discuss these differences and some ideas to keep in mind when working with such automated tests.
+
+What to expect: 
+- Descriptions of what makes a single-use test and reusable test
+- Considerations that go into creating a suite of reusable tests
+- Discussion of how tests of each type differ and considerations for writing each
