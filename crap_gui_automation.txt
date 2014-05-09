@@ -8,13 +8,13 @@ First of all, both Noah and Alan's posts are very good. Definitely read them and
 
 With that out of the way, here is my opinion on GUI automation: a lot of it sucks. And this is coming from a person who's written a fair bit of it. 
 
-What continues to amaze me how tightly people cling to using GUI automation as business as usual. People obviously don't want to stop using it, but why remains a mystery to me. In my experience, automation doesn't necessarily lead to faster testing, more thorough testing or even easier testing. Automating the UI can be highly effective in some contexts, but also downright annoying in others. 
-
 On top of the reasons that *others have stated* [http://arbitraryreason.com/automated-gui-testing-will-kill-you/], I'd like to point out a couple of more reasons for why GUI automation is less than optimal: 
 
 - Automation is a development activity: Writing good automated tests will almost always mean programming of some sort. Using only record and playback tools and having testers with little to know coding experience write automation can't lead to good results. The best GUI automation scripts are written and maintained by developers, who treat automated tests as any other kind of code. If you want GUI automation to succeed *at all*, you need developers. 
 
 - GUI automation as a dumping ground: A more insidious problem with GUI automation is when it's treated as a catch-all for test teams. Since GUI automation is go general, the theory goes, you can apply it to testing any aspect of an application. Difficult-to-test features or long, complex regression tests are sent to automation where they are expected to suddenly get more useful and reliable. Don't know how to test it? Automation to the rescue! The only problem is that this doesn't actually help product quality. Just like quality can't be "tested in", it also can't be "automated in". I admit this as much a problem with team organization as it is with test methodology, but it can still happen on test teams. 
 
+What continues to amaze me how tightly people cling to using GUI automation as business as usual. People obviously don't want to stop using it, but why remains a mystery to me. In my experience, automation doesn't necessarily lead to faster testing, more thorough testing or even easier testing. Automating the UI can be highly effective in some contexts, but also downright annoying in others. 
 
+I still hold that automation is a tool. Sometimes you have to decide whether or not it's worth it to use such a tool. 
 
