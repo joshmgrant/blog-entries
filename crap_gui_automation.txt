@@ -1,0 +1,20 @@
+It's been a busy few days in the testing blogosphere. 
+
+Noah Sussman starting things off by tweeting a post about why *GUI test automation is so difficult* [http://infiniteundo.com/post/80881879374/why-is-testing-hard]. It's not an Earth-shattering argument, but he correctly points out that trying to account for the kinds of errors that appear in a GUI-based test can be difficult to automate, leading to fragile tests. I have *similar opinions* [http://simplythetest.tumblr.com/post/80795547207/ui-automation-is-hard], but I didn't spell things out as clearly as Noah did. 
+
+In response, Alan Page took things one step further by suggesting that *testers stop writing (GUI) automation all together* [http://angryweasel.com/blog/stop-writing-automation/]. This post generated a lot of attention, and rightfully so. GUI automation is clearly a topic near and dear to many people in the software world. I just wanted to add some more commentary to the mix. 
+
+First of all, both Noah and Alan's posts are very good. Definitely read them and any comments around them in full. 
+
+With that out of the way, here is my opinion on GUI automation: a lot of it sucks. And this is coming from a person who's written a fair bit of it. 
+
+What continues to amaze me how tightly people cling to using GUI automation as business as usual. People obviously don't want to stop using it, but why remains a mystery to me. In my experience, automation doesn't necessarily lead to faster testing, more thorough testing or even easier testing. Automating the UI can be highly effective in some contexts, but also downright annoying in others. 
+
+On top of the reasons that *others have stated* [http://arbitraryreason.com/automated-gui-testing-will-kill-you/], I'd like to point out a couple of more reasons for why GUI automation is less than optimal: 
+
+- Automation is a development activity: Writing good automated tests will almost always mean programming of some sort. Using only record and playback tools and having testers with little to know coding experience write automation can't lead to good results. The best GUI automation scripts are written and maintained by developers, who treat automated tests as any other kind of code. If you want GUI automation to succeed *at all*, you need developers. 
+
+- GUI automation as a dumping ground: A more insidious problem with GUI automation is when it's treated as a catch-all for test teams. Since GUI automation is go general, the theory goes, you can apply it to testing any aspect of an application. Difficult-to-test features or long, complex regression tests are sent to automation where they are expected to suddenly get more useful and reliable. Don't know how to test it? Automation to the rescue! The only problem is that this doesn't actually help product quality. Just like quality can't be "tested in", it also can't be "automated in". I admit this as much a problem with team organization as it is with test methodology, but it can still happen on test teams. 
+
+
+
