@@ -1,0 +1,123 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{casual}                % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\usepackage{ifpdf}
+
+% personal data
+\firstname{Joshua}
+\familyname{Grant}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{51 Mount Dennis Dr}{Toronto, Ontario M6M 5H5}    % optional, remove the line if not wanted
+\phone{Home: (647) 341-0926}                    % optional, remove the line if not wanted
+\mobile{Mobile: (647) 240-0961}                      % optional, remove the line if not wanted
+\email{joshua.m.grant@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{my_photo_smaller}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{"A mathematician is a machine for turning coffee into theorems." -- Alfr\'ed R\'enyi}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2007-2009}{MSc - Applied Mathematics}{The University of Western Ontario}{London}{Ontario}{Research area: Mathematical Biology}  % arguments 3 to 6 are optional
+\cventry{2003-2007}{BSc - Mathematics}{Trent University}{Peterborough}{Ontario}{Dean's Honour List, 2003-2007}  % arguments 
+
+\section{Master's Thesis}
+\cvline{title}{\emph{The Evolution of Cooperation on Bipartite Networks}}
+\cvline{supervisors}{Dr Lindi Wahl and Dr Geoff Wild}
+\cvline{description}{\small An evolutionary game theoretic model is developed to examine how network heterogeneity affects the evolution of cooperation.}
+
+\section{Experience}
+\subsection{Teaching and Education}
+\cventry{2007--2009}{Teaching Assistant}{The University of Western Ontario}{London}{Ontario}{Lead tutorials and drop-in help sessions for students, graded tests and assignments and held regular office hours for additional student help.}                % arguments 3 to 6 are optional
+\cventry{2005--2006}{Teaching Assistant}{Trent University}{Peterborough}{Ontario}{Assisted students in a lab-based physics for education students course.}                % arguments 3 to 6 are optional
+\cventry{2006-2007}{Grader}{Trent University}{Peterborough}{Ontario}{Graded homework assignments and tests for second-year calculus courses.}
+\cventry{Summer 2005}{Instructor, Trent Science Camp}{Trent University}{Peterborough}{Ontario}{Lead the physics lab module for students in grades 6 to 8.}                % arguments 3 to 6 are optional
+\subsection{Vocational}
+\cventry{2009--Present}{Research Associate}{Cerebral Diagnostics Canada, Inc}{Toronto}{Ontario}{Conduct experiments, undertake statistical analyses, and develop in-house software for research in EEG (Electroencephalography). }                % arguments 3 to 6 are optional
+\cventry{Summer 2006}{Research Assistant, Department of Mathematics}{Trent University}{Peterborough}{Ontario}{Designed and developed a database of corporate ownership based on SEC filings as well as a microeconomic model of market dynamics.}                % arguments 3 to 6 are optional
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+\section{Computer skills} 
+\cvcomputer{Languages}{C, C++, Python, Perl, BASIC, Bash} {Packages}{MATLAB, Maple, Octave, R, Boost (C++), NumPy/SciPy (Python)}
+\cvcomputer{Platforms}{Windows, Linux, Unix (Solaris)}  {Office Software}{MS Office, OpenOffice, Photoshop}
+
+\section{Teaching Assistant Experience}
+\subsection{University of Western Ontario}
+\cvlistitem{Applied Mathematics for Engineering II, Winter 2008, Winter 2009}
+\cvlistitem{Linear Algebra For Engineering, Fall 2008}
+\cvlistitem{Calculus for Engineering I, Fall 2007}
+\cvlistitem{Calculus with Fundamentals I, Winter 2008}
+\subsection{Trent University}
+\cvlistitem{Physics for Teacher Education, Academic Year 2005-2006}
+\cvlistitem{Calculus III - Vector Calculus (\emph{grader}), Winter 2007}
+\cvlistitem{Calculus II - Multivariate Calculus (\emph{grader}), Fall 2006}
+
+\section{Contributed Talks}
+\cventry{June 2009}{\textit{Evolutionary Game Dynamics on a Bipartite Graph Network}}{JM Grant, LM Wahl, G Wild}{Canadian Applied and Industrial Mathematics Society Annual Meeting}{University of Western Ontario}{London, Ontario}
+\cventry{August 2008}{\textit{Sexual Moran Model: Theory and Computation}}{JM Grant, LM Wahl, G Wild}{Society for Mathematical Biology Annual Meeting}{Centre for Mathematical Medicine, University of Toronto}{Toronto, Ontario}
+
+\section{Other Scholarly Activities}
+\cventry{Fall 2008}{Organizer, Mathematical Biology Group Seminar Series}{Department of Applied Mathematics}{University of Western Ontario}{London, Ontario}{Organized speakers and times for weekly seminar series of the mathematical biology research group.}
+\cventry{May 2007}{Mathematical Biology Summer Workshop}{Centre for Mathematical Biology, Department of Mathematics and Statistical Sciences}{University of Alberta}{Edmonton, Alberta}{Participated in two week mathematical biology workshop for advanced undergraduates.}
+\cventry{August 2006}{Atlantic Association of Research in the Mathematical Sciences Summer School}{Department of Mathematics and Statistics}{Dalhousie University}{Halifax, Nova Scotia}{Participated in month long summer school, taking graduate courses in wavelet theory and Internet mathematics.}
+%\cvcomputer{}{} {}{}
+
+%\cvlanguage{language 3}{Skill level}{Comment}
+
+\section{Interests}
+\cvline{Linux}{\small Making the most out of my operating system}
+\cvline{Cooking}{\small Trying to prepare everything from maki rolls to cr\`eme br\^ul\'ee.}
+\cvline{Guitar}{\small Been playing for 12 years}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\section{References}
+\cventry{$\cdot$}{Dr Lindi Wahl}{Professor}{Department of Applied Mathematics}{The University of Western Ontario}{(519) 661-2111 ext 88795}{lwahl@uwo.ca}
+\cventry{$\cdot$}{Dr Geoff Wild}{Professor}{Department of Applied Mathematics}{The University of Western Ontario}{(519) 661-2111 ext 88784}{gwild@uwo.ca} 
+\cventry{$\cdot$}{Dr Marcus Pivato}{Professor}{Department of Mathematics}{Trent University}{(705) 748-1011 ext 7293}{pivato@xaravve.trentu.ca}
+\cventry{$\cdot$}{Dr Albert Ler}{Research Associate}{Cerebral Diagnostics Canada Inc}{alersh@gmail.com}
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

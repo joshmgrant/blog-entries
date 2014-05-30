@@ -1,0 +1,114 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{casual}                % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\usepackage{ifpdf}
+
+% personal data
+\firstname{Joshua}
+\familyname{Grant}
+%\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{51 Mount Dennis Dr}{Toronto, Ontario M6M 5H5}    % optional, remove the line if not wanted
+\phone{Home: (647) 341-0926}                    % optional, remove the line if not wanted
+\mobile{Mobile: (647) 240-0961}                      % optional, remove the line if not wanted
+\email{joshua.m.grant@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{my_photo_smaller}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{"A mathematician is a machine for turning coffee into theorems." -- Alfr\'ed R\'enyi}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2007-2009}{MSc - Applied Mathematics}{The University of Western Ontario}{London}{Ontario}{Research area: Mathematical Biology}  % arguments 3 to 6 are optional
+\cventry{2003-2007}{BSc - Mathematics}{Trent University}{Peterborough}{Ontario}{Dean's Honour List, 2003-2007}  % arguments 
+
+\section{Experience}
+\cventry{2009--Present}{Research Associate}{Cerebral Diagnostics Canada, Inc}{Toronto}{Ontario}{My current position involves improving in-house software for a small biotechnology company specializing in EEG (Electroencephalography). This includes writing code for 3D visualization, mathematical and statistical analysis of EEG.}
+\cventry{2007--2009}{Teaching Assistant}{The University of Western Ontario}{London}{Ontario}{As a teaching assistant I lead tutorials and drop-in help sessions for students, graded tests and assignments and held regular office hours for additional student help.}                % arguments 3 to 6 are optional
+\cventry{Summer 2006}{Research Assistant, Department of Mathematics}{Trent University}{Peterborough}{Ontario}{Working with a professor, I designed and developed a database of corporate ownership based on SEC filings as well as a microeconomic model of market dynamics.}                % arguments 3 to 6 are optional
+\cventry{2005--2006}{Teaching Assistant}{Trent University}{Peterborough}{Ontario}{I assisted students in a lab-based physics for education students course.}                % arguments 3 to 6 are optional
+\cventry{2003--2005}{Volunteer Library Assistant}{Kawartha World Issues Centre}{Peterborough}{Ontario}{A volunteer position where I worked in the resource library organizing materials and aiding in various workshops.}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+\section{Strengths and Skills}
+\cvlistitem{Strong personal and technical communication skills}
+\cvlistitem{Ability to interact and work in variety of settings and with various personalities}
+\cvlistitem{Excellent problem solving skills}
+\cvlistitem{Strengths in project planning and abstracting reasoning}
+\cvlistitem{Can work in a team or independently, making adjustments to suit}
+\cvlistitem{Experience with modelling and simulation (Monte Carlo and individual-based)}
+\cvlistitem{Knowledge and experience in object-oriented and procedural programming}
+\cvlistitem{Understanding of design and testing aspects of software development}
+\cvlistitem{Familiarity with open source principles and projects (e.g. Ubuntu, Firefox)}
+\cvlistitem{Quick learner, particularly in technological settings}
+%\cvlistitem{Experience with statistical and data analysis in non-academic settings, including non-parametric statistics and stochastic processes}
+
+\section{Computer Skills} 
+\cvcomputer{Languages}{C, C++, MATLAB, Perl, BASIC, Bash} {Packages}{Maple, Octave, Visual Studio, OpenGL, Boost (C++)}
+\cvcomputer{Platforms}{Windows, Linux, Unix (Solaris)}  {Office Software}{MS Office, OpenOffice, Photoshop}
+%\cvcomputer{}{} {}{}
+
+\section{Other Experience}
+\cventry{2008--2009} {Councilor}{Society of Graduate Students Council}{The University of Western Ontario}{}{London}{Ontario}
+\cventry{2006--2007} {Executive}{Mathematics Society of Trent}{Trent University}{}{Peterborough}{Ontario}
+\cventry{2006--2007} {Chair}{Catholic Council of Trent}{Trent University}{}{Peterborough}{Ontario}
+\cventry{2008} {Team Member}{London Ultimate League}{}{London}{}{Ontario}
+\cventry{2004--2008} {Various intramural teams and events}{Trent University, University of Western Ontario}{}{Peterborough and London}{}{Ontario}
+
+\section{Interests}
+\cvline{Linux}{\small Making the most out of my operating system}
+\cvline{Cooking}{\small Trying to prepare everything from maki rolls to cr\`eme br\^ul\'ee}
+\cvline{Guitar}{\small Been playing for 12 years}
+
+\section{References}
+\cvlistitem{Dr Lindi Wahl, Professor, Department of Applied Mathematics, The University of Western Ontario, (519) 661-2111 ext 88795, lwahl@uwo.ca}
+\cvlistitem{Dr Geoff Wild, Professor, Department of Applied Mathematics, The University of Western Ontario, (519) 661-2111 ext 88784, gwild@uwo.ca} 
+\cvlistitem{Dr Albert Ler, Research Associate, Cerebral Diagnostics Canada Inc, (416) 408-2907, alersh@gmail.com}
+\cvlistitem{Dr Marcus Pivato, Professor, Department of Mathematics, Trent University, (705) 748-1011 ext 7293, pivato@xaravve.trentu.ca}
+
+ 
+% 80 port st
+%401-<427 onto QE W-> Get off Hurontario 10 S -> right ->  
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
