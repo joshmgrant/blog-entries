@@ -1,0 +1,30 @@
+An important skill in software testing is being able to write a good bug report. Here's a situation that's been on my mind related to bug reports for the past while. 
+
+Is this a valid (albeit fictitious) bug report? 
+
+"After opening TestApp in my browser, I logged into my account and did the following: 
+
+-Went to the Widgets list
+-Clicked on the Create Widget button
+-Waited for the New Widget dialogue to appear
+-attempted to create a new widget
+
+The expected result was that I created a new widget easily in a straightforward manner. 
+
+The actual result was that creating a new widget sucked, even if I was able to create the widget successfully.
+
+I was able to reproduce this bug using other user accounts on IE, Chrome and Fire fox. In all cases creating a new widget basically sucked."
+
+This may seem frivolous; I even thought so myself when I first thought of it. After some reflection, I wondered if this is actually a good bug report. 
+
+I've often tested apps or features and been left frustrated. Even if the feature works as expected, I find myself being upset, or thinking things like "This work flow is so shitty. Why does it have to be like this?". In these cases, I find myself thinking that yes, *there is a problem here* [http://blog.isthereaproblemhere.com/].
+
+What's interesting is that, by some conventional reasoning, there is no bug. The app works according to the spec. It follows the documentation as expected. The output is correct for the given input. There are no performance issues. Security is not an issue. In some cases, even automated approaches can be applied to this area without problem. Following this line of logic, there is problem here. Hence, the bug report is closed as "Not a bug". 
+
+But it still sucks. 
+
+I do believe that good software testing involves information gathering. Drawing attention to a particular area can be highly beneficial and have value even if there is no clear "problem". Even if the above bug report is posted, it could trigger a discussion. Maybe there is a usability issue, or something even more subtle like localization or accessibility. There may also be misunderstanding: a particular app may have to be a particular way for reasons the bug report's author hadn't thought of. Or it could just be something to improve. 
+
+Starting these kinds of conversations can be difficult. Bug reports like the one above may or may not help depending on the team or the culture. However, it could also be a way to express something that is slightly intangible at first. It may even be a shared feeling. 
+
+For full disclosure, I've never posted a bug report at work like the example above. But I have considered it, and I think in some cases I could defend it. Would it be professional or acceptable is really the $64 000 question. I think it can be absolutely acceptable in the right environment. But that's just me. 

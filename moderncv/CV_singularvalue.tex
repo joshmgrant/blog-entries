@@ -1,0 +1,104 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{casual}                % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\usepackage{ifpdf}
+
+% personal data
+\firstname{Joshua}
+\familyname{Grant}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{51 Mount Dennis Dr}{Toronto, Ontario M6M 5H5}    % optional, remove the line if not wanted
+\phone{Home: (647) 341-0926}                    % optional, remove the line if not wanted
+\mobile{Mobile: (647) 240-0691}                      % optional, remove the line if not wanted
+\email{joshua.m.grant@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{my_photo_smaller}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{"A mathematician is a machine for turning coffee into theorems." -- Alfr\'ed R\'enyi}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2007-2009}{MSc - Applied Mathematics}{The University of Western Ontario}{London}{Ontario}{Research area: Mathematical Biology}  % arguments 3 to 6 are optional
+\cventry{2003-2007}{BSc - Mathematics}{Trent University}{Peterborough}{Ontario}{Dean's Honour List, 2003-2007}{Courses taken included Real Analysis, Abstract Algebra, Mathematical Modelling and Stochastic Processes}  % arguments 
+
+\section{Master's Thesis}
+\cvline{title}{\emph{The Evolution of Cooperation on Bipartite Networks}}
+\cvline{supervisors}{Dr Lindi Wahl and Dr Geoff Wild}
+\cvline{description}{\small An evolutionary game theoretic model is developed to examine how network heterogeneity affects the evolution of cooperation.}
+
+\section{Areas of Interest}
+\subsection{Applied Mathematics}
+\cvlistitem{Simulation: creating simulation models using Monte Carlo methods, network models, pair approximation techniques, and related concepts}
+\cvlistitem{Differential Equations: using analytic and numerical approaches in modelling systems with ODEs, general techniques for solutions to ODEs and PDEs, with particular interest in biological applications such as population dynamics and evolutionary theory}     
+\cvlistitem{Stochastic Processes: Markov processes and applications, including but not limited to PageRank-based algorithms and other network generating models such as preferential attachment}
+\cvlistitem{Applied Statistics: using non-parametric approaches and Bayesian statistics in computational contexts}
+\subsection{Software Development}
+\cvlistitem{Tooling and Support: Git version control implementation and coaching, development on Linux platforms} 
+\cvlistitem{Test Development: automated test development (unit testing, API testing, and UI testing via Selenium), task automation, test-driven development, exploratory testing}
+\cvlistitem{General Python Development: particular interest in mathematical and scientific areas}
+
+\section{Work Experience}
+\cventry{2010--present}{Test Developer}{CaseWare International}{Toronto}{Ontario}{Currently I work as a test developer on our Time On The Go product, a project management application. My daily duties involve designing, writing and refactoring UI tests using Selenium and maintaining test result data from regular builds. I am a major advocate for automated testing in development and exploratory testing as part of the software development process. We currently work in Java with Eclipse.} 
+\cventry{2009--2010}{Research Associate}{Cerebral Diagnostics Canada, Inc}{Toronto}{Ontario}{As part of this small medical device-oriented startup, I collected data and worked with human subjects in EEG experiments. In addition to empirical data collection, I also undertook some statistical analysis using non-parametric methods from neuroscience (SnPM), learning about mathematical methods of medical imaging such as EEG source localization models (BESA, LORETA, Bayesian models) and EEG theory in general. This work made heavy use of inverse method theory from applied mathematics.}                % arguments 3 to 6 are optional
+\cventry{2007--2009}{Graduate Student, Department of Applied Mathematics}{Western University}{London}{Ontario}{During my time at Western, I completed my Master's degree under the supervision of two supervisors. In addition to teaching assistant duties such as marking assignments and running student tutorials, I also conducted research related to the evolution of cooperation. This involved modelling game-theoretic modelling, Monte Carlo simulation and numerical analysis of ordinary differential equations.} 
+\cventry{Summer 2006}{Research Assistant, Department of Mathematics}{Trent University}{Peterborough}{Ontario}{Being a summer research assistant gave me some exposure to Perl programming and the power of regular expressions. My main project was to develop a database of SEC filings for analysis of corporate ownership structures. To gather data I developed a crude web scraper of public data using regular expressions and Lynx, a text-based web browser. This also provided my first exposure to working in a *nix environment, which is now my computing environment of choice.}                % arguments 3 to 6 are optional
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+%\cvlanguage{language 3}{Skill level}{Comment}
+\section{Interests}
+\cvline{Linux}{\small Making the most out of my operating system}
+\cvline{Cooking}{\small Trying to prepare everything from maki rolls to cr\`eme br\^ul\'ee.}
+\cvline{Blogging}{\small Keeping a (semi-)regular blog at http://simplythetest.tumblr.com and tweeting regularly as @joshin4colours}
+
+\section{References}
+\cvlistitem{Dr Lindi Wahl, Professor, Department of Applied Mathematics, The University of Western Ontario, (519) 661-2111 ext 88795, lwahl@uwo.ca}
+\cvlistitem{Dr Geoff Wild, Professor, Department of Applied Mathematics, The University of Western Ontario, (519) 661-2111 ext 88784, gwild@uwo.ca} 
+\cvlistitem{Dr Albert Ler, Former Research Associate, Cerebral Diagnostics Canada Inc, (416) 408-2907, alersh@gmail.com}
+\cvlistitem{Dr Marcus Pivato, Professor, Department of Mathematics, Trent University, (705) 748-1011 ext 7293, pivato@xaravve.trentu.ca}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
