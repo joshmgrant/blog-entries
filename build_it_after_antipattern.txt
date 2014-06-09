@@ -4,3 +4,40 @@ Relevant links:
 Release Testing Anti-Pattern: http://java.dzone.com/articles/organization-antipattern-0
 Selenium Tests - 100000 tests http://watirmelon.com/2014/05/14/100000-e2e-selenium-tests-sounds-like-a-nightmare/
 Test First - http://blog.8thlight.com/uncle-bob/2014/05/19/First.html
+
+Lately I've been thinking a lot about UI automation. There's plenty to think about. 
+
+On the one hand, I've thought that *UI automation kind of sucks*. It's an opinion that's slightly radical but not completely unfounded.  
+
+One the other hand, UI automation can be a great tool for developers, testers and software development teams. It can be helpful for a variety of reasons. Plus, there are some great *tools* [www.seleniumhq.com] and *resources* [www.sqa.stackexchange.com] out there for UI automation. 
+
+I think part of the problem is that, like a lot of things in software development, UI automation isn't itself bad but may be used badly or in improper situations. Like pointers in C++, using them and using them in an appropriate way can be very, very different things. 
+
+One way that UI automation can be used inappropriately, I think, is to delay it until late in the development cycle. The situation ends up like this: 
+
+-Software is developed with a specific release date in mind
+-Development and testing proceeded until close to the release
+-At this point, automated UI tests are requested to run looking for issues.
+
+The reasoning for following such a pattern is to have the UI tests act as a last check before shipping. Automated tests are straightforward and defined ahead of time, and so act as a good final check.
+
+Sounds pretty reasonable, right? Except that, in practice, there's a number of problems with this situation such as: 
+
+-Automated UI tests can be quite sensitive to small changes in the UI, leading to unreliable results
+This is a classic case of a radio list becoming a checkbox. Small changes in the UI like this can cause unreliable results in automated UI tests. Trying to locate problems and repair them can be difficult, even more under time pressure.
+
+-Test code is susceptible to code rot if not run often
+Automated tests may be written and refactored a head of time, but can degrade over time if they are run regularly. This can lead to issues that need to be fixed when the tests are actually needed. See the previous point.
+
+-End-to-End UI tests can be relatively complex, meaning they may not be ready to be run in time if they're not started early enough
+One of the arguments for employing UI automation at any point in the development cycle is to save time. Machines are generally faster and more efficient than human beings. However, some scenarios are still complicated enough that machines take a lot of time to complete them, in addition to any setup and initialization that is required. 
+
+-Automated tests in general can miss subtle bugs a human would find more easily
+Computers can only do what they are told to do. It is often valuable to open up an app and taking a human look before committing to a release.
+
+From this perspective, running automated UI tests (or any automated tests) as a last step before shipping is a form of release testing, which is a *development anti-pattern* [http://java.dzone.com/articles/organization-antipattern-0]. Waiting until just before release to do any form of testing is not a terrific strategy, since finding issues can become precarious. Does a show-stopper bug push back the release? What about less critical issues? Or could these issues have been found earlier? 
+
+In this sense, instead of having automated UI tests run at the end of a production cycle, it makes sense to start them as soon as possible (possibly even *the first thing that gets done* [http://blog.8thlight.com/uncle-bob/2014/05/19/First.html]). Not only do the test runs become more helpful at providing information, but the process of automating the app can be a source of information as well.
+
+Yes, automated checks can help provide critical information in an efficient way, but there may often be a better way. 
+
