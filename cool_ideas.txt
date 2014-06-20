@@ -1,0 +1,9 @@
+In software testing, much ink has been spilled on the topic of "best practices". This *tweet* [https://twitter.com/michaelbolton/status/479351166506385410] really sums things up well for me. 
+
+Although I believe that much of software testing and quality is highly context-dependent and context-driven, some cool ideas do often work well in many situations and contexts. Note I didn't say these ideas always work in all situations. That's important. 
+
+The closest I get to using "best practice" is "good practice", usually written specifically as in this sentence: "A good practice when working with widgets is to build a new sprocket for them first". Instead of insisting there's is a single best practice for testing scenarios (suggesting a unique, globally optimal approach), there are often good practices that work well (not unique and perhaps only locally optimal some of the time). Hence "a" good practice instead of "the" good practice. 
+
+I think the "cool idea" expression takes things a step forward by removing any sense of formality of the circumstance. Cool ideas are pretty cool, but can become uncool as well. Of course, to appreciate this point, you have to be paying attention to the coolness of the situation. Paying attention is quite helpful when testing software. 
+
+Let me be among the first to promote this phrasing as part of the context-driven tester's vocabulary, coined by Michael Bolton. Get your team thinking about cool ideas in their work. 
