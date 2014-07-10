@@ -1,0 +1,21 @@
+A couple of weeks ago, I found a Wikipedia article on - basically - *why Java is a bad language* [http://en.wikipedia.org/wiki/Criticism_of_Java]. 
+
+I'm no Java advocate, but sometimes Java bashing can get a little out of hand. So I thought I'd post some good things about Java (based on my experience). 
+
+Full disclosure: I love my wife, I love my cats, but I do not love Java. 
+
+In no particular order, here are some of the good parts of Java: 
+
+Packaging: Creating and maintaining packages of Java code is straightforward. Make a directory/subdirectories, create classes in .java files with correct imports, then jar it all up! Managing packages is even easier with modern IDEs like Eclipse. Creating reusable libraries works more or less exactly as it should without any strict structures or external tools. In turn, adding and removing libraries from other projects also tends to be straightforward. Adding or removing libraries is as simple as adding or removing jars from a project. 
+
+Packaging is one of the underappreciated aspects of Java as it allows for making "production-ready" code easier to build and maintain. It's also quite helpful when working with projects that are larger than a couple of files. Even in Python - one of my favourite languages - projects can be difficult to build, or dependencies not easy to manipulate (such problems is why *virtualenv* [http://virtualenv.readthedocs.org/en/latest/virtualenv.html] exists). 
+
+JUnit: When it comes to unit testing frameworks, *JUnit* [https://github.com/junit-team/junit] is the benchmark. Written by Kent Beck (and a great example of test-driven development), JUnit really is an excellent unit testing framework. It strikes a great balance between using Java's native language features and being a separate testing library. Concepts like annotations for test methods, setup/teardown methods and running test suits via XML are good practices that are emulated elsewhere in other languages. Going a step further, *TestNG* [http://testng.org/doc/index.html] is a test framework written by Cedric Beust that is built on top of JUnit. TestNG extends JUnit's features in logical ways, allowing for setup/teardowns before classes, test suites and groups in addition to test methods. It also provides easy functionality to run tests in parallel, as well as valiantly providing a way to give methods default parameter values. JUnit is a great framework for writing unit tests and TestNG is a great framework for writing any other kind of automated tests. 
+
+Cross-Platform: Say what you will, but this is at least trivially true. Even C code needs to be recompiled on different platforms to produce an executable. 
+
+Consistent Paradigm: Java was designed as an object-oriented (OO) language which is continues to be. Even if you're not a big fan of OO programming, there is value in a language having a consistent underlying paradigm. Almost every class is kept in its own file, and every object (probably) extends java.lang.Object. This makes projects and classes easier to grok and aids in producing usable design patterns. Even though Java has made *lambda expressions a first-class language feature* [http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html] and using Java sometimes meaning getting a *gorilla along with your banana* [http://www.johndcook.com/blog/2011/07/19/you-wanted-banana/], at least with Java you know what you're getting.
+
+public static void main(): Honestly, being able to turn any class into a executable by adding a single static method is a surprisingly great feature. It provides a quick and easy way to check output or what a piece of code is doing. I'm not sure if Java did this first, but it's something I use a fair bit. 
+
+That's it for now for my sort-of defense of Java. Like it or not, it's here to stay.
