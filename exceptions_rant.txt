@@ -1,0 +1,65 @@
+As is my opinion, test code is code, and should be treated exactly the same as application code. However, there are some subtle differences like test code being more damp.
+
+Another difference is exception handling.
+
+An exception is when a line of code behaves unexpectedly and raises an exception that the program has to deal with before doing anything else. In Java or C#, the jargon is that an exception is thrown at this line of code. If the exception is handled (usually in a try/catch block), it said the exception is caught.
+
+Here's a psuedocode example:
+
+// java
+try {
+	someObj.triesSomething()
+}
+catch (Exception e) {
+	handle(e)
+}
+// end java
+
+In this example, someObj tries to do something. If it does something without any exceptions, the statement is executed and the program continues. If it does something and throws an exception, like trying to work with an uninitialized object for example, an exception is thrown at that point, then the code proceeds to the catch block where the particular exception is handled.
+
+One option in this case is to do nothing, which would look like this: 
+// java
+try {
+	someObj.triesSomething()
+}
+catch (Exception e) {
+	// do nothing
+}
+// end java
+This is often called swallowing the exception because you're basically taking the exception and swallowing it whole to be digested and dealt with elsewhere. 
+
+When it comes to application code, exception swallowing is a not-great practice. It can be helpful in very select circumstances, but it's generally a bad idea.
+
+When it comes to test code, swallowing exceptions is absolutely awful. It's never a good idea, and is often harmful.
+
+The reason I feel this way is because of what exceptions are meant to do. An unexpectedly thrown exception means the application is acting exceptionally, which generally means something completely unexpected has happened. Often, this is because something bad has happened. An exception is a mechanism to tell the developer this while stopping additional actions that may now be invalid or even impossible to complete. Since test code is all about providing information about the app under test, intentionally hiding that information is counter-productive. As well, swallowing exceptions gives false confidence in tests; you get the green "pass" for a test by hiding lots of possible problems along the way. Bad news all around. 
+
+It can be tempting to swallow exceptions because it makes thing easier initially to complete functionality in code. There are some measures to prevent problems in test code (I'll leave swallowing exceptions in application code to app developers). 
+
+First, avoid catching broad exceptions. Some thrown exceptions might be ok or even expected, but exceptions not so much. Here, this might look like:
+// java
+try {
+	someObj.triesSomething()
+}
+catch (NullValueException e) {
+	// this is ok, other exceptions are not
+	someObj.setValueToNotNull(42)
+}
+// end java
+
+You could also re-throw exceptions after handing them. This means you catch the exception but then throw it again after some additional actions. This can be helpful if you want to log the exception somewhere else in a more human-readable format, like so:
+// java
+try {
+	someObj.triesSomething()
+}
+catch (Exception e) {
+	logWhatHappened(e)
+	rethrow e;
+}
+// end java
+Finally, the easiest thing (and best, IMO) is to not handle the exception at all:
+// java
+// don't catch it!
+someObj.triesSomething()
+// end java
+For test code, this has several advantages. It's less work and less typing for one, which is always a good thing. Two, any information or issues that could arise from this line of code happen without any filter, providing as much information as possible for the test developer and others. And finally, most test frameworks like JUnit already have exception handling built-in. Help these frameworks help you. 
