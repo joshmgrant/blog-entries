@@ -1,0 +1,11 @@
+If there's one thing I've realized over the past few years, it's that Object Oriented (OO) programming isn't easy. Developers of all shapes and sizes struggle with writing good OO code. Articles *like this one* [http://joostdevblog.blogspot.ca/2014/07/why-composition-is-often-better-than.html] details various aspects of OOP that cause headaches. 
+
+Eventually, examples arise using classes representing various critters making various noises in various situations. If you've seen OO tutorials, you know what I'm talking about.
+
+Being a test developer, I've come up with a novel idea for helping with this problem without resorting to weird animal examples. Mainly, using test codes as perfect examples of OO code. 
+
+No, this isn't just the *butter coffee* [http://www.blogto.com/eat_drink/2014/08/the_top_5_outrageous_foods_coming_to_the_cne_in_2014/] talking. 
+
+Test code can provide very good examples of how to use OO principles properly, an idea I've *alluded to in the past* [http://elementalselenium.com/tips/37-oop]. As well, test code and frameworks are a good thing to introduce to developers early on. Giving novice developers some exposure to tests along with core OO concepts sounds like a win-win to me. 
+
+Concepts like inheritance, abstract classes and encapsulation/data hiding can be explained well using test code.
