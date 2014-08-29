@@ -1,15 +1,21 @@
-Today I made a cup of coffee at work using our automated coffee maker. It almost ended in tragedy. 
+Today I made a cup of coffee at work using our automated coffee maker. It almost ended in tragedy.
 
-After putting in the coffee packet and starting the process, I got out the carton of cream to add to the coffee when it was finished. When the coffee had filled up, I took the plastic lid off the cream carton. The lid slipped out of my hands and rolled underneath the platform where the coffee mug was sitting as there is a little gap between the platform and the counter-top. Since the lid was round, I had some difficulty getting it out from underneath the gap, knocking the platform and almost spilling my coffee everywhere. 
+After putting in the coffee packet and starting the process, I got out the carton of cream to add to the coffee when it was finished. When the coffee had filled up, I took the plastic lid off the cream carton. The lid slipped out of my hands and rolled underneath the platform where the coffee mug was sitting as there is a little gap between the platform and the counter-top. Since the lid was round, I had some difficulty getting it out from underneath the gap, knocking the platform and almost spilling my coffee everywhere.
 
-Luckily, I escaped with a cup of coffee and no real harm done. 
+Luckily, I escaped with a cup of coffee and no real harm done.
 
-After this, I started thinking about how the situation happened and how I could avoid it in the future. I started to think it was bad design; leaving a small gap underneath the platform for items to roll under could lead to similar issues. I also wondered if the coffee vendor had considered these situations. 
+After this, I started thinking about how the situation happened and how I could avoid it in the future. I started to think it was bad design; leaving a small gap underneath the platform for items to roll under could lead to similar issues. I also wondered if the coffee vendor had considered these situations.
 
 Now, I realize that the situation could've been easily avoided by simple solutions. I could've used a carton with a lid or remove the full coffee mug and put it on the counter before opening the carton.
 
-The big question I'm left with: is this bad design (more importantly, bad user experience) or was I just using the product incorrectly? And where exactly is the line? 
+The big question I'm left with: is this bad design (more importantly, bad user experience) or was I just using the product incorrectly? And where exactly is the line?
 
-Sometimes I've used libraries or methods in my code that look really ugly and break a lot of well-known development conventions and patterns. I look at the code and it's fragile and hard to understand. I then find out later I was missing some additional information, like fields or arguments I could've set in certain methods, that would make the code much easier to read and work with. What starts out as working with "bad" code turns out to be me misusing it or not having some helpful information. 
+Sometimes I've used libraries or methods in my code that look really ugly and break a lot of well-known development conventions and patterns. I look at the code and it's fragile and hard to understand. I then find out later I was missing some additional information, like fields or arguments I could've set in certain methods, that would make the code much easier to read and work with. What starts out as working with "bad" code turns out to be me misusing it or not having some helpful information.
 
-I've also worked with pieces of code that are actually difficult to use or non-intuitive. Sometimes it is difficult to distinguish between these two situations. How can make this easier?
+Similarly, if I tried nailing a nail into a piece of wood with a wooden pencil and the pencil breaks in two pieces without actually nailing the nail into the wood, despite no indication the pencil could nail a nail into wood, that seems like a clear failure by me to properly use the nail, not bad pencil design.
+
+On the other hand, if I tried to write my name on a piece of wood and pencil could not be used to do so, that seems like a clear failure of design, not improper use of the nail.
+
+Where's the line between these two extremes? 
+
+Sometimes it is difficult to distinguish between these two situations. How can make this easier?
