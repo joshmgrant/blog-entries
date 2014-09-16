@@ -1,0 +1,11 @@
+I don't know how to change my Facebook newsfeed setting.
+
+This shouldn't be a huge deal, and yet, I think it could be a big, big deal. 
+
+Lately, there's been some talk about Twitter implementing filtered news feeds using algorithms instead of the (current) default of an unfiltered feed. Facebook already has filtered feeds, which have lead to some controversy. As a casual Facebook user, I realized I would prefer to have my feed unfiltered, with posts appearing in the order they appear based on my connections, than have a filtered feed. Although Facebook seems very much to like filtering users' news feeds I have read that it is possible to set my feed to show posts in "reverse chronological order".  So I decided to change my settings. As a fairly sophisticated web user, I thought this would be straightforward. 
+
+I was wrong. 
+
+I first looked to my user profile settings. Under those settings I found only the ability to update my user name, email, and so on. There was nothing there regarding my news feed or the overall layout of my Facebook account. Not a problem, I'm just looking in the wrong place.  
+
+I then looked under my account settings. There was a section called Timeline and Tagging. This seemed to be what I was looking for, so I clicked it and looked at the options.  
