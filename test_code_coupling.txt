@@ -1,0 +1,43 @@
+Here's a sample of test code. There's a subtle problem with it:
+
+class TestCase {
+	FooDriver foo; 
+
+	setUpBeforeClass(){
+		foo = new FooDriver();
+		foo.someOtherActions();
+	}
+	
+	setUpBeforeMethod(){
+		bar = foo.setUpSomething()
+	}
+	
+	tearDownAfterMethod(){
+		bar = foo.tearDownSomething()
+	}
+	
+	tearDownAfterClass(){
+		foo.close();
+	}
+	
+}
+
+class BarTest extends TestCase {
+	
+	# tests that use setups/teardowns
+	
+}
+
+At first blush, absolutely nothing looks wrong with this code. However, a problem arises over time as test projects grow. 
+
+The setup and teardown methods above are tightly coupled. It becomes difficult to modify or change one without changing the others. Sounds like a minor problem, but it isn't always. 
+
+Here's an example. Suppose you need to test the new Baz feature but you need a special teardown. You go ahead and add it to the test class as follows: 
+
+class BazTest {
+
+	tearDownAfterBaz() {
+		baz = foo()
+	}
+}
+
