@@ -1,0 +1,19 @@
+A few weeks ago, I had an epiphany about automating mobile apps. I think it was a good one. 
+
+We were discussing some of our automated UI tests of the mobile version of our site. Some locators had changed meaning some of the tests were failing. We talked about what had to be fixed and this turned out to pretty straightforward. There were only a few elements that had updated locators, which were easy to find and replace. I casually and mostly-jokingly mentioned that, if it came down to it, you could just brute force your way through all the locators on a given screen and find the ones you need that way.  
+
+That's then the lightbulb went off: mobile web apps could be very well suited to UI automation. 
+
+Lately I've been thinking that automated UI tests *aren't all that and a bag of chips* [http://simplythetest.tumblr.com/post/85247125825/gui-automation-still-sucks]. From my experience, automated UI tests for desktop and web apps tend to be fragile, and the benefit-cost radio of writing and maintaining such tests doesn't always work out.  Being a lazy thinker I figured these experiences would carry over to automating mobile UI tests.
+
+Then I found this presentation by Christian Heilmann on the *future of the mobile web* [http://christianheilmann.com/2014/07/24/video-the-web-is-dead-my-talk-at-tedx-thessaloniki/]. On top of getting me really interested in what the web and browsers can offer for mobile, Christian makes some good points about what makes mobile apps - native or web - so delightful for users. I recommend watching the whole thing.
+
+One, mobile apps are focused. They tend to do one specific task with little variation. Usage of things like alert, message and decision dialogs tend to be minimized or eliminated to keep app workflow and logic narrowly focused.
+
+Two, mobile apps have simple UIs. Total number of screens are reduced, thanks to the previous point, and in turn the total number of controls and elements are reduced. This also helps keep the app sizes small (front- and back-end) to increase performance on lower-powered devices.
+
+Put these two things together, and you potentially have apps that lend themselves well to UI automation.
+
+As well, automated UI testing of mobile apps may provide even more benefit if we consider them "ideal" functional tests. Since a lot of mobile apps should really be tested in the wild on real devices that run out of battery, have intermittent data connections or get dropped in toilets, automated tests on emulators can provide helpful benchmarks for purely functional aspects of an app. Naturally, this assumes that automated UI tests on emulators works at all, but *recent developments* [http://appium.io/] have made mobile UI automation more effective.  
+
+Effective mobile testing might be a brave new world at this point, but it may be a good place for UI automation after all. 
