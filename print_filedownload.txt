@@ -1,0 +1,5 @@
+This post might ruffle some feathers, or elicit some cheers. I'm not sure. 
+
+TL;DR version: automating file downloading from the web is the new file print. 
+
+Lately
