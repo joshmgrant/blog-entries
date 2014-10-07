@@ -1,0 +1,28 @@
+Much digital ink has been spilled on the good, the bad, and the ugly around Git. However, I haven't seen commit messages discussed. 
+
+In Git, each commit requires a message to be included. Since a commit is essentially a set of changes, commit messages are intended to describe the changes in that commit.
+
+With that in mind, here's my two cents on how to write commit messages that aren't terrible. 
+
+#Local is for You, Remote is for Everyone
+Since Git is distributed, every repository stands on their own. One implication of this is that commits you make on your local repo are only seen by you until you push. Since messages are a part of commits, this means you will only see these messages.
+
+What does this mean? It means on local branches, 
+
+##You should write commits that work for you. 
+
+For example, on a local feature branch, you can write commit messages that contain anything you want. You can even come up with little conventions to help yourself out.
+
+While a short description of the work in the commit is a good example, sometimes commits are so small and/or temporary that descriptions are meaningless. Sometimes commits are experimental, written to be potentially undone or combined with other commits. In cases like these, you could simply put "WIP" or "not done" commit messages. Or even popular song titles.
+
+More permanent commits could have a message with a description of what the code does, or what you changed based on previous work. 
+
+However, once you push commits to remote repositories, commits and messages become effectively public to everyone with access. In the case of public repos on GitHub, the whole online world could potentially see your commit messages. Hence, my own rule for pushed changes: 
+
+##Never write a commit message you aren't comfortable with other people seeing.
+
+It's a good guide for a lot aspects of software development, but it's still good rule. 
+
+#Local Can Become Remote
+
+#Let Your Tools Help You
