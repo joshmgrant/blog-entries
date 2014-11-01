@@ -1,0 +1,19 @@
+After taking care of buying and selling houses, the author intends to get back to quasi-regularly scheduled programming. 
+
+The title of this post is an idea that I first saw mentioned by *Alan Cooper* [https://twitter.com/MrAlanCooper]. He mentioned in the context of pilots, among whom this is a conventional saying. 
+
+I think it should be also be a conventional saying for software developers, too. 
+
+One area where this idea applies quite well - in my experience - is source control, even though there are *better examples of this idea* [http://en.wikipedia.org/wiki/Test-driven_development] in software development.  As a Git enthusiast, I've really come to appreciate the *feature branching workflow* [https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow]. At first I was drawn to this workflow because it was a common Git workflow and so a lot of people were using it. Lately, I've come to realize that it's actually a clever version of slowing down to go faster. 
+
+Many Git newcomers struggle with branching at first (myself included).  There are a lot of steps and a lot of terminology which at first seems sort of redundant and thus confusing. Since developers are human, we accommodate this by /not/ using feature branches and working directly on our main branches. For a while, this seems like a great plan. Fewer steps means less confusion and less work which means faster work. And faster is better!
+
+But then come the roadblocks. 
+
+Maybe it's the first time a developer pulls the latest changes and finds them difficult to square with their work in progress. More likely it's the first time a developer pushes changes they forgot wasn't quite complete. And of course, there's always the risk that *dangerous changes are pushed through accidentally* [http://jenkins-ci.org/content/summary-report-git-repository-disruption-incident-nov-10th]. These are all possible scenarios when working directly on master branches and in my experience it's not just a question of /if/ but /when/. 
+
+This is where feature branching starts to make a lot of sense. 
+
+Those "extra" steps are there for a reason. Working on a separate branch adds the step of merging in changes into the correct destination. This has the technical advantage of forcing the developer to look for merge conflicts or file differences and the behavioural advantage of making the developer to consider where their code is going and why. Merge operations that bring up a lot of conflicts or compilation errors are a good oracle for potential problems with your changes. Instead of quickly pushing bad changes, developers slow down slightly to look for bad changes before pushing. 
+
+In other words, feature branching forces developers to actually /think about/ what they're actually doing. Slow is smooth, smooth is fast.
