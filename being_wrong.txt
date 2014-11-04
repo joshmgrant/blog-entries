@@ -1,0 +1,22 @@
+How do you know when you're wrong about something? 
+
+I'm sure for a lot of people, this question might seem a bit strange, even vaguely offensive. I've been thinking about this for the past while and I think it's an important question.
+
+Thinking about the opposite, knowing you are right or correct about some idea or thought is generally straightforward. You put forward your idea, try some experiment, and if if the experiment results agree with your initial thought, you conclude you were right (at least at that time, in that situation). This is also supposes that your initial idea is falsifiable and that you are able to come up with a suitable experiment in the first place, but we'll just gloss over those details here.
+
+As well, in software development (and elsewhere) there's a tendency to focus on selling ideas. In order to satisfy many individuals with many perspectives on a product or business, selling an idea is important. This usually requires confidence in what you are selling and, in turn, belief that what you are selling is correct. It turns out that being lukewarm about an idea or focusing on the negatives doesn't work that well as a sales pitch. 
+
+But how do you know when you are wrong? 
+
+Humans are subject to all kinds of biases, one of them being *confirmation bias* [https://www.princeton.edu/~achaney/tmve/wiki100k/docs/Confirmation_bias.html]. We generally are uncomfortable with being wrong, and we bias our thinking towards being right. However, being wrong can be harmful; it can cost businesses time and money, hurt personal relationships or cause other problems. Even worse is being ignorant to the /possibility/ of being wrong. 
+
+As a test developer, it is important to identify situations where you are wrong. This may include being wrong in your reasoning, implementation, or understanding of a problem. Here are some heuristic approaches I've used to developing this skill: 
+
+- Dissonance: working on something, you see disagreement between what you expected to happen and what happened. This may mean your expectation - and in turn, ideas - are wrong.
+- Emotional: Sometimes you may have an emotional response to something that is unexpected. Something could trigger strong feelings of anger or joy (among other emotions) when you weren't expecting it. This could be an indicator that some expectation you have is wrong.
+- Technical: You may notice technical components aspects of your work such as build errors, variable automated results, merge issues, software crashes or CI jobs statuses (among others) that either weren't present previously or were unexpected. This may be an indicator that your ideas or implementations may be wrong.
+- Interpersonal: You may see responses from team members that indicate something is wrong, such as confusion or distaste towards work, receiving several or unusual questions from team members, unusual or unclear communication or personality changes. 
+
+These above ideas are bit rough, but they are also ideas I've used in the past for myself. 
+
+Being wrong is a natural part of work such as developing software. Being aware of why you're wrong is an important skill to develop.
