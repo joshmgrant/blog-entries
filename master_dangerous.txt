@@ -5,7 +5,7 @@ Based on a *great response I received on Programmers StackExchange*, [http://pro
 I will say up front that there are cases when master only workflows make sense. Some I can think of would be
 
 - Small projects with only one or two developers
-- Projects that /require/ developers' changes to stay very close in line with one another
+- Projects that are structured such that most changes do not affect other ones
 - Projects where changes are small and infrequent
 
 There could be other situations as well; these I just came up with. These are also true for strict definitions of terms like "small" and "infrequent". Even a moderately complex personal project would probably not satisfy these conditions. 
