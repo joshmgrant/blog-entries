@@ -1,0 +1,21 @@
+Following along the lines of a *previous post* [http://simplythetest.tumblr.com/post/101510895625/slow-is-smooth-smooth-is-fast], I've been thinking lately about VCS workflows using Git. One thing that I've been considering is working off main branches directly versus feature branching. 
+
+Based on a *great response I received on Programmers StackExchange*, [http://programmers.stackexchange.com/a/255174/36853]  I'm now of the opinion that (largely speaking) working directly on master should be considered dangerous. These kind of workflows are described *here* [http://blog.endpoint.com/2014/05/git-workflows-that-work.html] in the "master only workflow" section.
+
+I will say up front that there are cases when master only workflows make sense. Some I can think of would be
+
+- Small projects with only one or two developers
+- Projects that /require/ developers' changes to stay very close in line with one another
+- Projects where changes are small and infrequent
+
+There could be other situations as well; these I just came up with. These are also true for strict definitions of terms like "small" and "infrequent". Even a moderately complex personal project would probably not satisfy these conditions. 
+
+Largely speaking, however, I think the rule of master only workflows should be "Not even once."
+
+Some reasons why: 
+
+- Pulling become problematic
+- Pushing becomes problematic
+- Workarounds ahoy!
+- Branching is fast and easy...
+- ...and so is merging
