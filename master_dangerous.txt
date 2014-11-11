@@ -8,14 +8,16 @@ I will say up front that there are cases when master only workflows make sense. 
 - Projects that are structured such that most changes do not affect other ones
 - Projects where changes are small and infrequent
 
-There could be other situations as well; these I just came up with. These are also true for strict definitions of terms like "small" and "infrequent". Even a moderately complex personal project would probably not satisfy these conditions. 
+There could be other situations as well; these I just came up with. These are also true for strict definitions of the terms "small", "most" and "infrequent". Even a moderately complex personal project would probably not satisfy these conditions. 
 
 Largely speaking, however, I think the rule of master only workflows should be "Not even once."
 
-Some reasons why: 
+Some reasons why:
 
-- Pulling become problematic
-- Pushing becomes problematic
-- Workarounds ahoy!
-- Branching is fast and easy...
-- ...and so is merging
+- Pulling become problematic: Keeping your repository up to date and keeping your current work up to date are both important. When working on a single master branch, these two concepts become inseparable; keeping up your local work up to date /is/ keeping your repo up to date. This means that getting the latest code /requires/ you to face incoming changes and conflicts, whether you're ready to or not. Working on a feature branch helps avoid this problem in a straightforward way.
+- Pushing becomes problematic: Along with keeping your work up to date, sending work back to remote servers can also complicated in a master only workflow. Since all of your work is on a single branch, all of that work has to (eventually) be pushed back to the remote, including commits with broken or unfinished work. It also means that work is always a single push away from going back to the server, regardless of its state. 
+- Workarounds ahoy! In light of these shortcomings (and they are big ones), developers will find workarounds avoid catastrophic issues. These may include making liberal use of rebasing to collapse commits to manageable sizes, adding hooks to prevent receiving or sending bad code, and temporary code holders like git stash. All of these will work in a variety of situations to help the master only workflow, and all are usually more complicated than using branching in the first place. Sometimes these workarounds can lead to even stickier situations than the problems they try to prevent.
+
+In modern DVCS like Git (and probably Mercurial), branching is quick and easy. This is a feature, not a bug. Even merging, which can be more difficult than branching, is designed to be straightforward and fast.
+
+So unless you really know what you're doing to, just say no to master only workflows.
