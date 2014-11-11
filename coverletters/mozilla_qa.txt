@@ -1,0 +1,60 @@
+JoshuaGrant
+51 Mount Dennis Dr – Toronto, Ontario M6M 5H5
+Mobile: (647) 240-0961  Home: (647) 341-0926  Twitter: @joshin4colours
+Email: joshua.m.grant@gmail.com
+
+Education
+ 2007-2009 MSc - Applied Mathematics, The University of Western Ontario, London, Ontario.
+ Research area: Mathematical Biology
+ 2003-2007 BSc - Mathematics, Trent University, Peterborough, Ontario.
+ Dean’s Honour List, 2003-2007
+
+Experience
+-April 30, 2013 Webinar Presenter, Automated Test Design: Single Use vs Reusable Tests, Online.
+ As part of a periodic webinar series on aspects of software testing presented by SmartBear, I wrote
+ and presented a webinar on designing automated tests. This webinar was an interactive discussion
+ with questions coming from participants. A summary blog post of this webinar can be found at
+ blog.smartbear.com/testing/test-design-qa-with-joshin4colours.
+- October 2010–Present
+ Test Developer, CaseWare International, Toronto, Ontario.
+ I am an automated tester for the CaseWare Time product. I write and maintained automated
+regression and acceptance tests, emphasizing maintainability in my test code. Currently, I write Java-based Selenium tests for Time on the Go, one of CaseWare’s web products. I am currently exploring ways to make functional and user acceptance tests faster and more effective.
+- August 2009–August 2010
+ Research Associate, Cerebral Diagnostics Canada, Inc, Toronto, Ontario.
+ I was a scientific and technical researcher working for this small biotechnology star-up. We focused on several projects, including developing in-house software for research in EEG (Electroencephalography) and conducting EEG-based studies in pain research.
+- 2007–2009 Teaching Assistant, The University of Western Ontario, London, Ontario.
+ I lead tutorials and drop-in help sessions for students, graded tests and assignments and held regular office hours for additional student help.
+- Summer 2006 Research Assistant, Department of Mathematics, Trent University, Peterborough, Ontario.
+ I designed and developed a database of corporate ownership based on SEC filings using Perl and CGI.
+- 2005–2006 Teaching Assistant, Trent University, Peterborough, Ontario.
+ I assisted students in a lab-based physics for education students course. Mainly, my goal was help them understand the physical concepts and gain an appreciation for physics.
+ 
+What I’m Looking For:
+ Development opportunities involving coding and automation techniques
+ Opportunities to undertake test work at all levels of development, from unit testing to large-
+ scale automation
+ Organizations that appreciate software quality
+ Possible challenges with quantitative or mathematical focus
+ Roles to encourage testers and developers working together
+ Any role that allows me to improve and expand my programming skills and/or my testing skills
+ 
+Tools I’ve Used
+ Languages - Java, 4Test (SilkTest language), Python
+ Development Tools - Eclipse, Git VCS including Git Extensions, Visual Studio, Emacs
+ Atlassian Tools - Stash, BitBucket, JIRA and Confluence (sometimes in combination)
+ Continuous Integration with Jenkins/Hudson
+ Test Tools - Page Object Design Patterns, SilkTest (Classic and Open agents), Selenium WebDriver in both Java and Python bindings, pytest, TestNG
+ 
+Other Things of Interest
+- simplythetest.tumblr.com - My blog on testing and related ideas, updated semi-regularly
+- https://bitbucket.org/joshin4colours/gaia-ui-automation-tutorials - My first implementation of
+ the Gaia UI test tutorials for FirefoxOS 
+- bitbucket.org/joshin4colours/diehard-tests - A side project where I try to implement the DIEHARD test suite in Python
+- http://programmers.stackexchange.com/users/36853/joshin4colours - My Programmers.StackExchange profile
+ 
+Interests
+ Linux Making the most out of my operating system. If only more things were text-based.
+ Cooking It’s really just the love of food. My favourite dishes I’ve prepared include salt-block seared
+ tuna and pulled pork.
+ Dining Making food is fun, but you can’t beat a good restaurant experience.
+
