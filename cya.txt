@@ -1,0 +1,7 @@
+Here's a quick thought about project management. 
+
+CYA, short for *Cover Your Ass* refers to the practice of managing projects or components of projects such that any blame or wrong-doing is directed *away* from you. In other words, projects that fail can't be blamed on you. While this may have short-term benefit for individuals, it generally leads to problems for teams long term. Trust is eroded and goals are distorted leading to poor team performance and missed team goals. 
+
+CYA approaches are generally terrible, but somehow not far off from a better idea. 
+
+Creating an environment where individuals and teams *are allowed to fail* or are aware of the possibility of not doing well is highly beneficial. Instead of turning against one another or avoiding taking risks, it encourages moving forward positively with trust. 
