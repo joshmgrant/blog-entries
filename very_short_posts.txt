@@ -1,0 +1,10 @@
+In the spirit of Michael Bolton's *very short blog posts* [developsense.com] format, I'm going to a mini-series of short blog posts based on some *programming wisdom* [first tweet] I've acquired. 
+
+These posts will be themed based on those tweets, which can be summarized as:
+
+1. Parallelization is tricky
+2. Dates are hard
+3. (Pseudo)Random Number Generation is hard
+4. Cryptography is /very/ hard
+
+These are all basically opinions that I have on programming, and I figured long posts on them would devolve into word salad. These experiences are based on test development, so I'll draw some examples from there.
