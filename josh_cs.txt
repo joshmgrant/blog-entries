@@ -1,0 +1,4 @@
+Parallelization is tricky
+Dates are hard
+(Psuedo)-Random Number Genereration is hard
+Cryptography is very hard
