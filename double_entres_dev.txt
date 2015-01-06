@@ -1,0 +1,27 @@
+Here's a fairly old joke: 
+
+A king has a kingdom with many poor peasants living in squalor. Overtime, the peasants become angry enough with their living conditions to start an uprising to kill the king. One day, a duke rushes into the king's quarters and says, "Sir, the peasants are revolting!" 
+
+The king lazily replies "Yes, they are pretty disgusting".
+
+The joke is funny (or corny, if you prefer) because the word "revolting" has two meanings. The duke uses revolting as a verb meaning to rebel; the king uses revolting as an adjective to mean unclean or unacceptable. Both are valid uses, leading to two different interpretations of the situation. 
+
+I think this kind of double meaning occurs frequently in software development. 
+
+Consider this statement: 
+
+"Feature branch workflows are not a good pattern should be avoided." 
+
+Do I agree with this statement? Yes and no, depending on the interpretation. 
+
+I agree with this statement if the context is feature branching /for team workflows/. Creating several shared feature branches which run parallel to a main branch can cause difficult merges down the line, particularly if feature branches are merged in at roughly the same time. Features that work well in isolation might cause issues when merged in along with other features. An alternative to this is *trunk based development* [http://paulhammant.com/2013/04/05/what-is-trunk-based-development/] which is meant to cut down on large, difficult merges. 
+
+I do not agree with this statement if the context is feature branching /for individual developers using a distributed VCS/. In this case, *feature branching* [https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow] is a very helpful workflow. In fact, some source control systems like Git are built around feature branching on local repos. It's actually a bit challenging to imagine not working with feature branches at least some of the time while staying on the master branch all the time could be *considered dangerous* [http://simplythetest.tumblr.com/post/102363180680/master-only-workflow-considered-dangerous].
+
+Looking at these points, the conversation around the aforementioned statement changes dramatically depending on the context. As one could imagine, two people thinking about differing contexts could end up having a relatively awkward dialogue. 
+
+From what I've seen there's a ton of similar examples using concepts developers see every day: "Performance isn't important" and "All software needs to be tested" are two such statements that I'd react to similarly to the feature branching example above. In these cases, I can't absolutely say I agree or disagree; I need more context. 
+
+In light of this, it's important to set a bit of context up when discussing issues /and/ being aware that other contexts might exist based on the original statement. Sometimes context is implied, sometimes context is painstakingly spelled-out, and sometimes context is rather difficult to get establish (see Twitter conversations). 
+
+Software development could be helped by better defined terms to be sure, but terms with double (or even multiple) meanings need to be established for discussion to proceed. And that's no joke.
