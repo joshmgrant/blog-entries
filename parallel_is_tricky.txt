@@ -1,0 +1,3 @@
+As the first post in my *short posts of programming wisdom series* [main post], I want to talk about parallelization. 
+
+When it comes to test code, *parallelization is tricky* [tweet]. 
