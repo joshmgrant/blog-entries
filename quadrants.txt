@@ -1,0 +1,18 @@
+As a test developer, I spend some of my time writing code. I also spend some of my time testing and thinking about quality. 
+
+One idea that I've really enjoyed learning about has been the idea of *Agile Quadrants* [http://angryweasel.com/blog/riffing-on-the-quadrants/]. It's an idea that makes a lot of sense and wraps up a lot of good ideas in one place.
+
+It's also helped me clarify something that's bothered me for a while now: distinguishing between /engineering quality/ and /product quality/.
+
+In some ways, distinguishing between these two areas of quality seems fairly straightforward, even completely obvious. But then again, there's a lot of subtlety hiding. There's also the potential to get confused by *double meanings* [http://simplythetest.tumblr.com/post/107329189810/double-entendres-in-software-development]. For example, statements like "That app has high quality" or "This project is of low quality" quite ambiguous. Plus, while overall statements about an app's quality might make sense, there could still be aspects of that app for which those statements aren't really true. 
+
+Let's break things down into four broad categories. 
+
+Good Engineering, Good Product: Developers are happy. Managers are happy. Customers are happy. Happy all around. 
+
+Bad Engineering, Bad Product: Developers are miserable. Managers have no idea what to do. Customers are unhappy or non-existent. Terrible situation all around.
+
+Good Engineering, Bad Product: This
+
+http://www.jeffgothelf.com/blog/clients-dont-want-to-buy-experiments/?utm_content=buffer3b1f2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#sthash.fFHlwAFu.dpbs
+
