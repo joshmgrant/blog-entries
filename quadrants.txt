@@ -27,3 +27,5 @@ Bad Engineering, Good Product:
  - Unmanageable growth
  - Maintenance issues
  - Seemingly difficult to improve engineering
+
+ http://dashes.com/anil/2015/01/how-software-works.html
