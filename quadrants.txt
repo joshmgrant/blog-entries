@@ -12,7 +12,18 @@ Good Engineering, Good Product: Developers are happy. Managers are happy. Custom
 
 Bad Engineering, Bad Product: Developers are miserable. Managers have no idea what to do. Customers are unhappy or non-existent. Terrible situation all around.
 
-Good Engineering, Bad Product: This
+Good Engineering, Bad Product: This is an entirely feasible situation. Developers may be strong and apply good engineering practices to their problem, but the users may not take to the product. A recent post on *selling good development practices* [http://www.jeffgothelf.com/blog/clients-dont-want-to-buy-experiments/?utm_content=buffer3b1f2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#sthash.fFHlwAFu.dpbs] is a great example of situations like this. 
 
-http://www.jeffgothelf.com/blog/clients-dont-want-to-buy-experiments/?utm_content=buffer3b1f2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#sthash.fFHlwAFu.dpbs
+ - Poor product uptake
+ - Can leverage good practices into other products
+ - Good learning environment
+ - Might lead to non-business solutions
+ - Danger of being dropped at any time
 
+Bad Engineering, Good Product: 
+
+ - Throwaway scripts become permanent
+ - Feature creep
+ - Unmanageable growth
+ - Maintenance issues
+ - Seemingly difficult to improve engineering
