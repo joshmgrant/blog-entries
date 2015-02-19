@@ -1,0 +1,32 @@
+So, *I tweeted something today* [https://twitter.com/joshin4colours/status/568438987309735936]. I thought about it, and this deserves some elaboration. 
+
+These days, automated testing using *Selenium* [http://www.seleniumhq.org/download/] is pretty popular. It's a great tool that is fairly well built and well thought out. If you're working in a context that suits end-to-end/web UI automation, it's an excellent choice. But, like many things in software development, there's more to using the Selenium WebDriver well than meets the eye (initially). 
+
+The easy part is getting started. Essentially, a developer needs to 
+-Download and install WebDriver bindings for her preferred language (an egg for Python, a gem for Ruby, a jar for Java, etc)
+-Install and configure browsers and needed browser drivers for her preferred setup on her development machine
+-Start writing scripts!
+
+Really, that's it. From then on, writing basic tests or automation to drive browsers is fairly straightforward. The first time I used Selenium, I was amazed how fast I went from almost zero knowledge to full-on driving applications in browsers. Programming was fun! Bring on the for-loops!
+
+But then comes the hart part, which is: everything else. 
+
+Here's a few things that appear very shortly after nailing down a first Selenium script or two:
+
+-The script was first run using Browser X. How can it be modified to run with Browser Y?
+-The script only works on developer X's machine. How it can be run on a different machine?
+-There are scripts in file X and file Y. How can these scripts be run consecutively?
+
+and then later, more specific issues appear:
+
+-There's a nightly build of the app. How can the scripts be run after each nightly build?
+-There's now enough work/interest to merit a second developer. How can scripts be organized for multiple developers to work on them?
+-There's now many scripts. How can they be kept organized so they can be used properly? 
+
+All of these points are non-trivial, to say the least. For one thing, these are not purely technical solutions; just getting devs/build engineers to agree to /letting/ scripts get run against nightly builds can be difficult. And this is all premised on the idea that these Selenium-based scripts are good in the first place. These are where major automation efforts can start to run into problems. 
+
+Further, even if these problems are solved they can interact to produce even more complicated situations. For example, setting up scripts to run on one machine might be fairly easy, but what about 10 machines? 100 machines? And what if the Browser of Choice decides to have a silent update that breaks some existing scripts? Nevermind whatever weird requirements your scripts or tests need to have that are context-specific.
+
+And of course, there's the scripts themselves, which leads me to the topic of maintenance. Maintenance is the single most important thing - in my opinion - when it comes to writing good automated tests or scripts. Since good automation can be run on-demand however it's needed, it needs some attention. Any form of UI automation can be *quite fragile* [http://simplythetest.tumblr.com/post/80795547207/ui-automation-is-hard], so keeping things up to date is critical. It's also not easy, particularly as that last set of issues above start to come into play.
+
+This isn't to say good Selenium-based scripts can't be written or used effectively; they absolutely can. But while the clicking buttons part is easy, the rest of it may be quite hard.

@@ -1,0 +1,16 @@
+Adam Goucher, someone this blog has not given enough praise to, has written a wonderful post on *why it's not always a good idea to write your automated (Selenium-based) tests in the same language as your application*. It's great and you should read the whole thing. 
+
+One statement that really got me thinking is the idea that a lot of automation efforts are written not by application developers, but by specialized automation developers or by software testers. In turn, because some individuals are responsible for these automated tests but don't have much programming experience the same language as the application development is chosen for writing automation. 
+
+As I happen to be writing automation in such an environment, this struck a chord with me. It got me thinking further about the topic, so here's some thoughts on the matter. 
+
+-UI Automation is a good introduction to programming...
+If a tester or other team member wants to learn programming with little to now prior experience, writing UI tests can actually be a great introduction. Tests tend to be fairly well structured and linear without needing complex programming concepts such as parallelism, memory management or crazy data structures and algorithms (typically). Driving a web app through a browser is concrete, allowing familiarity of working with an application along with writing working code. Essentially, UI automation allows a newbie programmer to get a feel for writing and maintaining code without going off the deep-end of code complexity. If there's someone eager to learn programming on your team, UI automation could be a good place to start. 
+
+-...But not a good introduction to software development.
+It's not all sunshine and rainbows, however. Writing tests isn't the same as writing good tests. Automated test suites are /much/ more difficult to maintain than to write; it's easy to write test code that goes sideways even after a short period of time. At the same time, automated UI tests are often wanted by everyone. Application developers want it, managers want it and testers want it. And they want it quick, with good reason. This can create a downward spiral of novice developers producing substandard tests as fast as possible. It helps significantly to have experienced developers help with writing and maintaining test suites, and to set things up to make getting novices up to speed as soon as possible.
+
+-Heavy duty languages are not really needed
+One surprisingly helpful choice to help any automation effort is language choice. Choosing a language that's easier to "get stuff done in" is critical for automated tests. And as per my previous points, since writing automated tests isn't highly complex and mostly interfaces directly with the browser (in Adam's words, "[Y]our web server doesn’t care what kind of human is in front of the browser"), a language with less cruft is a good choice. Python, PHP and Ruby are all good choices here thanks to their scripting nature. Of course, C# and Java do have their strengths as well (no, that's not a typo) but they aren't the the last word. Java for example is great for writing larger-scale "industrial" applications, but miserable for writing quick specialized apps. 
+
+Remember that good test code isn't the same as good application code, and should be handled accordingly. 
