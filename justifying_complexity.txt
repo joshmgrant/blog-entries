@@ -1,0 +1,9 @@
+As a test developer, there's some ideas that keep popping up. One of them comes from James Whittaker's *How Google Tests Software* [http://simplythetest.tumblr.com/post/32502867673/thoughts-on-how-google-tests-software] book. Here, the book discusses how (at the time) test development and automation/tooling for a particular project had to justified by a team for new software projects at Google. Instead of getting access to test developers and assistance building tooling by default, teams had to "sell" themselves enough to merit these things.
+
+I think this can be a valuable approach. 
+
+Automation is a development activity, and so the code created as part of automation projects should be treated like application code. It could mean gathering requirements or needs for individuals who will be using automated tools, either directly or indirectly. It also means following generally good practices like being kept under source control, and that automation projects are *maintained* [http://xkcd.com/1319/] by developers, making necessary updates as the need evolves. This can be a lot of upkeep, requiring a fair bit of attention from everyone involved. 
+
+In light of this it makes sense that automation tools are justified for a project instead of added, well, automatically. In instances where automation is added with no justification tooling can grow in complexity without bound, becoming unwieldy and less effective. It also can become a *Ball of Mud* [http://www.laputan.org/mud/mud.html#BigBallOfMud] situation which makes upkeep challenging. Sometimes more time ends up getting spent actually working on the automation itself than solving the problem the tooling was meant to solve. 
+
+Whatever your approaches to automation in software development, sometimes less really is more.
