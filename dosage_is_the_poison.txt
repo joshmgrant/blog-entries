@@ -1,0 +1,19 @@
+In medicine, there's an expression that says "the dosage makes the poison". This means that the harmfulness of a substance depends on how much is taken over a given span of time. 
+
+Similarly but less dangerously, in cooking chefs often discuss over- or under-seasoning of dishes. A given plate can be made or broken on how salted it is.
+
+I think there's a similar idea happening when it comes to tools in software development. Even good tools can be used too much. 
+
+Let me provide an example. One of my favourite piece of software is the Selenium WebDriver. On top of being an above average library for driving browsers, WebDriver is also very well thought-out from an API perspective. It has been built with several (major) programming language bindings like Java, Python and Ruby and with several major browsers already in mind. It's also built to be highly reusable and extensible, some that can be built on top of instead of as a terminal point. 
+
+As a result, Selenium WebDriver has been used extensively in test frameworks, from those written by effectively a *single* [https://github.com/chemistrykit/chemistrykit] *developer* [https://github.com/Element-34/py.saunter] to those supported by *major tech companies* [http://googletesting.blogspot.ca/2014/11/protractor-angular-testing-made-easy.html]. It's a good tool. 
+
+However, it is possible to have too much of a good thing. In the case of WebDriver, it's a core tool used to write scads of UI automation based on manual test plans, which *can be terrible* [http://watirmelon.com/2012/01/31/introducing-the-software-testing-ice-cream-cone/]. I'm sure the WebDriver has also been leaned on heavily to produce some mediocre record-and-playback tools, which *can also be terrible* [https://twitter.com/jimevansmusic/status/400430813096845312]. 
+
+A well-made tool doesn't mean well-made usage.
+
+As a counterpoint to WebDriver, another piece of software I love using the *Joda Time* [http://www.joda.org/joda-time/] library. It was a third-party date and time library for Java that will become the de facto standard as of Java 8. Joda makes working with dates and times straightforward and almost fun, which pretty much deserves an award. One of key points is that Joda hides /a lot/ of complexity from end users. Similar to WebDriver, it's a well-built tool for its job. 
+
+In my experience, the difference is that I end up using Joda for precisely what's needed and nothing more. Convert a date from one format to another, do a calculation, and return a string. That's it. It works well, and solves a problem. No danger of being poisoned. 
+
+Tools can be quite helpful in a lot of situations, but it's also possible to have too much of a good thing.

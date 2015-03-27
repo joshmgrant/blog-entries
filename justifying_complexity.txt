@@ -1,9 +1,15 @@
-As a test developer, there's some ideas that keep popping up. One of them comes from James Whittaker's *How Google Tests Software* [http://simplythetest.tumblr.com/post/32502867673/thoughts-on-how-google-tests-software] book. Here, the book discusses how (at the time) test development and automation/tooling for a particular project had to justified by a team for new software projects at Google. Instead of getting access to test developers and assistance building tooling by default, teams had to "sell" themselves enough to merit these things.
+Yesterday, I mused about *how justifying automation can make it more effective* [http://simplythetest.tumblr.com/post/112159787720/less-is-more-with-automation]. 
 
-I think this can be a valuable approach. 
+I'd like to go one step further: I think this applies to /all/ software. In other words, all pieces of software projects should be justified before being used. 
 
-Automation is a development activity, and so the code created as part of automation projects should be treated like application code. It could mean gathering requirements or needs for individuals who will be using automated tools, either directly or indirectly. It also means following generally good practices like being kept under source control, and that automation projects are *maintained* [http://xkcd.com/1319/] by developers, making necessary updates as the need evolves. This can be a lot of upkeep, requiring a fair bit of attention from everyone involved. 
+Before you start throwing full wine bottles at the screen, here's my anecdotal story: 
 
-In light of this it makes sense that automation tools are justified for a project instead of added, well, automatically. In instances where automation is added with no justification tooling can grow in complexity without bound, becoming unwieldy and less effective. It also can become a *Ball of Mud* [http://www.laputan.org/mud/mud.html#BigBallOfMud] situation which makes upkeep challenging. Sometimes more time ends up getting spent actually working on the automation itself than solving the problem the tooling was meant to solve. 
+I recently got a new Samsung S4. It's a snazzy phone with a relatively up-to-date version of Android (4.4) and a bunch of apps and features. It's fast and smooth. One the apps it has by default is a notepad app that essentially allows me to create, edit and delete short notes. Despite this, whenever I make a grocery list - which I do often - I write it on a Post-It note and attach it to the back of my phone. Why? 
 
-Whatever your approaches to automation in software development, sometimes less really is more.
+The Post-It works great. It's attached to my phone so I don't lose it when I'm going to the grocery store. I can easily scratch out items I don't need, or add items I do need. Since editing the list at the store is unnecessary, the read-only nature on the outside of my phone is a plus. 
+
+On the other hand, I've tried using the notepad apps, and I find it awkward. Reading and editing lists mean taking out my phone, unlocking it and going to the app. Making random insertions or edits is slightly awkward. It also doesn't feel as easy to use as the Post-It. 
+
+In my mind, for this task the notepad app is not justified. The Post-It is a better solution, no software is needed. I could try to "get into" using the app, forcing myself to use it. I could also try other apps. But the best solution is to keep using the Post-It. It's proven and fail-safe. 
+
+A lot of software is built to solve a problem, but often times it's either not needed or doesn't solve the problem as well as other approaches. When a kludge starts to feel like a kludge, the end is near. That's why the best software projects are justified.
