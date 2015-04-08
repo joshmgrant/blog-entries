@@ -1,0 +1,21 @@
+Is technical debt in a codebase a luxury? 
+
+Today, the insightful *Tim Western* [https://twitter.com/Veretax] passed along an article on Twitter asking why *Google still has bugs in its software* [http://www.entrepreneur.com/article/244390] even though it has a large and high quality team of developers.
+
+At first, based on the initial comments, I didn't think much of the article. Having "zero bugs" in software is a fairy tale and I thought the article would be fairly shallow. I was happily mistaken; the article makes some excellent points around how (growing) companies should deal with bugs in growing code bases. 
+
+But something else jumped out at me, both in the Entrepreneur article and ensuing *Twitter discussion* [https://twitter.com/joshin4colours/status/585810974680092672]. Here's the key quote: 
+'
+Giant profitable companies such as Google are fortunate to be able to absorb huge amounts of technical overhead, thanks to large cash stockpiles, patient investors and hordes of the world’s top engineers.
+
+But startups (and most other companies) do not have this luxury.
+'
+What really got me thinking was the term /luxury/. Often - almost always, really - technical debt is seen a negative thing, something that needs to be dealt with or minimized over time. How could it be seen as a luxury? 
+
+In my view, part of this view relates to how software projects evolve and survive. A lot of software projects never get past the "toy" phase for a developer trying something out, and even fewer get to the "regularly used" phase and fewer still are used for long periods while being worked on by more than a few developers. An organization like Google probably has code that's old enough to cut it's own birthday cake and a total codebase large enough that no one single person could ever really know all of it or even the majority of it. That alone is quite an achievement, even excluding quality for a moment.
+
+As well, this also means that, to some extent, the codebase is part of a successful organization. In Google's case, it is a highly profitable tech company. What does success mean? In part it means not having to worry about every little issue that pops up; bugs can be called "low-priority" and be deferred indefinitely to be fixed. It's a tech equivalent of saying "I don't /need/ to worry about this any more". 
+
+At my current job, I've worked on an enterprisey desktop application that also has been around since the early 2000s. During my first weeks of work in 2010, I found a fairly obvious bug in printing functionality where the app crashed if a user tried to print without being connected to a printer. When I showed a developer this, he said "Oh yes, that bug's been around for a while" and that was that. The bug wasn't fixed and no more discussion ever came up about it. Life went on as it did before. This is part of the luxury of technical debt; minor bugs can be totally ignored until they "escalate" into "higher priority" issues. Success means not having to worry about the little things. 
+
+I've never thought of technical debt as anything except a technical description of a technical problem. Now I'm rethinking this opinion. 
