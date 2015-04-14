@@ -1,0 +1,11 @@
+Today, I had a fairly major revelation: I want to be known for more than my code. 
+
+To some, this could be a radical statement, but in retrospect it's kind of obvious to me. 
+
+This idea was triggered by the wonderful Coraline Ada Ehmke in this *tweet* [https://twitter.com/CoralineAda/status/587984684128210944]. It refers to the myth of (developer) meritocracy, but this really hit home for me. 
+
+I've been rolling this around in my mind for a while now, particularly in light of *Brendan Eich stepping down as CEO of Mozilla* [http://recode.net/2014/04/03/mozilla-co-founder-brendan-eich-resigns-as-ceo-and-also-from-foundation-board/] last year. This lead to conversations about merit and mertiocracy, and eventually going to back to the idea of "developers should be judged by the code they write". This idea has never really sat well with me, and until Coraline's comment, I never could put my finger on why. Now I know. 
+
+Any piece of software is more than its code. Good software *tries to solve a problem* [http://simplythetest.tumblr.com/post/112255212170/software-should-be-justified], which is inherently human. Software is written by people on teams large and small, open and closed, and in a variety of organizations. Inevitably, decisions come down to more than purely technical decisions, and often these decision are based just as much on *organizational culture and structure* [http://en.wikipedia.org/wiki/Conway%27s_law]. Saying that developers only need to be judged on their code is equivalent to saying that organizational culture is irrelevant or doesn't exist. This is flatly wrong, to say the least.
+
+I want to be known for more than my code.
