@@ -1,0 +1,3 @@
+Lately I've been thinking about metrics, particularly popular metrics like Lines of Code (LoC) or (automated) test count (TC). 
+
+I've seen people mention that the TC metric is a "vanity" metric. This means that TC is mainly for the benefit of the team or individual tracking and even then it's a more of a confidence boost. Looking at a growing TC is something to feel good about, and not much more. 
