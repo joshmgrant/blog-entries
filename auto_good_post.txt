@@ -1,0 +1,29 @@
+...doesn't mean it's not a good idea. 
+
+Today, I found *this post by Adrian Sutton* [https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/] on the Twittersphere. It's so great and doesn't have comments enabled I had to talk about it somewhere. If you're even a little bit interested in automated UI or automated end-to-end tests, you should read the whole thing. 
+
+In a nutshell, the post starts by referencing a recent post on the Google Testing blog that stating that *automated end-to-end tests simply aren't worth developers' time* [http://googletesting.blogspot.com.au/2015/04/just-say-no-to-more-end-to-end-tests.html]. Since Google is seen as a paragon of software testing, I'm sure there was a lot of interest in this post. I did read it, and some good points were made, particularly that UI tests are tough to maintain over time. 
+
+However, Adrian beautifully tears apart this reasoning. 
+
+There's so many good nuggets of wisdom in Adrian's post I'll just quote some of the best bits: 
+'
+If your idea of fantastic test infrastructure starts with the words “every night” and ends with an email being sent you’re doomed.
+'
+'
+...end-to-end tests, or acceptance tests as we call them:
+[snip]
+- are all required to pass before we consider a version releasable
+[snip]
+- are owned by the whole team – testers, developers and business analysts together
+'
+'
+ If you don’t have all the tests passing consistently, gradually and inevitably more and more tests become intermittent over time.
+'
+These are all excellent points. Running tests beyond a night/daily build isn't just some development fantasy reserved for the most elite of development companies. Hardware is cheap and powerful. Virtualization is becoming more available and user-friendly. Test frameworks are bountiful and generally of good quality. Why /not/ run tests as often as possible, even end-to-end tests? Waiting for an email to tell you that something /might/ be broken from a build twelve hours ago doesn't have to be the last word on automation. 
+
+You also get the side benefits of focusing on faster build and deployment times for your app. 
+
+More importantly, these points highlight the need to have the whole team involved in automated end-to-end tests. I'm convinced that everyone involved - not just automators - need to on board for automated end-to-end tests to work. Forcing checks to all pass a requirement for a release is a good way to make sure people care about them. It also correctly frames automation success as a communication success. Teams that work well together will have an easier time making better software than teams that don't. 
+
+In summation, Google might not be finding success with end-to-end automation but that doesn't mean no one has. 
