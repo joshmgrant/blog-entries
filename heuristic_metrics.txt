@@ -1,3 +1,19 @@
 Lately I've been thinking about metrics, particularly popular metrics like Lines of Code (LoC) or (automated) test count (TC). 
 
 I've seen people mention that the TC metric is a "vanity" metric. This means that TC is mainly for the benefit of the team or individual tracking and even then it's a more of a confidence boost. Looking at a growing TC is something to feel good about, and not much more. 
+
+I half-agree here. Using TC as a metric for quality or reliability is absurd. The number of tests don't tell you anything about what the tests do, how they were written and why they were written. TC also doesn't tell you about the overall validity of this approach; there are *entire* [https://vimeo.com/80533536] *classes* [http://simplythetest.tumblr.com/post/85247125825/gui-automation-still-sucks] of automated checks that are generally problematic. On top of this, TC is a metric that's easy to game. Writing a quick Python script can generate hundreds of automated checks with little to no value in a few minutes.
+
+Despite this, I still think there may be value in metrics like TC if they are considered heuristically instead of quantitatively. In other words, instead of focusing on hard numbers, the value could come from figuring out what those numbers could mean. I'll describe what I mean with some examples. 
+
+Suppose there's two software projects, A and B. Project A has a TC of 17 and project B has a TC of 10,000. What kinds of things could we infer about these projects based *only* on these data? Here some thoughts:
+
+In A, we have 17 tests. That's small enough that all the names could be listed on a single page. It's possible one person could know all of the test names and (roughly) what they do. It also means that adding or removing a test would be conspicuous, so team members would notice when the TC is changed. 
+
+In B, we have 10,000 tests. This is large enough that one person likely couldn't know all of these test names, and even two or three might not. The assets related to these tests would likely be split up in more than one file within the project, meaning there's (probably) some non-trivial management required of these assets. The number would also mean that adding or removing tests might not be noticed initially by team members.
+
+Comparing the two, I'd infer that project B is older than project A, as TC tends to grow over time. I'd also guess that project B is larger in some sense, such as team members or code or complexity. 
+
+Of course I could add more info into my toy example, but that's beside the point. I've made some observations that appear reasonable based only on two numbers. As a fun exercise, consider the corner cases of having a TC of 0 or TC of 1. What could they mean? 
+
+Thinking heuristically is a critical skill for any tester, but I think it's equally valid to apply heuristics to metrics. It's easy to get caught up in making these values go up or down as needed but it's just as important to think about the bigger picture.

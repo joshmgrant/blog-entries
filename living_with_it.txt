@@ -1,0 +1,11 @@
+Sometimes, you should live with something before deciding to change it. It's true when it comes to home making as well as software development. 
+
+I've recently been lucky enough to purchase a house. It's a lovely detached home in a good neighbourhood in Toronto, which is why I like to emphasize /lucky/. The previous owners took good care of the home but there were little foibles with it. We recently started hanging up some pictures around the house. Somewhat surprisingly, in a few cases we hung up some pictures in places of our choice but where there were already nails or nail holes in the wall at the same locations or close by. We also ended up hanging things to cover existing holes in the wall, and did so without much trouble. 
+
+At first I was surprised because I figured those holes and nails would be problematic, but in retrospect it's not surprising. Those holes were there because the previous owners found those locations good for hanging things. It turns out that my wife and I agree. 
+
+Sometimes I hear people talk about a code base they haven't seen before, and they say "Some of the code is weird, we'll have to re-write it" or "This is part isn't well written, we'll have to fix it up". In my experience, it's prudent to "live with" that code for a while before making decisions like this. Sure, it could be badly written - a totally possible situation - but more often it's written that way for a reason. I find this especially true with test code; tests may look redundant or strangely designed, but they are actually written specifically that way *for good reason* [https://codeshelter.wordpress.com/2011/04/07/dry-and-damp-principles-when-developing-and-unit-testing/]. 
+
+In the extreme case, total re-writes are often *terrible ideas* [http://www.joelonsoftware.com/articles/fog0000000069.html]. Removing learned and implicit functionality is a huge risk with dubious reward. 
+
+Living with a new house or new code might be slightly awkward at first but it helps in the long to figure out what how you really want things. 
