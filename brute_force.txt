@@ -1,0 +1,25 @@
+I love using brute force approaches to computational problems. And I don't think this is a bad thing. 
+
+Today, Reginald Brathwaite posted some opinions on *tech interview anti-patterns* [http://raganwald.com/2015/05/08/carnac-the-magnificent.html]. It's a great topic and I think he really nails it, but the ideas in his post also nicely dovetails  into some thoughts I've been having recently about developers and problem solving. 
+
+Here's a key paragraph from his post: 
+|
+And of course, this brute force executes fewer than 10,000 iterations, and runs faster than you can blink on contemporary hardware. But you’re applying for a job where you’re supposed to know about “scale” and “speed,” so you could optimize things and not do obviously wasted computations. Nothing that starts with 12345 can ever add up to 100, for example. Aren’t programmers supposed to know this? 
+|
+I've seen this a few times with other developers (and myself). Developers pride themselves on both strong problem solving abilities and deep technical knowledge. These are admirable qualities, but sometimes they can be counter-productive if too much focus is placed on one or the other. We should also note that developers are also human, with egos and pride, which can complicate matters further. 
+
+Which brings me to my main idea: brute force algorithms are great. Why? Here are a few reasons: 
+
+-They are easy to understand: all brute force approaches basically do the same thing. Get the data in some iterable form, iterate through the data doing a particular set of operations, and then collect results. This is easy enough that nearly anyone who's written a for-loop or done some data entry can understand. 
+-They are easy to explain: similar to the previous point, if you have to explain your approach to someone else, even withouth specialized knowledge like for-loops, the explanations are simple. Lack of confusion is a big bonus here.
+-They are often fast to implement: because of the lack of specialized knowledge, brute force approaches means there's less overhead in the implementation, meaning solutions do not need a lot of lead time
+-They are often fast to execute: somewhat surprisingly, despite lack of sophistication brute force approaches can be pretty fast to get results from. This is particularly true with computational problems in the age of Moore's law and RAM measured in gigabytes. 
+
+So, you have approaches that are fast, effective and easy to understand. Did I mention these are widely applicable? 
+
+Of course, not all problems are well-suited to brute force. Sometimes computation time is nontrivial (legitimate big data sets, for example). In some cases, computing power is intentionally limited or it's not reasonable to assume you can just buy better hardware (using old or embedded systems). And there are contexts where some algorithms make much more sense and are worth the trouble. But you can still get surprisingly far. 
+
+So why don't developers use brute force methods a lot more often? The same reason developer interviewers like asking trivia question and in hopes of getting really specific answers. Developers want to show off their technical knowledge and cleverness. Accepting that some problems are best solved by brute force is a bit of a hit to the ego. People would rather concoct elaborate plans than admit that the problem isn't that difficult in the first place. 
+
+
+I'm not immune to this. I've written overly complicated stuff, then justified it to myself because it's "clever" and "optimal". Lately I've taken more joy in making code clearer and simpler instead of "cleverer". 
