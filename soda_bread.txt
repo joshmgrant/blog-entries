@@ -1,0 +1,11 @@
+One of my favourite recipes to make is Irish soda bread. It's one of the only baking recipes I know fairly well. The ingredients are simple enough: flour, buttermilk, oats, baking soda, salt and occasionally some caraway seeds. 
+
+Not only is delicious, but it also has another great characteristic: it's a forgiving recipe. 
+
+Sometimes I don't have buttermilk so I substitute milk with a bit of vinegar. I've done all whole wheat flour and all white flour based on what's in my cupboards (the recipe calls for half of each). I've doubled the amounts. I think I've even forgot the salt on occasion. I'm pretty sure I never remember the right baking temperature. 
+
+And each time it turns out pretty good. Perhaps a bit different, but pretty good. 
+
+There's a lot of benefits to such a recipe, not the least of which is that I /know/ I can make a loaf given a variety of circumstances. Conditions don't need to be perfect for a good loaf of bread to come out of my oven. 
+
+Sometimes working with software can be helped by being forgiving. Allowing code to be slightly imperfect but still satisfying more important needs can be a great feature. It's often either challenging if not impossible to get things perfect in a software project. In those cases, stick to recipes that will give some flexibility.
