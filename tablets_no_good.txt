@@ -1,0 +1,17 @@
+Here's a tech prediction: developing /primarily/ for tablets as a platform will lead to tears and heartbreak. 
+
+This came up today when I noticed a *question on Twitter* [https://twitter.com/mathewi/status/601451680203309056] from Mathew Ingram. The question asked what people thought of newspapers betting on tablets as a platform. I responded by saying betting on tablets as a platform was "short-sighted and technologically over-complicated". Allow me elaborate. 
+
+I've written before about *tablets as a possible missed opportunity for software developers* [http://simplythetest.tumblr.com/post/65399662402/are-tablet-apps-a-missed-opportunity]. That was a while ago, and I feel like things have progressed even further. Developing specifically for tablets has gotten worse, not better. 
+
+For starters, let's define building things for a "tablet". What does that mean? The way I see it, it means one of two things: 1) building for iPad or 2) building for...all other platforms with a vague nod toward particular hardware form factors. 
+
+The iPad is easily the most popular tablet around if we *consider sales* [https://gigaom.com/2011/07/22/android-vs-ipad-the-tablet-sales-figures-that-matter/]. It has the most brand recognition and is widely popular. However, iPad sales have been *in decline* [http://www.businessinsider.com/apples-ipad-sales-decline-again-2015-4] recently. Some are speculating that the iPad has plateaued, and perhaps even going to be superseded by other Apple products like larger-screened iPhones. Apple being Apple, the support for iPads could change swiftly; support could be discontinued at any point. This means developing for only iPad means tying yourself not just to single platform, but a single device on a single platform. This is a highly risky strategy with dubious benefit. Even bailing out and trying to switch to more general iOS devices might not be that direct. 
+
+The alternative approach of building for any mainstream tablet isn't really much better. First, you have to grapple with what mobile developers already know is a big pain point: several completing platforms. You'll have to decide what tablets to support and go from there. Of course iPad means iOS, and potentially larger iPhones. What else? Android means dealing with *fragmentation* [http://mashable.com/2012/05/16/android-fragmentation-graphic/], so supporting many OS variants for the near future. It also means that popular Android tablets - existing or newcomers - might be updated at varying rates, which is a large tech cost for developers. 
+
+Beyond Android and iOS, the terrain gets murkier: what about BlackBerry, and it's *tablets* [http://www.knowyourmobile.com/mobile-phones/blackberry-passport/22747/blackberry-passport-review-dont-believe-haters]? Does the Microsoft Surface count as a tablet? If so, you're now developing for Windows. What if some other crazy OS appears and takes significant marketshare, or a major one drops out? 
+
+This is what I meant by technologically over-complicated. You've got about a dozen hard choices to make before you've even decided on how to put ads in...I mean, how your business model will work. I won't even start on whether tablets overall will continue to have the same popularity now as in the future. 
+
+Tablets are a perfectly valid form factor now. People enjoy using them and they're a first-class member of many larger ecosystems. But betting on "tablets-only" will almost certainly be a losing bet.
