@@ -1,0 +1,17 @@
+I recently opined on *Twitter* [https://twitter.com/joshin4colours/status/609384397981155329] about decreasing the run time of automated checks. My opinion in that the easiest, most straightforward way to decrease check run time is to remove checks. 
+
+After some thought, I've realized that this extends generally to other software processes: if you want something to take less time, make it smaller. 
+
+If you want your unit tests to take less time, have fewer of them. 
+
+If you want your end-to-end automated suites to run faster, reduce the number of checks in them.
+
+If you want your product build to be faster, get rid of as many lines of code as you can from the source code. 
+
+I'm sure there are other examples elsewhere related to code-specific components. 
+
+People talk about performance all the time for good reason. Making steps faster allow for *new possibilities* [http://blog.chriszacharias.com/page-weight-matters] during development and otherwise. It also makes developers (along with testers, designers, managers, and so on) happier because they can spend more time on interesting parts of their work and less time waiting.
+
+Of course there are other approaches to making these processes faster such as throwing more hardware at the problem or clever algorithmic hacks. However, these require thinking and effort, more than removing lines of code or checks. These approaches also tend to require upkeep and maintenance. Getting rid of stuff does not. 
+
+In short, smaller can be better. Don't be afraid to downscale.
