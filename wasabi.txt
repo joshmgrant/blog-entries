@@ -14,8 +14,7 @@ What makes this story so fascinating is that it's a great example of a software 
 
 With that setup, here's some things that have leapt out at me looking at this story: 
 
--Unmanageable Technical Debt
--Technical Decisions Affect Social Decisions
--Easy to Change vs Hard to Change
+-Technical Decisions Are Social Decisions
+-Proprietary Closed-Source Languages Are Awful 
 -Language Design Is Hard
-
+-One Person Can Make the Difference
