@@ -1,0 +1,21 @@
+I have to blog about this. 
+
+Today, I found a post saying that FogBugz - a popular project management app for software teams - has *stopped using its in-house proprietary programming language Wasabi* [http://blog.fogcreek.com/killing-off-wasabi-part-1/]. 
+
+TL;DR: This whole story should be a case study in CS and software engineering programs everywhere. 
+
+The back story is fairly straightforward. FogBugz was an application first written for Windows in the early 2000s. Because it written on a Windows platform, it was written mainly in VBScript, a scripting language on Windows machines. In 2005, the decision was made to build FogBugz for Linux platforms as well. Since VBScript was no longer an option for development on Linux, a decision had to be made to remedy this problem. The decision was to write a custom programming language called Wasabi using a custom compiler written in C#. 
+
+One of the main individuals at FogBugz working on these projects was the well-known *Joel Spolsky* [http://www.joelonsoftware.com/]. He's a software developer who's worked at Microsoft and elsewhere and has written blog posts how seen as classics by some in the software development community.  One of his more famous posts talks about big re-writes and how they are *largely a bad idea* [http://www.joelonsoftware.com/articles/fog0000000069.html]. As porting FogBugz from Windows to Linux could've merited a "big re-write", Joel was a proponent of using a custom language to avoid writing new code and reuse existing code. 
+
+After ten years, the result of this decision was the abandon Wasabi altogether. I can't say I'm surprised. 
+
+What makes this story so fascinating is that it's a great example of a software development failure and it's mostly public. There are posts by Joel of his *decision* [http://www.joelonsoftware.com/items/2006/09/01.html] *to use* [http://www.joelonsoftware.com/items/2006/09/01b.html] Wasabi as well as *critiques from his peers* [http://blog.codinghorror.com/has-joel-spolsky-jumped-the-shark/]. This was around ten years ago, when the software world was quite different, but some of the points are still relevant now (and will be for the foreseeable future). As well, this might be a /software development/ failure, but not a /business/ failure; FogBugz is still around and making money, perhaps even some directly due to the decision to use a custom language. While Wasabi didn't kill off FogBugz, it probably made things more difficult for a longer time than expected. My guess is that there won't be much *lost love* [http://jacob.jkrall.net/wasabi-the-parts/introduction.html] for Wasabi from individuals at FogBugz.
+
+With that setup, here's some things that have leapt out at me looking at this story: 
+
+-Unmanageable Technical Debt
+-Technical Decisions Affect Social Decisions
+-Easy to Change vs Hard to Change
+-Language Design Is Hard
+
