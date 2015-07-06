@@ -1,0 +1,13 @@
+Today I listened to the latest A/B Testing podcast by the esteemed Alan Page and Brent Jensen. It's a great podcast discussing testing, software development and some Microsoft-y topics, and I'd recommend it. The latest episode I found quite interesting and these some first thoughts on it. 
+
+Once again, Alan and Brent mention how they both feel that while testing will be around for a while, the test /role/ (ie someone who's only job is to write and execute functional tests all day) is in danger. Alan says that the only way you could be a full time "functional tester" (his words) would be if you're the best functional tester /in the world/.
+
+It's something that some people would find fairly disturbing, but I agree with this statement. Test roles as described in the podcast are definitely in danger. 
+
+But I've kind been hung up on the concept of a "functional tester". Not all testing is functional testing, after all. Could there still be full time tester roles that are real, paying, adult jobs in the future? I think so. 
+
+If a tester's job is to find bugs, then absolutely. 
+
+Not all bugs are directly a result of programming errors. Sure, there are classes of bugs caused by things like integer overflows or the like. Even bugs caused by cross-platform issues or networking snafus could be described as "technical" and thus are programming bugs. However, I'd argue that a lot of (most?) bugs are caused by non-programming aspects in organizations such as communication breakdowns, bad team dynamics, scheduling conflicts, and so on. 
+
+Testers that can identify (and fix!) these bugs will always be in demand. 
