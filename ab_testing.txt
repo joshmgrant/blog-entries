@@ -8,6 +8,6 @@ But I've kind been hung up on the concept of a "functional tester". Not all test
 
 If a tester's job is to find bugs, then absolutely. 
 
-Not all bugs are directly a result of programming errors. Sure, there are classes of bugs caused by things like integer overflows or the like. Even bugs caused by cross-platform issues or networking snafus could be described as "technical" and thus are programming bugs. However, I'd argue that a lot of (most?) bugs are caused by non-programming aspects in organizations such as communication breakdowns, bad team dynamics, scheduling conflicts, and so on. 
+Not all bugs are directly a result of programming errors. Sure, there are classes of bugs caused by things like integer overflows or the like. Even bugs caused by things such as cross-platform issues or networking snafus could be described as "technical" and thus are programming bugs. However, I'd argue that a lot of (most?) bugs are caused by non-programming aspects in organizations such as communication breakdowns, bad team dynamics, scheduling conflicts, and so on. In many cases, even defining a particular result /as a bug or not/ can be a source of problems. As Gerald Weinberg famously wrote, it's always a people problem.
 
 Testers that can identify (and fix!) these bugs will always be in demand. 
