@@ -1,0 +1,7 @@
+One of my predictions for the (near) future of software development is less focus on code, more focus on everything else. 
+
+I've seen a few things to make me think this way. One of the latest is this *interesting question and answer*[http://programmers.stackexchange.com/questions/289380/how-to-suspend-open-source-support] on Programmers Stack Exchange. I'm less interested in the actual answer (as of right now there's only one) and the fact that initially the question with +11 upvotes is put "on hold", meaning it needs to be clarified further before it can be fully opened. Also interesting, the question received multiple downvotes. I think the question is fairly well stated, asking essentially what happens to an OSS project when the sole maintainer goes away for three weeks. 
+
+It's one of those questions that makes me go "Hmm". 
+
+In their excellent *A/B Testing podcast*[http://www.angryweasel.com/ABTesting/], Alan Page and Brett Jensen have discussed on multiple occasions about what a tester at Microsoft does. One definition that they favour is that an application developer writes application code and features while testers do everything else. I've been chewing on this for a while now and I think I agree with this definition. I do think writing application code - good code, at least - is a skill that can be learned over time, and is vital to any good software project. I also think that "everything else" other than writing application code is important, perhaps even more so. 
