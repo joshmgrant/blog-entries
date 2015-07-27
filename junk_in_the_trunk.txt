@@ -1,0 +1,16 @@
+Get that junk out of your trunk.
+
+*I love source control*[http://simplythetest.tumblr.com/post/75652233000/the-joy-of-git-and-other-source-control-systems]. It's probably one of the most important tools for any software developer get to know and really understand. But what about software teams? I think that team source control workflows and strategies are one area of software development that doesn't get enough attention. Team source control workflows are much more important than teams think.
+
+Many teams start using a particular source control technology (such as Git or Subversion) and get to know the /technology/ better than the /problem it solves/. After starting to use a new source control system, team members start making and committing changes to a main repository without thinking much about how those changes will propagate through to individual builds or deployments or even how these changes may affect other developers and projects. I call this the "Junk in the Trunk" anti-pattern, where the trunk a term used in Subversion to represent the main branch/component of a repository.
+
+It is easy to fall into this anti-pattern, particularly when a team moves beyond one or two members. There may be competing priorities and varying levels of familiarity with the particular source control system. Developers also don't always see the benefit of using a "more complicated" workflow even if it solves obvious problems they are having. Some examples/indicators of this anti-pattern may include:
+
+- *Master only workflows* [http://simplythetest.tumblr.com/post/102363180680/master-only-workflow-considered-dangerous]
+- All members of a team committing directly to a release branch
+- All members of a team using feature branches directly off a release branch
+- Regular builds from an unstable main branch
+
+The core problem in these cases is that builds or releases happen from an unpredictable point in the source control. Even with good quality control techniques like code review or automated checks on merges or commits problems can get through. The solution is to introduce some predictability and stability into the workflow. This can be accomplished by using good practices in team source control such as *trunk-based development*[http://paulhammant.com/2013/04/05/what-is-trunk-based-development/], *Gitflow-like workflows* [http://nvie.com/posts/a-successful-git-branching-model/] or even making good use of tags or labels on "good" commits in your source control history. I'm currently using a trunk-based workflow with Git, and our nightly builds are more regular and stable helping troubleshooting significantly. 
+
+Changes in workflow can be difficult to get going, but the benefits can be quite significant. Take some time to get that junk out of your trunk.
