@@ -5,3 +5,11 @@ I've seen a few things to make me think this way. One of the latest is this *int
 It's one of those questions that makes me go "Hmm". 
 
 In their excellent *A/B Testing podcast*[http://www.angryweasel.com/ABTesting/], Alan Page and Brett Jensen have discussed on multiple occasions about what a tester at Microsoft does. One definition that they favour is that an application developer writes application code and features while testers do everything else. I've been chewing on this for a while now and I think I agree with this definition. I do think writing application code - good code, at least - is a skill that can be learned over time, and is vital to any good software project. I also think that "everything else" other than writing application code is important, perhaps even more so. 
+
+One thing that falls into "everything else" is support. This is vital part of any software project, even if developers don't want to acknowledge it. Having users looking for support of your app means /you have users/ which is already ahead of about ninety percent of the apps out there. Providing good support means keeping your existing users happy and interested, as well as appealing to potential new users. Plus, in the age of ubiquitous Internet connections communicating with your users (or perhaps even your community) is easier than ever. 
+
+However, this doesn't mean support is a checkbox that can be simply marked off. Good support is a skill that should be built or developed. 
+
+Largely speaking, I don't think software developers are very interested in providing good support. Some probably don't even really know what that means. Taking the previous SE question at face value, there's been one answer and a handful of comments to the question of how to provide support when a maintainer takes a leave. Contrast that to threads of programming language critiques or which JavaScript framework is the best, which can run into the hundreds of responses even though these issues are pretty much irrelevant to most users.
+
+Count me in on caring about "everything else" in software development. Including the squishy users who actually care about your product.

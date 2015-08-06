@@ -1,0 +1,38 @@
+I have a bit of a beef with WebDriver-based test frameworks. How come they don't synchronize element operations *ever*? I [complained on Twitter](https://twitter.com/joshin4colours/status/629308388615192576) about this and figured it merited a bit more detail.
+
+Here's an example of what I mean. Using the WebDriver, here's a Java example of how an element specified by some locator is clicked: 
+
+<code>
+WebDriver driver = new FirefoxDriver();
+driver.get("http://some.app");
+driver.findElement(By.id("someId")).click();
+</code>
+
+Easy and straightforward. How could the click() operation fail? One very common way it fails is if the someId element isn't ready to be clicked when click() is called. The element may be available in the DOM, valid and functional but due to some other page operations might not appear in time. Here's a contrived example: 
+
+<code>
+WebDriver driver = new FirefoxDriver();
+driver.get("http://some.app");
+openModalDialogInApp(driver);
+closeModalDialogInApp(driver);
+driver.findElement(By.id("someId")).click();
+</code>
+
+Often modal dialogs are in the DOM and take non-trivial time to appear or disappear without any additional requests or JavaScript calls. In this case, calling click() might fail with some exception because of how the modal dialog is handled. Luckily, the excellent developers of the Selenium WebDriver considered issues like this and wrote utility methods to prevent this issue. The solution looks like this
+
+<code>
+WebDriver driver = new FirefoxDriver();
+driver.get("http://some.app");
+openModalDialogInApp(driver);
+closeModalDialogInApp(driver);
+wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("someId"))), SOME_TIMEOUT_IN_MILLISECONDS);
+driver.findElement(By.id("someId")).click();
+</code>
+
+Crisis averted. This problem and solution would also apply to clearing text, sending keystrokes, and other operations.
+
+Here's my question: this pattern of "wait to do THEN do" is extremely common so why don't test frameworks implement it? I've looked a couple of test frameworks and none of them appear to do this with elements. Any Element class or wrapper around the WebDriver might do a lot of things, but it never seems to wait then act. What's even stranger is that the WebDriver natively supports doing this. Most (all?) official language bindings for the WebDriver have some version of the WebDriverWait object from Java. Recently I've been burned by this using the [Protractor framework](http://www.protractortest.org/#/) in JavaScript, but it's far from unique in having this problem.
+
+This is one of my major reservations with test frameworks: they seem to solve a lot of problems but never the ones test developers deal with that are mission critical. Protractor is a great example of this (which is a whole other blog post). It has a command line interface for launching tests. It has specific functionality for integration with AngularJS apps. It doesn't include implementing the "wait then do" pattern for working with elements, which causes significant problems with end-to-end test suites. Why not? 
+
+I've used the "wait then do" pattern some great success in my own WebDriver-based tests, but the implementation uses a custom wrapper. Maybe one day I'll stumble upon a framework that does this for me.
