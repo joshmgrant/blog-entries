@@ -1,0 +1,11 @@
+Here are some random observations I've had working with Selenium-based end-to-end test frameworks over the past while: 
+
+- Writing custom Assert libraries is a waste of effort. If you're working in a programming language that's at all established there's already an Assert library that's good enough for your needs. 
+- Custom approaches beget more custom approaches.
+- Starting with a third-party end-to-end test framework means you _will_ reach a point where the framework's assumptions don't apply to your situation.
+- Synchronization is always a problem and is always solved later than it should be.
+- Yes, you want to use explicit waits everywhere possible. Yes, you should use a [WebDriverWait](https://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/support/ui/WebDriverWait.html) construct from Selenium.
+- The success or failure of an end-to-end test suite depends on the assumptions and expectations around it.
+- Maintenance, maintenance, maintenance!
+- Starting small and building up slowly is highly preferable to starting big and moving fast.
+- Test developers are developers.
