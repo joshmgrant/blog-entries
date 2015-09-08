@@ -1,0 +1,9 @@
+Around here, it's back to school and/or back to work. So I'm starting off with some thoughts on test coverage. 
+
+One common anti-pattern when it comes to writing software is feature creep. The idea is that as a software product matures, more and more features are added or made more complex. Eventually, feature creep can cause problems like conflicting features, emergent complexity, performance slow-downs and others. Avoiding excessive feature creep is something really great software does effectively. 
+
+But my thought is: can this also apply to testing efforts? 
+
+Sometimes, it's easy for testers to approach a product with a "test everything" or "test as much as possible" mindset even though [it isn't a good idea](http://simplythetest.tumblr.com/post/72397936619/test-everything-isnt-a-strategy). On top of resource constraints like limited tester time, it's just plain impossible to know everything about a software product. I think this is fairly obvious. Still, test creep can happen when testing tries to move too much into the "test everything" direction. 
+
+Starting off with a good set of checks (automated or otherwise) or a sensible test charter or plan can usually yield helpful results and feedback. Bugs can be caught earlier and can be better understood, and regressions and re-introduced bugs can be minimized. But like feature creep, test creep starts with successful testing. There's a push to include "more" testing or to get better app coverage, or perhaps add more automated checks. There also be calls to try to test previously unconsidered areas of an app, which can complicate testing. And like feature creep, tests begin to become more complicated, less effective and more difficult to manage. 
