@@ -9,5 +9,5 @@ Here are some random observations I've had working with Selenium-based end-to-en
 - Maintenance, maintenance, maintenance!
 - Starting small and building up slowly is highly preferable to starting big and moving fast.
 - [Test developers are developers.](https://twitter.com/AutomatedTester/status/631216695571558400)
-- Test code is code, and should be treated as such (good organization, version control, code reviews, etc)
-- For at least a little while, you can solve many problems by throwing more hardware at them
+- Test code is code, and should be treated as such (good organization, version control, code reviews, etc).
+- For at least a little while, you can solve many problems by throwing more hardware at them.
