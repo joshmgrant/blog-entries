@@ -1,0 +1,35 @@
+If a Continuous Integration (CI) service is like an executive chef in a commercial kitchen, is it possible to have [too many cooks](https://www.youtube.com/watch?v=QrGrOK8oZG8)?
+
+On my team (approx 20 people) we have two CI servers, both Jenkins. These servers are divided up along the lines of product-type. One server runs jobs related to desktop products and the other runs jobs for web products. We have a non-trivial number of jobs but nothing completely massive. Within the whole company, there's around 5-6 CI servers of a few different types. Periodically we discuss the idea of combining our team's two CI servers into a single one but usually we end up deciding to keep things as-is. The discussions can be enlightening, however. 
+
+It got me thinking about CI servers in a process and team context. How many CI services is best, given our situation? More generally, how many should any team or organization have? 
+
+	my initial tweet
+	
+This lead to some great responses. I'll start with the canonical reply to this sufficiently complex software development question, from Adam Goucher: 
+
+	adamgoucher's response
+
+Here, "it depends" on things like task/job complexity, computational resources, and staffing to name a few.
+
+Another insight came from Dave Haeffner, who rightfully points out that CI is a good tool to have: 
+
+	davehaeffner's reponse
+	
+Given how cheap and plentiful both physical and virtual computers are, dedicating some to CI processes and servers seems like a no-brainer. A first CI could even be a bunch of scheduled jobs via cron or Windows Task Scheduler, or even an automated email saying "deploy to internal servers" or "run the [nose](http://pythontesting.net/framework/nose/nose-introduction/) script". The point is that smart automation makes life better for developers. 
+
+Of course if you decide to start using a CI server, should you have more than one? Alan Page mentioned the rule at Microsoft: 
+
+	alanpage - one per product
+	alanpage - scale
+
+Most companies aren't as large as Microsoft but thinking about how CI servers are associated (one per product, one per division, etc) can be a helpful place to start. One for the whole organization - even for a small-ish one - might be too daunting to be practical. On the other hand, a centralized CI is one time I think that an org-wide centralized plan might make sense and work.
+	
+My favourite response came from Anna Balik, who's clearly seen how CI servers evolve in real situations: 
+
+	testerab response
+
+Even if the idea of using a CI server seems straightforward in theory, in practice there might be some...intermediate steps before one gets up and running. I'm sure more than one place has had mission-critical jobs running on an outdated machine under some random desk somewhere. I've also seen how CI systems can somehow multiply, appearing almost out of thin air. This can be both a blessing and a curse. 
+
+Overall, I'm sticking with the "it depends" opinion of how many CI servers are suitable in an organization. I do think that "one per employee" seems like overkill and flat wrong and should be avoided. Otherwise, there's several recipes for success with Continuous Integration. 
+
