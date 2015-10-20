@@ -4,6 +4,6 @@ In two different front-end frameworks (GWT and Angular), it appears Google event
 
 What I find really interesting is that despite both frameworks being quite different overall, they both suffer from this issue. 
 
---GWT: Divs Ahoy!
+--GWT: Divs Ahoy
 
 --Angular: Everyone loves JavaScript
