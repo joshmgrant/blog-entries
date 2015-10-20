@@ -1,0 +1,9 @@
+Google is doing it again. First, they posted some short-sighted opinions on end-to-end automation. Now, I've noticed a pattern in their web front-end frameworks that encourages testing trade-offs that are (in my opinion) poorly thought-out. 
+
+In two different front-end frameworks (GWT and Angular), it appears Google eventually makes developers decide between performance gains and increased E2E testability. Both of these things are helpful on their own. The issue I see is that the frameworks eventually forces them to be somewhat mutually exclusive, or at least making one occur at the expense of the other. 
+
+What I find really interesting is that despite both frameworks being quite different overall, they both suffer from this issue. 
+
+--GWT: Divs Ahoy!
+
+--Angular: Everyone loves JavaScript
