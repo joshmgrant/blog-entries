@@ -4,6 +4,61 @@ In two different front-end frameworks (GWT and Angular), it appears Google event
 
 What I find really interesting is that despite both frameworks being quite different overall, they both suffer from this issue. 
 
---GWT: Divs Ahoy
+--GWT: Lost in Translation
+
+[GWT](http://www.gwtproject.org/) (formerly Google Web Toolkit) is an open-source Java-based web front-end framework. Essentially, GWT is a transpiler from Java to JavaScript: it provides tooling to take Java code and compile it into a pure JavaScript front-end. The idea is to use a language with a mature tooling/development ecosystem used to build complex applications (Java) to build a cross-platform JavaScrpt-based front end for web applications. This gives developers the benefits of both Java and JavaScript. Google did use this front-end itself on a few of its products such as Google AdWords and Blogger but eventually distanced itself from the OSS project.
+
+While there appears to be a lot of great stuff in GWT, there's also some big downsides. The TL;DR version of these problems is that GWT was conceived before JavaScript frameworks became mainstream (and good) and in comparison GWT is slow and awkward. 
+
+The one shortcoming that this post will focus on is front-end automation using tooling like the Selenium WebDriver. Ironically, due to the long compile times and the fact that Java code compiles to highly obfuscated JavaScript to arrive at a GWT-based front-end, Selenium is a great choice for automated checking. Testing the Java side isn't too helpful because GWT builds JavaScript not a Java app, and testing the generated JavaScript directly is a big pain because it's been machine generated and is generally difficult for a human to work with. The WebDriver can help automate checking of the final product and because of the long compile times, there's no real performance hit for running browser-driven checks.
+
+However, GWT works against making checking using Selenium more effective. 
+
+Let's look at an example. Here's a sample of a portion of the DOM of a GWT-based front-end (specific class names changed to protect the innocent): 
+
+```
+<div class="GLKXA-2BDUE-class1 GLKXA-2BCY-class2>
+	<div class="GLKXA-2BOTE-class3 >
+		<a class="GLKXA-2BNTE-class4></a>
+		<div class="GLKXA-2BNTE-class4>
+			<div class="GLKXA-2BCY-class5">
+				<button type="button" class="GLKXA-2BM0C-class6">
+					<div class="GLKXA-2BCY-class7">
+						<div class="gwt-HTML GLKXA-2BJY-class8">People
+						</div>
+						<span class="gwt-InlineLabel" title="Summary View" style="margin-left: 6px;">Summary View</span>
+						<div class="GLKXA-2BC1C->
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve" enable-background="new 0 0 16 16" class="GLKXA-2BK3-class9">
+								<path class="fill" d="stuff">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</button>
+				<div class="GLKXA-2BAVC-class10" aria-hidden="true" style="display: none;">
+					<div class="GLKXA-2BMUC-class11 GLKXA-2BPUC-class12" >
+						<div class="GLKXA-2BL1D-class13">
+							<div class="GLKXA-2BE1C-class14">
+								<div class="GLKXA-2BH1C-class15 GLKXA-2BCY-class7>
+									
+									<!-- SNIP for reader's sake -->
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+```
+This piece of code represents a toolbar type group of elements for a page. Image a Show/Hide/Filter button combination for a page of items. Now suppose a developer would like to use WebDriver to automate interacting with these elements on the page. How would that work? 
+
+It would be challenging, for starters. This DOM has many layers of <div>'s, making for some tricky locators. The class attributes all have a dynamically generated component, so relying on them to locate elements could be unreliably. As well, there are some repeated (non-unique) elements so even xpath queries might not work well. If yet more <button> elements are introduced it might be nearly impossible to maintain scripts that use these elements due to the DOM structure.
+
+Fortunately, the authors of GWT thought of this and added a feature explicitly to assist the WebDriver: [the enableDebugid() method](http://www.gwtproject.org/javadoc/latest/com/google/gwt/user/client/ui/UIObject.html#ensureDebugId%28com.google.gwt.dom.client.Element,%20java.lang.String%29). 
+
+It'd be difficult, for one. 
 
 --Angular: Everyone loves JavaScript
