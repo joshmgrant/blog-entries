@@ -1,0 +1,10 @@
+My last post talked about using Fog Creek's decision to kill off their Wasabi programming language as a case study for computer engineering related disciplines. I thought it's a good case study because it's an example of how a seemingly purely technical decision can affect a software project over the long run. 
+
+The more I research it, the more intriguing I find it. 
+
+I've been doing some online sleuthing and have come up with some more points: 
+
+- Past Decisions that Look Terrible Now Were Reasonable at the time
+- Technology Changes In Unpredictable Ways
+- Small Choices Can Have Bit Impact
+- 
