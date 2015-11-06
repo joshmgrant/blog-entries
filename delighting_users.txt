@@ -1,0 +1,14 @@
+I recently had a conversation with a co-worker about writing software with users in mind. He had the opinion that developers should try to make software that delights their users and make the users' experience as enjoyable as possible. 
+
+I've thought about it, and I'm on the fence about this opinion. 
+
+On the one hand, I definitely agree with making software that users enjoy using. Some (other developers)[http://blog.codinghorror.com/this-is-all-your-app-is-a-collection-of-tiny-details/] agree. The more a user enjoys working with a particular tool, the more they're inclined to use it. It also helps create a relationship between a developer and user, who can provide each other helpful information to create a virtuous cycle. There's something innately cool about a good relationship in this case. 
+
+On the other hand, I'm becoming more and more convinced that good software (needs to exist for a reason)[http://simplythetest.tumblr.com/post/112255212170/software-should-be-justified]. When I think of most software products, I think of them as tools to accomplish a particular task. In many cases these are pretty straightforward, mundane tasks like managing email or reading an article online somewhere. I don't know about you, but I don't get overly jazzed about email clients, even if they're good email clients. In other words, I'm somewhat indifferent to what software does as long as it does what it's supposed to do. 
+
+This takes on another dimension when I realize how much more software becomes a part of everyday life. Some days I use several dozen (or more!) pieces of software to do a variety of tasks, both at work, at home and elsewhere. When you're using software all the time, it becomes less of an event using an individual application. Most people these days use software so much they likely don't even think of some tasks as software-related. It's just another thing that gets done. 
+
+When I think of tools that I use, they're bring about mostly utilitarian feelings in me. I don't "delight" in using a given fork and knife at the dinner table, or using one kind of nail instead of another to hang a picture. I just want to eat or hang a picture on the wall. If the tools help me accomplish this, I'm happy. If they don't, I'm less than happy. I don't relish in the tools for their own sake. One of the comments that's had the most impact on me came from Anna Balik, (tweeting)[https://twitter.com/TesterAB/status/475023358716039168?lang=en] that "[she tries] to assume that my little bit of software is not the most important thing in the user's life". It's really stuck with me because it's true: software developers make tools to help people out, not to overtake their life. 
+
+So I'm not sure how much focus developers should put on "delighting" users. I feel like developers should really try to make good applications to help people out.
+
