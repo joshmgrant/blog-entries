@@ -1,0 +1,31 @@
+Flaky Tests
+
+Starting off 
+-doing all the right things, like using page objects, getting developer and tester co-operation and using high powered test machines
+- But: flaky tests
+- Becomes even worse as test suites grow
+- There's a temptation to throw up your hands and say "this is stupid" and throw it in the bin
+- BUT IS IT?
+
+The Technical Parts
+- It's easy to shug off flaky tests. But they can provide technical info
+- Could mean your tests are bad or missing some synchronization issues
+- This leads into being a possible performance heuristic
+- Could mean that there are parts of your app that are somewhat ill performant, particularly client-side stuff
+   - annotations or dialog boxes
+- Could also be a rudimentary stress test depending on the run setup
+   - Parallel instances of Chrome
+- There's an argument to be made that continually failing tests could indicate "bad" areas of the app
+   - checklists
+
+The Human Parts
+- E2E automated test suites can also be a good barometer of team practices
+- Getting individuals to look at E2E test results can difficult, but a good test is flaky results
+- See what the reaction is, and this could reveal who's looking at results and how
+- Also could be a gauge of how people feel about E2E tests overall
+- Be mindful of "failure fatigue". How does your team deal with it? 
+- Also, how are results used in context? 
+- Using E2E tests as acceptance criteria (or rejection checks) means flakiness is a much bigger problem
+- Using E2E tests as regression that need interpretation could mean there's greater tolerance for them
+- Looking at trends/historical data might also play a role: is 1 flaky test too much? 1% of tests? 10%? 
+- All of this is context dependent, and also gets at the question: why are you doing this in the first place? 
