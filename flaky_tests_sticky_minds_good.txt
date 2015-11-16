@@ -1,0 +1,14 @@
+-- What Flaky Tests Can Tell You -- 
+
+Imagine this. You're a test developer who writes end-to-end automated tests for a web application. You use good technology in the Selenium WebDriver. You follow good practices like using page objects to separate the tests from the application logic. You make use of virtualization and use adequately powered machine hardware.  You also understand how end-to-end automation is a team effort and so you work with application developers, testers and managers in concert to get the most value out of your efforts. And yet for all your good work you still have a recurring problem: flaky tests. These are tests that pass or fail unexpectedly for reasons that appear random. Flaky tests become even worse as test suites grow as more areas of an app are covered and tested in detail. Eventually there's a temptation to throw up your hands and say "This is stupid!" and throw the whole test suite into the trash bin. 
+
+But are flaky tests actually a problem?
+
+It's easy to shrug off flaky tests and use them to discredit automated end-to-end testing. But flaky tests can be useful for learning more about an application under test and about how your team works. I'll provide some technical and human examples of where flaky tests can be helpful in software testing efforts. 
+
+The Technical Side
+From a technical standpoint, there's a few sources of flakiness in WebDriver-based tests. One of the main areas is synchronization. Web applications have many layers that affect performance, including network connection speed, browser HTTP handling and rendering and computer processing resources. As a result, some operations may take slightly longer (or shorter) than others to complete in an end-to-end scenario. A button may not appear in time, or a dialog box may not disappear fast enough for an automated script to complete without unexpected failures. The solution is to put wait statements to synchronize script steps with the application under test. This might seem like a hack to avoid flakiness, but it also may be an oracle of performance issues in your application. If some areas consistently need more waits or longer waits it could be an indication of poor performance, particularly client-side performance, in those areas. At one point on one team I worked with, there was one set of automated end-to-end tests that seemed to fail inconsistently all the time but related to the same feature. When I talked to developers, it turned out that area had some front-end problems due to some bad coding practices. Flaky tests sort of picked up on this problem if indirectly. 
+
+Another problem I've seen producing flaky tests is from accidental load testing. As test suites grow, there's more 
+
+The Human Side
