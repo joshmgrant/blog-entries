@@ -57,8 +57,8 @@ This piece of code represents a toolbar type group of elements for a page. Image
 
 It would be challenging, for starters. This DOM has many layers of <div>'s, making for some tricky locators. The class attributes all have a dynamically generated component, so relying on them to locate elements could be unreliably. As well, there are some repeated (non-unique) elements so even xpath queries might not work well. If yet more <button> elements are introduced it might be nearly impossible to maintain scripts that use these elements due to the DOM structure.
 
-Fortunately, the authors of GWT thought of this and added a feature explicitly to assist the WebDriver: [the enableDebugid() method](http://www.gwtproject.org/javadoc/latest/com/google/gwt/user/client/ui/UIObject.html#ensureDebugId%28com.google.gwt.dom.client.Element,%20java.lang.String%29). 
+Fortunately, the authors of GWT thought of this and added a feature explicitly to assist the WebDriver: [the enableDebugid() method](http://www.gwtproject.org/javadoc/latest/com/google/gwt/user/client/ui/UIObject.html#ensureDebugId%28com.google.gwt.dom.client.Element,%20java.lang.String%29). The idea here is simple: give the Java-side code the ability to set id attribute on particular elements that can be enabled or disabled at compile time. This allows - for example - an internal build for development to have id attributes that scripts can hook into but for a production build not to include these attributes. There's a setting the gwt.xml config that allows deployments to either enable or disable these debug id's. 
 
-It'd be difficult, for one. 
+This sounds like a great solution. But like the old saying, it works well until it doesn't. The main problem with ensureDebugId() is that it creates some trade-offs between automation and performance. 
 
 --Angular: Everyone loves JavaScript
