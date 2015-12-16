@@ -1,5 +1,3 @@
--- What Flaky Tests Can Tell You -- 
-
 Imagine this: You are a test developer who creates automated end-to-end tests for a web application. You use good technology in the Selenium WebDriver. You follow good coding practices like using page objects to separate the tests  from application logic. You make use of virtualization and use adequately powered machine hardware.  You also understand how end-to-end automation is a team effort and so you work with application developers, testers and managers in concert to get the most value out of your work. And yet for all your good work you still have a recurring problem: flaky tests. These are tests that pass or fail unexpectedly for reasons that appear random. Flaky tests become even worse as test suites grow and more areas of an application are covered. Eventually there comes a temptation to throw up your hands and say "This is stupid!" and throw the whole end-to-end test suite into the trash bin. 
 
 But are flaky tests really a problem?

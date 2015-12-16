@@ -1,0 +1,6 @@
+I've been working with end-to-end automated tests quite a bit over the past few years. As a result, I have some very specific opinions about how to write page objects for them. 
+
+- Don't put application logic-based checks or asserts in your page objects
+  - Avoid putting needless additional logic in your POs
+- Using API calls along side UI-based checks is a double-edged sword
+- Breaking down pages into "blocks" has has mixed results
