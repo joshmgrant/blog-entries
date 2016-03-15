@@ -1,0 +1,25 @@
+How To Not Do Stupid Things With Data
+
+I'm taking a quick break from my parental duties to reply to something I saw on the Internet.
+
+Alan Page recently [tweeted](https://twitter.com/alanpage/status/707465309524008961) about some misuse of basic statistics he's seen. He goes on to say that one of the toughest parts of working with data is not doing stupid things with the data. As someone with some statistical knowledge, I agree. Given a data set, it's really tempting to jump in and start doing oodles of tests and spitting out statistics. Often, it's a good idea to start with some more basic ideas first. 
+
+Here are some things you can do with data that aren't stupid:
+
+- Plot Your Data Visually (if possible)
+Probably the single most helpful thing you can do to get started with your data set is to plot it visually. Depending on the nature of your data set, you could use a simple scatter plot, histogram or box plots - among other things!- to get a feel for what's going on with the data. Plots can help you see what your data might tell you. Sometimes relationships are stark and jump right off the page. They can also be a good check on bad data, showing clearly that something is "off". Plots are also helpful for discussion with non-technical individuals who aren't statistically inclined. 
+
+Plots aren't always possible particularly if your data is "big", but even plotting a well chosen subset can be a good substitute. 
+
+- Think About The Limitations of Your Data
+Getting good data is tough. Even if you're careful in how you collect it, there still may issues that can screw things up. For example, how do you know the reliability of your source? Are there missing or unclear values in your data set? Are there any [biases](https://en.wikipedia.org/wiki/Sampling_bias) in your data? On the more qualitative side, can you trust the source? As the saying goes, garbage in, garbage (or gospel) out, so know what issues there may be with your data before you do any hardcore stats. 
+
+- Determine If You Have Enough Data
+Getting good data is tough, but getting enough data can make that tougher. Sometimes if you want to make certain assumptions or claims on your data, you'll need to have a sufficiently large sample size (among other things). Luckily, there are [ways to calculate this](https://en.wikipedia.org/wiki/Sample_size) ahead of time. This is great because you can then prepare and collect data all at once instead of trying to scrape together enough data.
+
+- Calculate Statistics of Central Measure (if it makes sense)
+Lastly, it's often a good idea to look at basic statistics around *central measure* which in English means statistics that look at "typical" values. These are statistics like the (sample) mean, median or mode. Usually these are easy values to calculate and can give you some initial insight into what data "typically" looks like. Calculating all three can also help tell if your data can be assumed to be normally distributed or not; if the mean, median and mode are all widely different, chances are good your data isn't normally distributed. 
+
+If it is normally distributed, then congratulations, you get a lot of [great statistical tools](https://en.wikipedia.org/wiki/Central_limit_theorem) to use! If not, then you've dodged a bullet applying all those great tools to something that doesn't work for your data. Once again, garbage in, garbage out. 
+
+Good luck to all those working with data out there! 
