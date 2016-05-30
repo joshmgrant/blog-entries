@@ -1,0 +1,7 @@
+I've been thinking about writing a post like this for a while but JB Rainsberger has forced my hand. 
+
+JB recently tweeted about some of the downsides to writing for-loops. As usual, his thoughts were well reasoned and insightful. It's true that run-of-the-mill for-loops obscure programmer intent, and in terms of programming tools there are often better approaches.
+
+But I want to be clear about something: I _love_ for-loops. Sometimes I wonder if they literally make the world tick. 
+
+For-loops are one of the first things that most people encounter when they start programming. This is true if someone learns to program for work, for school or for their own amusement. 
