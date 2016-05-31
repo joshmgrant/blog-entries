@@ -1,0 +1,15 @@
+I'm going to write about something I wish I'd know about a long time ago when I started to learn programming. It's an important distinction no one told me but is pretty important.
+
+When I read about or hear people talking about particular languages, I'll sometimes hear "I love $LANGUAGE! It's so great to develop in and write projects in!". After hearing this, I might think "But that language is terrible! The syntax is awful and so verbose!". Other times, I might hear someone mention a language and say "I'll never work with $OTHER_LANGUAGE! It's terrible to work with". And I'll think, "but the syntax is great, it's so easy to read and write". Obviously, I'm not alone in this, but lately I started to wonder: why are opinions on programming languages so vastly different? 
+
+One answer could be differences in taste and experience, which is true. But there's a more subtle explanation as well. A programming language is more than just the language; the ecosystem and community around one are just as important as the language itself. Programming languages are software, and like other forms of software, how it's used can influence how it's developed.
+
+Essentially, my opinion is that there's three aspects of a programming language: 
+
+- The Language
+- The Ecosystem
+- The Community
+
+The language is the actual programming language itself. This includes the syntax and semantics, platform requirements and libraries included for programmers to use while coding. 
+
+The ecosystem 425-7272 fix it again sam

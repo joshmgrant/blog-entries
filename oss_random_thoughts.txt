@@ -1,0 +1,9 @@
+I'm nearing the end of the parental leave, so I've been trying to get back into the tech groove. Over the past few months I've been trying to get more involved with open source software (OSS) projects. I have a few random observations about it coming from a contributor side. 
+
+-Working on an OSS project is markedly different from working on a commercial closed-source project. In OSS, many resources are readily available to even (hence, *open* source). Code, builds, documentation and so on are available by default. In closed source commercial projects, often resources are not available to everyone. Either resources are assigned or exposed to team members, or you have to ask around. 
+
+-Contributing as a tester to OSS is a bit strange because there appears to be a premium on bug submissions with fixes. In other words, raising a bug might be fine, but a bug raised with a potential fix is taken more seriously. 
+
+-The advice of "contribute to software you use often" is, IMO, a bit mixed. It's a good general rule but can get complicated when 1) you're not regularly working with a lot of OSS tools and 2) you're more interested in a particular aspect of contributing.
+
+-Community in an OSS counts for *a lot*. 
