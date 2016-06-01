@@ -4,4 +4,8 @@ JB recently tweeted about some of the downsides to writing for-loops. As usual, 
 
 But I want to be clear about something: I _love_ for-loops. Sometimes I wonder if they literally make the world tick. 
 
-For-loops are one of the first things that most people encounter when they start programming. This is true if someone learns to program for work, for school or for their own amusement. 
+For-loops are one of the first things that most people encounter when they start programming. This is true if someone learns to program for work, for school or for their own amusement. It can remember for loops being one of the first flow control constructs I ever saw. At the time, I didn't think of much of them as they seemed almost obvious. But over time, I've come to appreciate - even adore - the humble for loop.
+
+Why so much love? Because lots of code is one-off scripting code. 
+
+The first programming I did was for academic research. The first project I worked on was in Perl to scrape data from Securities and Exchange Commission for corporate structure research in my undergrad. My master's thesis consisted in part of work based on simulations of population dynamics of the evolution of cooperation written in C. In both cases, my work was essentially one or two for loops that contained some non-trivial logic. 
