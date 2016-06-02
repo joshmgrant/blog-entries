@@ -14,4 +14,10 @@ Code written by academics and students for research is often in this form: a sho
 
 I'm sure there are similar scripts written by programmers and IT personel. I've written quick scripts to accomplish tasks like replacing names in files over the years, and they tend to be one big for-loop. 
 
-When maintenance isn't a huge concern, for-loops really shine. They're a straightforward application of automation, something computers do really well. At their most basic, for-loops are a construct that say "Repeat this block of code a specifc number of times". This number can be hard coded or pulled from somewhere else. 
+When maintenance isn't a huge concern, for-loops really shine. They're a straightforward application of automation, something computers do really well. At their most basic, for-loops are a construct that say "Repeat this block of code a specifc number of times". This number can be hard coded or pulled from somewhere else. This is often really helpful in quick scripts, where it's known that the simulation needs to run ten-thousand times or the number of iterations is always the total number of .txt files in a known directory. 
+
+And if you ever need to make a for-loop based script a bit more extendible, it's often not difficult to put it into a class method or function that takes a few parameters. A short comment explaning what the loop does and where the values are coming from is also an easy way to help maintence. These may sound like quick and dirty solutions because they are, but that's kind of the point. For-loops are for getting stuff done in a smart way. 
+
+Going back to JB's original point, I should say that I agree that learning list-based approaches like map, reduce, find and select are improvements over bare loops. When I finally got comfortable with [list comprehensions](https://en.wikipedia.org/wiki/List_comprehension) in Python, it was an epiphany. Using lists made everything better, more streamlined, less buggy. Programming was simple again! 
+
+Even still, I can't quite shake the utility of the humble for-loop. It's something I'll keep coming back to for quite a while. 
