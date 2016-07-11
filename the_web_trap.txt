@@ -1,0 +1,22 @@
+Once again, the prolific [Noah Sussman](https://twitter.com/noahsussman) has tweeted some great insights into modern software testing and development. One [tweet](https://twitter.com/noahsussman/status/752328657654390784) that's been getting lots of attention discussed how releasing often (20 times a day) can be no more or even less risky than releasing once a day, once a week or even less frequently. It's a good point and a key part of continuous delivery (CD), a software model that Noah supports. 
+
+There's some great commentary on the replies to that tweet, but I feel like there's something missing from the discussion around software employing CD. I'll call it _the Web Trap_. 
+
+Over the past five to ten years software development has been moving away from desktop-based products to web and mobile based products. Things that were tied to a desktop environment are increasingly moving to the cloud - even relatively complex pieces of software like [word processors](https://products.office.com/en-US/compare-microsoft-office-products). Along with this, there have also been entirely new genres of software that have become popular such as [social](www.twitter.com) [media](www.facebook.com) [apps](www.snapchat.com) or [online](etsy.com) [marketplaces](www.500px.com). Because software developers are human beings, they follow trends. As cloud-based products become more popular and sophisticated, developers gravitate to working on them and bring along interest and skill sets. Cloud-based technologies become sexy and get lots of resources dumped into them. Meanwhile, desktop-based technolgies become less appealing and somewhat stagnant. All the cool kids are working somewhere else. 
+
+This has had consequences that have played out in the large software development community. Desktop-based apps are different from web-based apps in a number of clear ways, such as desktop apps
+- not necessarily requiring networking
+- possibly having direct access to hardware or OS components on the machine they're installed on
+- being potentially very difficult to patch or update on user machines
+- possibly depending on other desktop apps that cannot be easily changed/updated.
+These points essentially don't apply to web- or cloud-based apps, which show some of the stark differences between the desktop and the cloud. In fact, some of these aspects allow for better CD in web apps, like constant deployments to a central server via a network connection or being highly OS agnostic. 
+
+Despite these differences, and along with the trendiness of the cloud, there's a curious pattern happening in some software shops: desktop apps are starting to be developed using similar approaches to web apps, even if these approaches don't work as well. This is because so much of the popular discussion in software development centres on using approaches suited to web-apps such as CD. There's even [projects](http://electron.atom.io/) designed to make desktop apps that are basically sandboxed web apps. Hence, the Web Trap.
+
+As someone who's worked on both desktop and web apps at the same company, this all seems a bit strange. 
+
+To use a software metaphor, it's a case of inheritance in the OOP sense that's gone a bit awry. When the class Cat and Dog inherit from the parent class Animal, everything is fine and works as expected; subclassing Human from the Animal class is where you start to run into problems. At first glance it mostly works; the problems that you encounter tend to be subtle and only appear over a longer run. They're also not obvious how to stamp out or if it was a bad choice to start with.
+
+Using techniques from web development for desktop products is like this case of subclassing. It's not an inherently bad idea but it may turn out badly without some thought and care. Based on what I've seen about human nature and software development, the web trap will lead to some bad ideas and bad software. 
+
+To me, CD is the next big step in the evolution of software development. It's coming and web and mobile shops needs to embrace it. Others need to be a bit more cautious.
