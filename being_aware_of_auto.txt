@@ -1,0 +1,12 @@
+I recently tweeted a comment about software testers knowing about what's going on the world of automation. It got a pretty warm reception, so I think I'll expand on my thoughts. 
+
+Using a Continuous Integration Service
+
+Using Modern Source Control
+
+Telemetry and Monitoring
+
+Using Selenium
+
+Learning Javascript
+   
