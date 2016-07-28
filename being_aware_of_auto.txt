@@ -1,12 +1,30 @@
-I recently tweeted a comment about software testers knowing about what's going on the world of automation. It got a pretty warm reception, so I think I'll expand on my thoughts. 
+I recently [tweeted a comment](https://twitter.com/joshin4colours/status/755869819497385984) about software testers knowing about what's going on the world of automation. It got a pretty warm reception, so I think I'll expand on my thoughts. 
 
-Using a Continuous Integration Service
+In a nutshell, whatever your role in testing is these days, your day-to-day job will probably be enanced by using at least some of the following approaches. At a minimum I'd suggest knowing what these terms mean and an example of how they might be used in a software development shop. 
 
-Using Modern Source Control
+**Using a Continuous Integration Service**
 
-Telemetry and Monitoring
+One the biggest changes over the past decade when it comes to automation in software development has been task automation. In the past, things like building a particular version of an application, creating documentation or updating the status of bug reports were done manually. Some teams even had dedicated individuals who were the "build person" who were responsible for initating a build. Doing tasks like this manually (or with heavy ties to individual people or machines) was time consuming and created annoying bottlenecks such as the build person taking a personal day and blocking new builds from being completed. 
 
-Using Selenium
+Lucikly, continuous integration (CI) tools came to the rescue by allowing tasks to be standarized and automated. CI services essentially schedule and execute tasks that a regular desktop computer can do and have these taks execute on target machines other than itself. Going back to the build example, instead of having Bob being responsible for manually creating builds on his machine a CI service can be set up to choose a target machine and execute a build on that machine. Not only does Bob not need to be physically present at the build machine but builds can occur any time, either scheduled or in response to another action. For example, Alice the tester may want a build of an application based on the latest changes to see if a bug has been fixed, and can initate that build herself. This not only frees up resources from doing repetitive tasks but also gives more control to teams over individual and team workflows. You can also chain CI taks together to further streamline some tasks. Learning how a CI service works is also a great introduction to automation without a lot of emphasis on programming. 
 
-Learning Javascript
+Some popular examples of CI services are [Jenkins](https://jenkins.io/index.html) (free, open source), [TravisCI](https://travis-ci.org) (cloud-based), and [Bamboo](https://www.atlassian.com/software/bamboo) (proprietary) but there are other ones as well. Even more low-tech is using a tool like cron or Windows Task Scheduler for use on a single machine to automake tasks. CI is indepensible for developing software beyond hobby programs, and it's one place where a tester can really add value.
+
+**Using Modern Source Control**
+
+I should first point out that I love source control. When writing code (or blogs!) it's too helpful a tool not to use. For a tester who codes, it's a no-brainer. Even if a tester doesn't code, using source control in a modern way can be a big benefit when testing software. If you're not familiar with source control, see an older post of mine on the basics. 
+
+What do I mean by modern? I mean using source control that 1) integrates with other tools like CI server or bug tracker and 2) allows for using good team workflow practices like trunk-based development. Good source control allows individuals like testers to analyze changes and dig deeper into what's happening in a software project. A tester with access to a source control history and some basic training can ask questions like "Which files in the application have had the most developers work on them?", "Which files have the most changes?", "Which changeset contained the code that caused the bug?" and so on. This information can be helpful for looking for patterns and underlying causes of some issues. 
+
+Integrating source control with CI services can be even more powerful. Issues in bug trackers can have their statuses updated based on changes made by developers. Testers can request certain requirements be automatically checked on incoming code such as passing automated tests or code styling requirements. Builds and deployments can be initiated by changes to code. There are many possibilities in this case when source control is used well, which is one of the underlying concepts behind continuous delivery. 
+
+The current hotness in source control is git, which is free and open-source with a healthy ecosystem around it. There are several other options such as Subversion and Mercurial (open source) and Microsoft Team Foundation (proprietary, obviously). 
+
+**Telemetry and Monitoring**
+
+This is a topic I'm not as familiar with but is definitely of interest to testers. Monitoring is an approach where hooks are placed into an app that sends information back to the software creator about how the software is being used. This could include which back-end/server API functions are being called and in what order, which parts of a UI are being used and at what frequency, and so on. The goal isn't to send specific user information back to the development team but more general information about what parts of an application are being used and how. This helps provide insights into what end users are _actually_ doing and how they _actually_ use the app. Alan Page is a tester at Microsoft that has briefly discussed some of the [cool things he's seen done](http://angryweasel.com/blog/intelligence-and-insight/) with telemetry and monitoring.
+
+Similar to mining source control history, using monitoring can help provide deep insights into 
+
+Using Selenium Well
    
