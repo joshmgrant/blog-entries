@@ -6,14 +6,12 @@ Tutorials on inheritance in Object-Oriented Programming (OOP) are a dime a dozen
 
 This makes for easy tutorial writing but doesn't really illustrate _good_ code reuse. So I'm going to try a bottom-up example. 
 
-Suppose you're writing some graphics-based app and you write a `Circle` class. The class (in pseudocode) might look like this: 
+Suppose you're writing some transportation-based app and you write a `Car` class. The class (in pseudocode) might look like this: 
 
 <pre><code>
-class Circle {
+class Car {
 
-    double radius;
-    double circumference; 
-    double area;
+    
 
     // constructor
     public Circle(double r) {
