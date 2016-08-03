@@ -24,7 +24,11 @@ The current hotness in source control is git, which is free and open-source with
 
 This is a topic I'm not as familiar with but is definitely of interest to testers. Monitoring is an approach where hooks are placed into an app that sends information back to the software creator about how the software is being used. This could include which back-end/server API functions are being called and in what order, which parts of a UI are being used and at what frequency, and so on. The goal isn't to send specific user information back to the development team but more general information about what parts of an application are being used and how. This helps provide insights into what end users are _actually_ doing and how they _actually_ use the app. Alan Page is a tester at Microsoft that has briefly discussed some of the [cool things he's seen done](http://angryweasel.com/blog/intelligence-and-insight/) with telemetry and monitoring.
 
-Similar to mining source control history, using monitoring can help provide deep insights into 
+Similar to mining source control history, using monitoring can help provide deep insights into how users interact with an app, how the app is actually used and how certain features are received. You can find out answers to simple questions ("How many people logged in last week?") to more specific and insightful questions ("How did users change their habits when feature X was released?"). These are the kind of questions that help testers execute better testing strategies, and overall help teams make better choices for users.
 
-Using Selenium Well
+For more information, check out the [AB Testing Podcast](http://www.angryweasel.com/ABTesting/) with Alan Page and Brent Jensen. For how a mainstream product uses telemetry, take a look at how [Mozilla uses telemetry with Firefox](https://wiki.mozilla.org/Telemetry).     
+
+**Using Selenium Well**
+
+Last and certainly not least, the Selenium WebDriver is a tool pretty much any tester who works with web apps should be familiar with. 
    
