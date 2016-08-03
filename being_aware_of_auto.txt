@@ -30,5 +30,10 @@ For more information, check out the [AB Testing Podcast](http://www.angryweasel.
 
 **Using Selenium Well**
 
-Last and certainly not least, the Selenium WebDriver is a tool pretty much any tester who works with web apps should be familiar with. 
-   
+Last and certainly not least, the [Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/) is a tool pretty much any tester who works with web apps should be familiar with. At this point, the WebDriver is a [standard](https://www.w3.org/TR/webdriver/) tool for automating driving browser actions, similar to how a human user would interact with web apps in a browser. It has several language bindings, works with several mainstream browsers, and is a great example of an extensible API that can be build on top of by a developers. In short, it's a good piece of work. 
+
+When used smartly, the WebDriver allows testers and developers to automate user acceptance tests that can be placed in a continuous delivery workflow. The WebDriver can also be used to write automated tests that run locally to double-check changes didn't break critical features in unanticipated ways. There's even uses for the WebDriver that extend [beyond functional testing](https://applitools.com/web-app-testing/).
+
+For testers who are interested in learning to code, the WebDriver can provide a [good introduction to programming](http://simplythetest.tumblr.com/post/110279905950/choosing-your-automated-test-language-the-better). Automating test scripts can be a comfortable way to get familar with programming without diving deep into programming language waters. It provides enough of a structure to get started and still get some good testing work done. 
+
+With these concepts in mind, embrace test automation whatever your role is in software development.
