@@ -1,0 +1,11 @@
+Often, kindness wins. Being nice is, well, pretty nice. And this absolutely holds true in the digital realm as well as the physical. 
+
+A couple of things triggered this thought in the past few days. The first was seeing a tourism website for place I'm visiting later this week in the US. The site looked good except that when I hovered over the menus at the top, the menus expanded _behind_ the title photo and were effectively useless (I won't link to the site here. You'll have to trust me). This behaviour was the same in multiple browsers. When I told my wife about this, she said I should I do a good deed and message the site maintainers about this. Before that comment, I was thinking of posting something snarky about this site needing testers. Her comments made me think differently, and after some thought I realized it would've been in poor taste to slam this website. I sent a polite email explaining the situation and went on my way. I'm pretty happy with this result. 
+
+Today I read a post from Om Malik who had a somewhat similar situation [with an online food delivery service getting his order sent to the wrong place](http://om.co/2016/09/12/the-nicer-internet/). It's a bad but understandable mistake and Om goes through a similar thought process as I did. He first thinks about publicly berating the service but then thinks better of it. Like me, he feels better about that approach after the fact. 
+
+Sometimes it's really easy to write incendiary pieces when a product or service (or person!) does something badly. It allows you to vent frustrations, even minor ones. It's also usually enjoyable as most rage-quit or click-bait type pieces are. Plus the Web tends to reward outrage but not thoughtful non-action or nuance. And in the software testing world, sometimes big personalities see benefit in being blustery with their approach. 
+
+I'm learning that being snarky and mean _online_ is one approach but not always the _best_ approach. There are other ways and some of those work pretty well. 
+
+(I still reserve the right to post awful click-bait wherein I deem appropriate or necessary.)

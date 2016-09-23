@@ -1,0 +1,9 @@
+I've been thinking quite a bit about [this image and comment](https://twitter.com/testobsessed/status/767075745545924608), tweeted by the always insightful Elisabeth Hendrickson.
+
+As a developer, I've always struggled with keeping good documentation. When I write it upfront, it never seems complete or misses obvious additions. Writing it after code, it seems seems as bland as an after thought (as it usually is). Docstring-type comments always take longer to write than I think and are unsatisfying. And of course there's the perpetual problem of keeping documentation up-to-date however it got there in the first place. 
+
+The example above gave me a light bulb moment of what good documentation should look like. Docs and code are best when they're closely tied together. I'd even go as far as to say they're best when they're _forced_ to work together. 
+
+I hit this problem from the other side this week when looking at some test code I'm working on. An example from a project's introduction documents flat-out didn't work as written. This is always annoying, and probably happens more often than developers imagine. 
+
+It turns out that I'm not alone in thinking this, and discussing the idea of [testing out your documentation like code](https://twitter.com/joshin4colours/status/778300168789635072) got some reactions. In fact, I've learned there are already tools that do this (thanks [Bradamante](https://twitter.com/Bradamante)!) such as [Python doctest](https://docs.python.org/2/library/doctest.html). Testing code samples in documentation is a neat idea because often the "test" is really just "does this code execute without errors?". This is a more satisfying start to complete, working documentation.  
