@@ -1,0 +1,9 @@
+When I first started learning about software development, I read a bit about Test Driven Development (TDD). One of the [first things I read](https://www.amazon.ca/Foundations-Agile-Python-Development-Younker/dp/1590599810?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-d-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=1590599810) about TDD gave some of its benefits. The benefit that I found most appealing was a mental shift from thinking of tests in a negative light (a passing test turning failing indicates a problem) to a positively light (start with a failing test then work toward getting it passing). At the time I thought "Meh, sure I guess" but now I'm realizing this is a fairly important concept. 
+
+It's really an example of the power of positive thinking.
+
+Taking something that's viewed negatively and changing it to be viewed positively can have a big impact, even if nothing else changes.
+
+Automated testing is a great example of this. Thinking of automated tests in a negative light - everything is passing until something goes wrong - is fundamentally different from thinking of automated test in a positive light - everything starts with failures and then passes when certain functionality works as expected. I think this line of thinking can be extrapolated to testing and software quality in general. When testing is thought of in a negative light - testers find bugs and make sure nothing went horribly - it's fundamentally different from when testing is seen positively - testers explore a piece of software and find the parts that work well. It may seem like a slight shift but it can really change the entire outlook of a project or idea.
+
+Don't underestimate the power of positive thinking.  
