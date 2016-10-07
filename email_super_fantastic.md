@@ -1,0 +1,15 @@
+Is the email inbox the next publishing Shangri-La? 
+
+I listened to the [latest Track Changes podcast](https://trackchanges.postlight.com/podcast-32-clover-newsletter-turning-over-a-new-leaf-or-four-with-founders-liza-darwin-and-81f0b9748a2d#.wwphzyt0s) which featured Liza Darwin and Casey Lewis. They are the co-founders of Clover, an email-based news community for teenage girls. While I'm not a teen girl and don't even know many of them, I highly recommend this podcast episode because it highlights a lot of interesting conceptions and misconceptions about teen media consumption. 
+
+But one thing stuck out: what if an email inbox was reserved for receiving things that you actually _enjoyed_?
+
+It's been said that young people (say under 25) don't really use email. They've grown up in a world of social media, texting and mobile devices and so look at email as a medium used by "old" people. Young people don't really communicate by email, and young people barely know how to use it. Anecdotally, I've seen evidence of this: new co-op hires (around age 20) barely use email and need to specifically be told to check their inbox. Note these are often Computer Science students. So that's that, the reasoning goes: young people don't know about or care for email and they're all about Snapchat or Facebook with large helping of texting. 
+
+Enter Clover. 
+
+Clover is an email-based newsletter. There is a new post five days a week. New submissions, comments or ideas can be sent back to the Clover team directly by replying to one of the email newsletters. Newsletters are kept to specific lengths. When Casey and Liza asked the community how else they'd like to connect with the newsletter content, the response was to have a mobile app. There is no website but there are Facebook groups for members to discuss some issues. The email newsletter is the central component. 
+
+At first this sounded like I was missing something but after some thought I realized Casey and Liza are onto something. They understand that email can be used as a publishing platform, that it doesn't need to be (strictly) for communication. An email can be opened and read and enjoyed with no action required to be taken past that. That's right: enjoyed. I subscribe to a few email-based newsletters from media entities and others, and I have to say I enjoy getting them. I open up a newsletter and often will read the content in it without navigating or clicking elsewhere as much as possible. It's also pleasant to see these newsletters appear in my inbox because I know I can read them undisturbed by things like flaky wifi, interstitial ads or terrible UI choices. In short, it turns looking through my inbox into a delightful experience.
+
+With the death of newspapers on the horizon and [magazines not far behind](http://www.cbc.ca/news/business/rogers-magazines-1.3785707), media publishers are looking for ways to move from print to digital. Maybe they need to look at their inboxes. 
