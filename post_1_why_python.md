@@ -30,4 +30,30 @@ If Python is missing your Mac operating system, or you need to update it, you ca
 
 ### Windows
 
-Typically Windows and Mac operating systems do not include Python by default. Luckily, installation is straighforward in both cases. Both
+Typically Windows operating systems do not include Python by default. Luckily, installation is straighforward. Find the [latest version of Python](https://www.python.org/downloads/windows/) and download the installer. All major versions of Python have full Windows installers that configure Python. 
+
+### What Comes With Python
+
+Installing Python installs several components. The central component is the Python intepreter. This is called by typing `python` into a terminal and hitting enter. When called like this with no arguments, it starts a Python [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) that allows Python commands to be called in an isolated, safe way. This is a great way to try Python commands. When called with a Python script in the form `python /path/to/script.py` the Python interpreter tries to execute the contents of the script. This is the other common usage of the Python interpreter.
+
+The other tool that is installed with Python is its package manager, called Pip. Pip allows Python modules for a whole variety of tools to be installed. The usual way of installing Python modules using Pip is to call `pip install --update MODULE_NAME`. This will install the module with the given name if it hasn't been installed, or update it the module if it has been installed. More information on Pip can be found on the [official documentation pages](https://pip.pypa.io/en/stable/) if you're interested beyond the basic usage.
+
+Along with modules installed using Pip, Python comes with some standard modules. These are mainly based on common programming usage such as working with file systems (the [os](https://docs.python.org/3/library/os.html) and [sys](https://docs.python.org/3/library/sys.html) modules). 
+
+With Python set up, the next step is to think of a good scripting project. Let's see what we can do!
+
+## Project Idea: Automating Creating Test Users
+
+Python scripting is always fun but it's good to have a goal in mind when starting a project. Here, we'll look at using the Selenium WebDriver to help with some a fairly common task when testing a web application. 
+
+Here's a situation that may be familiar to many testers. A bug is reported in your app that occurs when there are a large number of user accounts created on the app. To either reproduce the bug or to explore the case, it would be helpful (or even necessary) to add a large number of user accounts to your app under test. In particular, creating user accounts sometimes means coming up with unique fields and or identifies, like unique email addresses. Doing this may be time consuming and repetitive, which in turn can lead to boredom and human error. Situations like this can be annoying and problematic for testers. 
+
+The solution to this problem is automation. It's a perfect case for automation since it involves doing a specific task over and over several times. It also allows for easy scaling, whether creating ten users or ten thousand test users. We're also in luck because Python has WebDriver bindings, which means we can use it "off-the-shelf" as a Python module. The WebDriver is a great tool for driving and controlling a web app in a browser. 
+
+Let's start scripting!
+
+## Writing the Script
+
+
+
+Given this scenario,  
