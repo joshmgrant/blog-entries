@@ -56,9 +56,92 @@ Let's start scripting!
 
 ## Writing the Script
 
-The first thing we need to write this script is to get the WebDriver module. To do this we use Pip. Open a terminal, and type `pip install --update selenium`. This will install the modules needed for the Selenium WebDriver. To keep things simple, we will use Chrome for our testing, so make sure you have installed the latest Chrome browser. You'll also need the Chromedriver, which is an executable the WebDriver uses to access browser internals. It can be downloaded [from here](https://sites.google.com/a/chromium.org/chromedriver/downloads). Download unzip the `chromedriver` executable and put it somewhere it can be accessed globally. On Windows, you could add it to `C:\Chromedriver\chromedriver.exe`. It doesn't matter where you locate the Chromedriver but you will need the path for the script. 
+The first thing we need to write this script is to get the WebDriver module. To do this we use Pip. Open a terminal, and type `pip install --update selenium`. This will install the modules needed for the Selenium WebDriver. To keep things simple, we will use Chrome for our testing, so make sure you have installed the latest Chrome browser. You'll also need the Chromedriver, which is an executable the WebDriver uses to access browser internals. It can be downloaded [from here](https://sites.google.com/a/chromium.org/chromedriver/downloads). Download unzip the `chromedriver` executable and put it somewhere it can be accessed globally. On Windows, you could add it to `C:\Chromedriver\chromedriver.exe`. We will assume it's in this location but you can place it anywhere valid on your file system. It doesn't matter where you locate the Chromedriver but you will need the path for the script. 
 
-Other than Selenium, we can write a script with all built-in Python modules. Here's an example of a [finished product found on Github](https://github.com/joshmgrant/TestUserGenerator/blob/master/generate_users.py). You can clone that repository or copy/paste the code from that file and try it.  
+Other than Selenium, we can write a script with all built-in Python modules. Here's an example of a [finished product found on Github](https://github.com/joshmgrant/TestUserGenerator/blob/master/generate_users.py). You can clone that repository or copy/paste the code from that file and try it by typing `python generate_users.py`. If there's no problems, a browser will open up, log into the test app then add ten test users. 
 
-<!-- insert code sample here -->  
+Let's walk through this script in sections, starting with the top section.
+
+    from selenium import webdriver
+    import time
+    import random
+    import string
+
+These are imported modules that give us some additional functionality. The first line imports the WebDriver components of the Selenium module (which contains some other utilities). This allows us to drive the browser. The other import statements give us tools for timing (`time`), generating random values (`random`), and string sets and manipulation (`string`). Other than the WebDrive, there are standard modules that come with Python 3. 
+
+We can set the number of users we want to generate using a variable. In this case, we write
+
+    NUMBER_OF_USERS = 10
+
+Python uses dynamic typing, so we can create variables without deciding explicitly what type it is. In this case, we declare a variable to be an integer number. 
+
+Next we can start a browser using the WebDriver, in this case using the lines 
+
+    driver = webdriver.Chrome("C:\\Chromedriver\\chromedriver.exe")
+    driver.get("http://joshmgrant.github.io/UserGenerator/login.html")
+
+This starts a new Chrome instance and navigates to the test application. We will use the `driver` object to manipulate the browser in this script. In the next steps, we can locate the user name and password fields to work with. Using the lines 
+
+    driver.find_element_by_id("username").send_keys("admin@testcorp.com")
+    driver.find_element_by_id("password").send_keys("p4zzW0Rd")
+    driver.find_element_by_name("login").click()
+
+the script finds the user name and password fields by their id attribute then sets text in their fields with valid credentials. The script also finds the Login button but this time by the name attribute then clicks it.  
+
+These elements are found using functions based on the `find_element` method of the WebDriver. This is really the workhorse of the WebDriver and likely the main method called to retrieve elements from [the Document Object Model (DOM) layer](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) of a web app. This is a layer that is below the actual UI and gives developers something to either attach to or manipulate in a web app. The Selenium WebDriver makes use of the DOM and is what gives the WebDriver so much flexibility to interact with elements on a page. 
+
+Now we can introduce the first logical construct, a for-loop. This is one of [my favourite programming constructs](http://simplythetest.tumblr.com/post/145304551395/why-i-cant-quit-for-loops). 
+
+    for i in range(NUMBER_OF_USERS):
+
+Essentially this allows a block of code to be repeated a specifed number of times. In this case, we repeat the code block adding a new user the specified number of times based on the `NUMBER_OF_USERS` variable. In particular, `range()` creates an array of values of the length of the number of users which is then iterated over in order. Non-blank lines that are to be executed within the loop are preceeded by a single tab character, which is the syntax for any logical grouping in Python.  
+
+In the loop, we can generate random test users using the `random` and `string` modules. These lines 
+
+    random_id = ''.join(random.choice(string.digits) for i in range(3))
+    random_first = "user"
+    random_last = ''.join(random.choice(string.ascii_lowercase + string.digits) for i in range(5))
+    random_email = random_first + random_last + "@testcorp.com"
+
+These lines create necessary values for a user first name, last name, user id and email. The first name is given a constant value of `user` for simplicity, and a random last name containing letters and digits is created. An employee id is created using a random set of digits. An email is then created by combining the first and last names.
+
+The lines 
+
+    driver.find_element_by_id("userEmail").clear()
+    driver.find_element_by_id("userEmail").send_keys(random_email)
+
+    driver.find_element_by_id("userIdCode").clear()
+    driver.find_element_by_id("userIdCode").send_keys(random_id)
+
+    driver.find_element_by_id("newUserFirst").clear()
+    driver.find_element_by_id("newUserFirst").send_keys(random_first)
+
+    driver.find_element_by_id("newUserLast").clear()
+    driver.find_element_by_id("newUserLast").send_keys(random_last)
+    
+    driver.find_element_by_id("newUserButton").click()
+
+    time.sleep(2) 
+
+then send these random user values to the respective fields using `find_element` methods after first clearing the text fields. By default `send_keys` does not do any logic while sending keys, so fields need to be cleared separately. 
+
+We also add a two second delay at the end of each user creation to properly synchronize some actions in each iteration. 
+
+Finally, we close the browser session using the commands
+
+    driver.quit()
+
+## Common Pitfalls or problems
+
+This script was written to work "off-the-shelf" without any changes. However, there may be some problems that lead to this script not working well. These are problems common to most WebDriver-based scripts. 
+
+**Browser Not Found**: Sometimes an error will be thrown if a browser specified by the WebDriver is not available or installed. If you see this, definitely confirm you have installed the latest Chrome browser.
+
+**Selenium Module Not Found**: This problem occurs when you run the script without the Selenium modules installed properly. See the previous section to install Selenium via Pip if you see this issue. 
+
+**Can't Reach the Test App**: This can happen if you have no Internet connection. This has happened to me even in professional software environments. Make sure the machine you run this script on is connected online. 
+
+**Element Not Found Exceptions**: If one of the `find_element` calls fail, it may be due to an element not appearing properly or "in time". This could be due to a slow Internet connection, poor browser performance or an overall underpowered machine. Elminiating these problems can be tricky, but there are a number of approaches. The simplest is to add in some sleep statements, even this is not recommended in general.
+
+Now that we've written the script we can run it as needed and reap the benefits of automation. 
 
