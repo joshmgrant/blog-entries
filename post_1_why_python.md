@@ -58,7 +58,7 @@ Let's start scripting!
 
 The first thing we need to write this script is to get the WebDriver module. To do this we use Pip. Open a terminal, and type `pip install --update selenium`. This will install the modules needed for the Selenium WebDriver. To keep things simple, we will use Chrome for our testing, so make sure you have installed the latest Chrome browser. You'll also need the Chromedriver, which is an executable the WebDriver uses to access browser internals. It can be downloaded [from here](https://sites.google.com/a/chromium.org/chromedriver/downloads). Download unzip the `chromedriver` executable and put it somewhere it can be accessed globally. On Windows, you could add it to `C:\Chromedriver\chromedriver.exe`. It doesn't matter where you locate the Chromedriver but you will need the path for the script. 
 
-Other than Selenium, we can write a script with all built-in Python modules. Here's an example of a finished product. 
+Other than Selenium, we can write a script with all built-in Python modules. Here's an example of a [finished product found on Github](https://github.com/joshmgrant/TestUserGenerator/blob/master/generate_users.py). You can clone that repository or copy/paste the code from that file and try it.  
 
 <!-- insert code sample here -->  
 
