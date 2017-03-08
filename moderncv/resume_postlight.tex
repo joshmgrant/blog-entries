@@ -1,0 +1,112 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks,
+  citecolor=Violet,
+  linkcolor=Red,
+  urlcolor=Blue}
+\recomputelengths                             % required when changes are made to page layout lengths
+\usepackage{ifpdf}
+
+% personal data
+\firstname{Joshua}
+\familyname{Grant}
+%\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{29 Symons St}{Toronto, Ontario M8V 1T7}    % optional, remove the line if not wanted
+\mobile{Mobile: (647) 240-0961}                      % optional, remove the line if not wanted
+\email{joshua.m.grant@gmail.com}                      % optional, remove the line if not wanted
+\email{Twitter: @joshin4colours}
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{my_photo_smaller}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{"A mathematician is a machine for turning coffee into theorems." -- Alfr\'ed R\'enyi}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2007-2009}{MSc - Applied Mathematics}{Western University}{London}{Ontario}{Research area: Mathematical Biology}  % arguments 3 to 6 are optional
+\cventry{2003-2007}{BSc - Mathematics}{Trent University}{Peterborough}{Ontario}{Dean's Honour List, 2003-2007}  % arguments 
+
+\section{Experience}
+\cventry{November 2016--March 2017}{Trading Analyst}{MediaNet}{Toronto}{Ontario}{I was responsible for campaign optimization and peformance, actively looking for optimizations based on data-driven and market-driven approaches. I also implemented some tooling and automation around processes within the advertisting operations team.}
+\cventry{December 2015--Ongoing}{Contributing Author}{Techwell Publications}{Toronto}{Ontario}{I've written two articles as a paid contributor to Sticky Minds, a software testing publication. My latest article was \href{https://www.stickyminds.com/article/what-software-testers-need-know-about-automation}{"What Software Testers Need to Know about Automation"}, published TechWell's StickyMinds publication in November 2016.}
+\cventry{April 2014}{Webinar Contributor}{SmartBear Software}{Toronto}{Ontario}{I gave a webinar entitled \href{http://blog.smartbear.com/testing/test-design-qa-with-joshin4colours/}{"Automated Test Design: Single Use vs Reusable Tests"} sponsored by SmartBear. This webinar discussed some differences between one-time use automated tools versus tools used often, focusing on design and maintainability.}
+\cventry{October 2010--October 2016}{Test Developer}{CaseWare International}{Toronto}{Ontario}{I wrote and maintained automated regression and acceptance tests in both Java and JavaScript (NodeJS), emphasizing maintainability in my test code. I also took an active interest in process automation involving continuous integration services and version control.}
+\cventry{August 2009--August 2010}{Research Associate}{Cerebral Diagnostics Canada, Inc}{Toronto}{Ontario}{I was a scientific and technical researcher working for this small biotechnology start-up. We focused on several projects, including developing in-house software for research in EEG (Electroencephalography) and conducting EEG-based studies in pain research.}                % arguments 3 to 6 are optional
+\cventry{Summer 2006}{Research Assistant, Department of Mathematics}{Trent University}{Peterborough}{Ontario}{I designed and developed a database of corporate ownership based on SEC filings using Perl and CGI. This was also my first introduction to using regular expressions which I made heavy use of in this project.}                % arguments 3 to 6 are optional
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+\section{What I'm Looking For:}
+\cvlistitem{Remote and co-located positions}
+\cvlistitem{Server-side development, including API development and maintenance}
+\cvlistitem{Data-driven roles and teams making use of modern software methodologies}
+\cvlistitem{Opportunities involving working on developer-side automation and tooling}
+\cvlistitem{Roles encouraging collaboration between teams}
+\cvlistitem{Roles providing opportunities to improve and expand my programming knowledge, with new or familiar languages and tools}
+
+\newpage
+
+\section{Tools I've Used} 
+\cvlistitem{Languages - Java, Python, JavaScript with NodeJS}
+\cvlistitem{IDEs - Eclipse, WebStorm, Visual Studio and VS Code}
+\cvlistitem{Version Control - Git with Bitbucket, Bitbucket Server and GitHub and a strong interest in working with other systems (SVN, Hg)}
+\cvlistitem{Development Tooling  - Jenkins CI, TravisCI, bash scripting, JIRA and Confluence}
+%\cvcomputer{}{} {}{}
+
+\section{Interests}
+\cvline{Cooking and Dining Out}{This is really my love of food. Toronto is a great food city and I like to make the most of that.}
+\cvline{Open Source}{I like seeing what people can create. I've particiated in existing open source projects (\href{www.proselint.com}{www.proselint.com}) and created my own (\href{https://github.com/joshmgrant/corsica}{https://github.com/joshmgrant/corsica})}
+\cvline{Writing}{I've always enjoyed writing, both professionally or otherwise. My blog is called Simply the Test (\href{http://simplythetest.tumblr.com}{simplythetest.tumblr.com})}
+\cvline{Podcasts}{Podcasting is the new blogging. Some that I've listened to include \href{https://www.thisamericanlife.org/podcast}{This American Life}, \href{http://www.angryweasel.com/ABTesting/}{AB Testing}, and Track Changes, the \emph{official} podcast of Postlight.com}
+
+\section{References}
+\cventry{Victor Amorim}{Vice President}{Account Strategy and Activation}{MediaNet}{(647) 338-5908}{victor.amorim@medianet.com}
+\cventry{Brendan Looker}{Team Lead, Web}{Test Developmet}{CaseWare International}{(416) 867-9504 x1184}{brendan.looker@caseware.com}
+\cventry{Dr Lindi Wahl}{Professor}{Department of Applied Mathematics}{The University of Western Ontario}{(519) 661-2111 ext 88795}{lwahl@uwo.ca}
+\cventry{Dr Geoff Wild}{Professor}{Department of Applied Mathematics}{The University of Western Ontario}{(519) 661-2111 ext 88784}{gwild@uwo.ca} 
+%\cventry{Dr Albert Ler}{Research Associate}{Cerebral Diagnostics Canada Inc}{alersh@gmail.com}
+%\cventry{$\cdot$}{Dr Marcus Pivato}{Professor}{Department of Mathematics}{Trent University}{(705) 748-1011 ext 7293}{pivato@xaravve.trentu.ca}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+\end{document}
+
+
+%% end of file `template_en.tex'.
