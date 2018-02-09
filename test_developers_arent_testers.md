@@ -1,0 +1,15 @@
+Test developers aren't testers. They aren't the same thing. 
+
+I [briefly mentioned this opinion on Twitter recently](https://twitter.com/joshin4colours/status/951649914672488448) and I'd like to expand on this. For the purposes of this post, you can substitute "automation engineer", "SDET" or similar job titles for test developer. 
+
+Currently, on my team we have a tester and myself, a test developer. When the tester on our team is away, it's expected that I cover his responsibilities. Lately he's been away for personal reasons, so I took over. 
+
+One thing that I've always kind of felt has become clear to me after handling testing responsibilities: test developers and testers are two *distinct* roles with *different* skill sets. 
+
+I think this isn't obvious to many people as I've realized. Many times test automation projects are started in QA teams, or departments by testers (either organically or managerial decree) and therefore are owned by testers. Similarly, when test developers are hired by some orgs, they are placed in QA departments or adjacent to QA departments. There's also the case where there is a separate test automation team/department in an org that typically works closely with or even reports to QA managers or teams. There's many cases where test developers work relatively far from development/developers, organizationally. And of course there's situations like mine where testers and test developers are sometimes considered interchangeable on some smaller teams or orgs.
+
+While I won't say that these situations are never beneficial, they do point to a notion that test developers and testers are similar if not the same roles. I disagree. Good test developers often have somewhat specialized skill sets related to automation and test automation. They often have detailed knowledge of test tool choices and ecosystems, what good test code looks like in the small and in the large, and incidentally a good understanding of using continuous integration well. These aren't typically skills that testers have (from my experience). In fact, sometimes a good tester's mindset can conflict with a good test automation mindset. Testers often want to explore an application and find out as much information about it as possible, even if this information results in strange application states or not quite reproducible situations. Test developers want stability and reliability in their test code, particularly so test suites can scale and be maintainable. Sometimes these mindsets end up in opposition (and bad automated tests).
+
+Finally, I should mention that on small teams, one person may wear that hat of both tester and test developer (among other hats). As well, testers with an interest in automation or test developers who find tester roles more appealing can transition from one role to another successfully since there is some natural overlap. The concern I have isn't that testers and test developers don't have some great common ground, it's that as roles they're often treated interchangeably.
+
+So some food for thought. Test developers aren't testers.
