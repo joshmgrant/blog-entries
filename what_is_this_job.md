@@ -1,0 +1,11 @@
+This [tweet](https://twitter.com/noahsussman/status/961231207223758848) by Noah Sussman intrigued me. 
+
+In it, he mentions that he's not sure what to call his role/title, since "I’m QA, except I don’t look at your app, I look at all the stuff that’s NOT your app. Like logs, telemetry, customer service scripts etc...what am I?". In my previous post, I thought about how [test developers aren't testers](http://simplythetest.tumblr.com/post/169623787610/test-developers-arent-testers) and I've had similar notions as Noah. 
+
+I feel that often test developers end up taking on responsibilities that are outside of test automation, such as handling continuous integration services, continuous deployment/delivery workflows, and telemetry and data pipelines. These are often highly beneficial to software teams but also ambiguous in terms of ownership. For example: who should build out a data pipeline for production monitoring? Even in orgs with full-stack developers and a devops mindset, there are modern software practices that are tricky to tie to a particular role or team. I've completely seen this with test development, which (in my opinion), falls somewhere between testing and application development as some kind of new thing.
+
+Teams that can embrace this ambiguity and can allow these practices to flourish while having the right team and individual ownership of them can succeed. I think the key is to _establish ownership_ of these processes and ideas, even in cases where they cut across teams or projects. This may mean having people on your team like Noah who isn't a developer, isn't a tester, isn't a manager but has _some other role_ while still having some ownership over aspects of the project or product.
+
+This may also mean orgs embracing new practices and rethinking goals and values but let's take some baby steps here. One of the first orders of the day is deciding what the heck people like Noah _are_ in an organizational sense.
+
+Overall, I think there's a brave new world that is arriving - or arrived, for some - for software quality assurance but we just aren't sure what to call it yet.
