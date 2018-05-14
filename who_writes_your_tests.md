@@ -11,3 +11,5 @@ UI tests have historically been the responsibility of test/QA teams, to varying 
 The service/API test layer can also be a quagmire. Writing good service layer tests often requires programming competency and a working understanding of the internals of an application. Testers generally - but not always! - do not have these skills. By definition, black box testing means being kept away from the internals being tested, which are the domain of developers. However, knowing how and what to test in service layer automated tests more suited to testers. Often a lack of testability or poor architecture for service layer tests can also be a problem and one that testers need to advocate for. To top it off, service layer testing can also be highly context dependent, unlike unit and UI automation. What works in one contex/application may not carry over well to another. 
 
 Why does it matter who owns these automated tests? Because in many cases, initially _someone_ has to for test automation to succeed. As well, because there's often a split between development and test teams for who should own test automation, 
+
+insurance - deductable maybe $750, 
