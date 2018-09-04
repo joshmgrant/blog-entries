@@ -42,7 +42,17 @@ which gets text from this element for verification. We could even add a line lat
 
 without needing to reassign the variable. This is allows elements to be defined and use in a logical manner without having to call *findElement*-style methods over and over again.
 
-*Synchronization is standard*: Notice this script does not contain any sleep statements, explicit waits, or global implicit waits. In fact, this script should work on a variety of differently powered machines - some low-powered - without adding any of these things. This is because Nerodia contains built-in synchronization functionality to smartly wait for browser and DOM events to occur before interacting with the DOM. This means test developer don't have to have as much overhead to get scripts running in a stable way against apps that are slow due to architecture or networking.
+*Helpful element types and locators*: While this looks similar to a standard WebDriver script, two lines that definitely look different are
+
+> intro = br.div(class_name='intro')
+
+and 
+
+> br.link(text='Guides').click()
+
+These lines make use of built-in element types that extend the base element used in Nerodia. In this case, these elements define a div with a class "intro" and a link with text "Guides". These helpful element types and locators are a nice addition to standard locators and elements that can make test scripts more expressive.
+
+*Synchronization is standard*: Notice this script does not contain any sleep statements, explicit waits, or global implicit waits. In fact, this script should work on a variety of different machines - some low-powered - without adding any of these things. This is because Nerodia contains built-in synchronization functionality to smartly wait for browser and DOM events to occur before interacting with the DOM. This means test developer don't have to have as much overhead to get scripts running in a stable way against apps that are slow due to architecture or networking.
 
 *It's Pythonic*: While I'm not exactly hardcore when it comes to language idioms, I do appreciate how Pythonic Nerodia is as a browser automation tool. Assertion statements are easy to understand, [snake casing](https://en.wikipedia.org/wiki/Snake_case) is used and overall the script feels like a Python script and not some hacky holdover from Ruby.
 
