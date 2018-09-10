@@ -2,25 +2,25 @@ In my previous post, I introduced the lovely [Nerodia](http://simplythetest.tumb
 
 Here is a Python script using Nerodia to verify there are some text values located on the Watir project homepage:
 
-> from nerodia.browser import Browser
-> 
-> br = Browser(browser="firefox")
-> 
-> br.goto("https://watir.com")
-> 
-> \# Check that "Titus" is somewhere in the page text
-> assert "Watir" in br.text
-> 
-> \# Check "open source" is in the intro
-> intro = br.div(class_name='intro')
-> intro_text = intro.text
-> assert "open source" in intro_text
-> 
-> \# Check that the page is correct via the URL
-> br.link(text='Guides').click()
-> assert 'watir.com/guides/' in br.url
-> 
-> br.close()
+    from nerodia.browser import Browser
+    
+    br = Browser(browser="firefox")
+    
+    br.goto("https://watir.com")
+    
+    \# Check that "Titus" is somewhere in the page text
+    assert "Watir" in br.text
+    
+    \# Check "open source" is in the intro
+    intro = br.div(class_name='intro')
+    intro_text = intro.text
+    assert "open source" in intro_text
+    
+    \# Check that the page is correct via the URL
+    br.link(text='Guides').click()
+    assert 'watir.com/guides/' in br.url
+    
+    br.close()
 
 As of the posting of this article, this script should run and exit without errors providing Nerodia is installed. 
 
@@ -30,25 +30,25 @@ There's a few interesting aspects to this script I'd like to point out:
 
 *Logical reuse of elements*: One aspect of Nerodia that distinguishes it from the WebDriver is the ability to define elements individually and use them effectively later in a script. As an example, consider the line
 
-> intro = br.div(class_name='intro')
+    intro = br.div(class_name='intro')
 
 in the above script. This gets a div element from the DOM with class name *intro* and creates an object that represents it for use in the script. This object can be reused in ways that are logical, such as in the next line
 
-> intro_text = intro.text
+    intro_text = intro.text
 
 which gets text from this element for verification. We could even add a line later in the script to check if the element is visible by writing
 
-> assert intro.visible
+    assert intro.visible
 
 without needing to reassign the variable. This is allows elements to be defined and use in a logical manner without having to call *findElement*-style methods over and over again.
 
 *Helpful element types and locators*: While this looks similar to a standard WebDriver script, two lines that definitely look different are
 
-> intro = br.div(class_name='intro')
+    intro = br.div(class_name='intro')
 
 and 
 
-> br.link(text='Guides').click()
+    br.link(text='Guides').click()
 
 These lines make use of built-in element types that extend the base element used in Nerodia. In this case, these elements define a div with a class "intro" and a link with text "Guides". These helpful element types and locators are a nice addition to standard locators and elements that can make test scripts more expressive.
 
