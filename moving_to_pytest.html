@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body>
+        <p>If you are currently working on a production codebase using Python 2.7 and/or using Nose in your test framework, stop what you're doing and read this.</p>
+<p>(If you're working with Python 3 or not using Nose, you can read this too, I won't mind.)</p>
+<p>You need to start using <a href="https://docs.pytest.org/en/latest/">Pytest</a>.</p>
+<p>I'm usually not one for hard opinions with sweeping generalizations but I've been thinking about this and I think this is good move overall.</p>
+<p>I'm recommending moving off Nose in Python 2.7 to Pytest in Python 3 (maybe 3.4 or later) because both <a href="https://nose.readthedocs.io/en/latest/#note-to-users">Nose is dead</a> and <a href="https://pythonclock.org/">Python 2.7 is soon to be dead</a>. This means getting updates, new features and bug fixes is going to slow to a halt soon. Your test framework will be frozen in ice and it will be tougher to keep up.</p>
+<p>As well, Pytest has pretty good support for integrating with Nose. It also works well with Python 2.7 and works mostly well with unittest, with some caveats. Test frameworks will have to make a few tweaks but they should be straightforward and not an entire overhaul. You can also use Pytest as a runner at first instead of a full test framework. Working up to replacing Nose/Python 2.7 with Pytest/Python 3.</p>
+<p>So, how to do this? One thing that's worked for me is using a <a href="">Red, Green, Refactor</a> approach. This looks like:</p>
+<ol>
+<li><strong>Red</strong>: Install the latest version Pytest and run your nose tests using it instead of nosetests. This is low effort and should work with Python 2.7 and Python 3.4+. It will also likely produce errors and/or invalid test failures.</li>
+</ol>
+<p>This part is both fairly simple and <em>critical for getting started</em>. I cannot stress enough to start with this step.</p>
+<ol start="2">
+<li>
+<p><strong>Green</strong>: After running existing tests with Pytest, examine the errors and failures and make some changes. This could mean making changes to setup or configuration files, changing some <code>setUp</code>/<code>tearDown</code> methods in classes, or other things. It might also mean trying older versions of Pytest. Make iterative changes until you get something working (tests in the same pass/fail state as before).</p>
+</li>
+<li>
+<p><strong>Refactor</strong>: Once you have a Pytest as your runner and tests are running mostly as before, you can start to remove Nose functionality like <code>@with_setup()</code> decorators and unittest conventions like subclassing <code>unittest.TestCase</code> or class-level <code>setUp</code> and <code>tearDown</code> functions. You can replace this kind of functionality with <a href="https://docs.pytest.org/en/latest/fixture.html">Pytest fixtures</a> which provide the same functionality but with more flexibility.</p>
+</li>
+</ol>
+<p>Follow this pattern in order and you'll find your happy place with Pytest (or at least much happier than using Nose).</p>
+
+    </body>
+    </html>
