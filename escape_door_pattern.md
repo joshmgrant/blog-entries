@@ -2,7 +2,7 @@ In programming and software development tooling, sometimes you get stuck somewhe
 
 Some examples of such cases I've faced are
 
-- when using a git GUI like [Git Extentions](https://git-extensions-documentation.readthedocs.io/en/latest/git_extensions.html) or [SourceTree](https://www.sourcetreeapp.com/), sometimes there's a git action I want to complete that either isn't supported by the GUI or is just a bit too complicated to do via UI, and I need the git CLI to execute a command and
+- when using a git GUI like [Git Extensions](https://git-extensions-documentation.readthedocs.io/en/latest/git_extensions.html) or [SourceTree](https://www.sourcetreeapp.com/), sometimes there's a git action I want to complete that either isn't supported by the GUI or is just a bit too complicated to do via UI, and I need the git CLI to execute a command and
 - when writing browser-based tests, I use the Page Object pattern faithfully but find myself in a situation where it is simply easier to invoke functionality through the WebDriver object directly instead of some page object abstraction. 
 
 In the above cases my tooling allows me to solve the majority of my problems through helpful abstractions (a GUI app and design pattern, respectively) but these abstractions fall a bit short in a few cases. Hence, I need some way to _escape_ the abstractions to get to a different layer of abstraction, at least temporarily.
