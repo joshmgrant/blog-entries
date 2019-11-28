@@ -1,4 +1,4 @@
-In continuing my [exploration]() of Pytest and its wonderful features, I want to cover a pytest plugin that's really more a full fledged test automation tool - [pytest-bdd]().
+In continuing my [exploration](https://simplythetest.tumblr.com/post/188858906385/pytest-the-awesome-parts) of Pytest and its wonderful features, I want to cover a pytest plugin that's really more a full fledged test automation tool - [pytest-bdd](https://pytest-bdd.readthedocs.io/en/latest/).
 
 Pytest-bdd is really a variant on more widely used frameworks like [Cucumber](https://cucumber.io) or [Behave](https://behave.readthedocs.io/en/latest/), which itself is essentially Python Cucumber. BDD is a popular approach for many teams either working with automated testing for the first time, or teams that experienced with automation and looking for a mature methodology to use. They key feature to BDD is writing _feature files_ in a particular common language syntax called [Gherkin](https://cucumber.io/docs/gherkin/reference/). This allows features to first be written in a form such as this
 
@@ -90,7 +90,7 @@ To execute this test, we can call
 pytest test_store_login.py
 ```
 
-and see the result. Pytest-bdd will also generate some helpful Cucumber-style reporting in addition to the standard Pytest reporting. Also available are [substitutions and regular expressions]() in Gherkin steps.
+and see the result. Pytest-bdd will also generate some helpful Cucumber-style reporting in addition to the standard Pytest reporting. Also available are [substitutions and regular expressions](https://github.com/pytest-dev/pytest-bdd#step-arguments) in Gherkin steps.
 
 At last, BDD and Pytest together!
 
