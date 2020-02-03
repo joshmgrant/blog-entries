@@ -39,7 +39,7 @@ Instead, here are some thoughts of mine as I reflect on 2019.
 ## Canadiana 
 
 - This [thread](https://twitter.com/DesmondCole/status/1189580860456087552) by Desmond Cole discussing the narratives after this year's federal election gave me pause. He was discussing the election outcome but really this applies to almost every facet of Canadian culture. Ontario (mostly Toronto area) and Québec are extremely important _of course_, Alberta and BC are sometimes important, and the rest of Canada just sort of doesn't matter. This is such a bummer to me.
-- The idea that Canada is "too small" or "just not a big enough market" economically or culturally is slowly becoming hogwash and will eventually just be an excuse for incubments to keep the status quo.
+- The idea that Canada is "too small" or "just not a big enough market" economically or culturally is slowly becoming hogwash and will eventually just be an excuse for incumbents to keep the status quo.
 - One of my favourite books this year was [Maximum Canada](https://www.theglobeandmail.com/arts/books-and-media/book-reviews/review-doug-saunderss-maximum-canada-argues-the-more-the-merrier/article36510614/). I thoroughly agree with Doug Saunder's point that Canada should simply have a lot more people in it.
 - Calgary and probably Edmonton could become interesting destinations that drive growth, if these places allow that to happen.
 - Cannabis legalization has been pretty uneventful overall in my experience, which is a good thing.
