@@ -1,0 +1,14 @@
+Last week, I had the pleasure of attending a [Ministry of Testing meetup](https://twitter.com/MinistryTestTO) which featured Lisa Crispin talking about [testing is a team problem](https://www.meetup.com/Ministry-of-Testing-Toronto/events/268216206/).
+
+Lisa's talk was excellent and one thing that stood out for me was the idea that testing isn't exclusively one person's job but a team job. And on teams there are members who might have specialties that help the team and the overall product quality in specific ways. There's much discussion right now about the future of testing and the testing role, with many testers looking at things like automation, artificial intelligence and agile methodologies wondering "What is my job going to be?" or "How can I show my value as a tester?"
+
+Naturally when I think of how testers can provide and show value, I think of movie sex scenes. 
+
+A while back, I read an excellent piece on the [rise of intimacy coordinators in Hollywood movies](https://www.nytimes.com/2020/01/14/magazine/sex-scene-intimacy-coordinator.html). You should read the whole thing but the main point is that over the past half-dozen or so years, there's been an increased demand in having intimacy coordinators on staff for Hollywood films and some theatrical productions. An intimacy coordinator is a professional who treats intimate scenes between actors as a form of choreography, one with particular sensitivities and nuances (as most people can imagine). Intimacy Coordinators not only help stage sex scenes, they also provide direction and help with actors' feelings and preparations toward such scenes. It's a niche role but one that many actors, directors and theatre professionals - for many reasons - feel is highly valuable for film and theatre productions. 
+
+In many ways, this is the kind of approach many testers might consider to find ways to be valuable on software teams. Having a niche domain knowledge for example might be something that proves helpful on many teams. I've read in the past of "testers" who are really more of team coaches and project managers, keeping a project on time and on budget without sacrificing quality. Some skills can be unique, or demand for particular skills might translate into other beneficial skills that teams are looking for. And sometimes, teams don't know what they're missing out on until they get it - much like many actors who've said they will be requesting an intimacy coordinator in their filming from now on after working with one.
+
+I'd be in remiss to not mention that test automation could be one such specialty. Many teams benefit from having one or two dedicated members to writing, analyzing and working with test automation based on my experience. I do think there's other such specialties out there, waiting to be invented or discovered. 
+
+
+Quality is a team effort, and everyone on the team brings their own strengths to the table. Let's see those strengths shine through.
