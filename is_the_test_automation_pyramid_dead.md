@@ -1,0 +1,21 @@
+Is the test automation pyramid dead? 
+
+Probably not, but I don't really want to get into that in this post. I want to tinker with the concept a bit.
+
+In my day job, I think a lot about test automation in general. The [classic test automation pyramid](https://www.mountaingoatsoftware.com/blog/the-forgotten-layer-of-the-test-automation-pyramid) - created in [several](https://www.luxoft-training.com/news/the-test-automation-pyramid/) [forms](https://www.ministryoftesting.com/dojo/lessons/the-mobile-test-pyramid) - is a major concept that informs test automation architecture. Overall, I think it's still a good heuristic for thinking about _trade-offs_ of the cost of writing different kinds of automated tests, both in terms of the cost of maintenance and cost of execution, and _grouping_ of tests into helpful classes to decide the who/what/where/why of automated test writing. I don't think these ideas are either new or controversial, which is why I like them. Most people mostly agree on the trade-off and grouping aspects of the test pyramid. 
+
+Where I (lately) think the test pyramid falls a bit short is on 
+
+- how to execute automated tests in a modern context and, 
+- what I will call the _desirability_ of writing an automated test. 
+
+I think both of these issues arise when test automation is seen as a _development_ activity more than a _testing_ activity, a distinction I will blithely gloss over here.
+
+For the first point, I'm going to wager that almost all teams developing software - and even individuals working on toy projects - have some kind of Continuous Integration tool and a (possibly rudimentary) Continuous Delivery process. I'm not saying these processes are all uniformly good or that CI tools are being used to their, let's say, fullest potential. But CI and CD are there, one way or another, most of the time. So where do automated tests go? The usual approach is to execute fast/unit tests first, then medium sized/speed service tests, then slow/End-to-end/UI tests last. There's often other steps interleaved in these pipelines such as app builds, deployments or database refreshes. This ordering of automated tests is fine, as much as it goes, but could it be done better? Unit tests are often very fast and can catch known issues, but does that mean they should be executed before service tests? The test automation pyramid doesn't really provide any guidance here. The pyramid doesn't allow for concepts such as feature flags or microservice architectures. What if my team _knows_ a feature or piece of code doesn't need to be tested? I've seen how a large set of unit tests can be helpful as a regression test suite, but should this be built-in from the beginning when writing tests? This also brings up ideas such as [branch by abstraction](https://www.martinfowler.com/bliki/BranchByAbstraction.html) which I still haven't wrapped my head around. 
+
+In short, while the testing pyramid gives some ideas of who/what/where/why of test automation, it falls a bit short on the how of test automation.
+
+On the second point, I've noticed some of the smartest folks in software development approach testing completely agnostic to the test automation pyramid. In their view, developers need to test at the level of abstraction that makes the most sense in the context of what they're doing. Distinguishing "unit vs integration", "local environment vs staging", or "Selenium-based vs not" tests aren't helpful; they just want to test the thing they want to test, darn it! They want to write a _desirable_ test regardless of the underlying tools they need to. Unfortunately, most test tools have been developed from particular user types or perspectives out of necessity and so the whole collection of things can lack cohesion. Writing a unit test in Java is dramatically different from writing an Appium-based test, mainly because of how these tools were designed and who was "expected" to use them. The test automation pyramid may undersell automation in exploratory testing as well, since such automation can be broad and not as structured.
+
+We all want to build great software, and with that I think we all want to write good test automation as part of doing so. 
+
