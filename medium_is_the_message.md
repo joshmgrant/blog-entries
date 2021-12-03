@@ -1,0 +1,3 @@
+I work in tech, for a SaaS (Solution as a Platform) based company whose head office is in San Fransisco. If you know about test automation, you've likely heard of it. In this job I use a lot of different software, for everything from communicating with my coworkers to filing expenses. Overall, the company uses a lot of software for all different things. 
+
+Lately, I wondered - Carrie Bradshaw style - if how the individual pieces of software we use affects how we interact in the workplace.
