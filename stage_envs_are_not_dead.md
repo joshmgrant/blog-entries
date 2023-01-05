@@ -1,0 +1,1 @@
+Recently I saw this [neat post on ephemeral staging environments](). Overall it's a great article and the general idea is good. Short-lived environments that are created and destroyed on demand - so-called _ephemeral_ environments - are a great practice for teams at scale for testing and deploying changes before pushing to production. 
