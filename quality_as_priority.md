@@ -1,0 +1,15 @@
+You get what you prioritize.
+
+Lately I've been thinking of quality in general when it comes to products. One of the most influential pieces of writing to me on quality was this article on [the case for bad coffee](https://www.seriouseats.com/the-case-for-bad-coffee). I've blogged about this article [before](https://simplythetest.tumblr.com/post/188287960815/making-software-and-growing-tomatoes) in the context of software development methodologies, but I think illustrates one good way to think of quality, which is quality as priority. 
+
+The late and beloved Gerald Weinberg defined quality as ["value to some person"](https://www.quotes.net/quote/59342), which may be refined to talk about the value a stakeholder has, or value to some person at some time or what have you. This is an excellent starting point for thinking about quality, and many folks in software development and elsewhere have considered Mr Weinberg's wise words. The definitely of quality is a bit vague, however. Suppose you want to improve or evaluate the quality of something. Where does this definitely leave you?
+
+In the Case for Bad coffee, the author Keith Pandolfi discusses his love affair with creating specific coffees in particular styles, taking care in the preparation and serving of the coffee. He later finds his passion for taking time to create a single origin espresso gave way for being able to have cheap mass-produced coffee readily available to drink. In both cases he finds value in varieties of coffee that are quite different. So what happened? 
+
+The difference is in his _priority_ of what a quality coffee is.
+
+First he finds high quality coffee in carefully prepared specialty coffees in comfortable environments. In other words, he prioritized the experience and/or sense of taste of coffee. Then, over time, he finds that having coffee that may not taste that good but is available whenever and wherever he is. In other words, at this point his priority changed to having access and availability to coffee. His priorities changed and so in turn did his view of value and quality. 
+
+This thinking goes beyond coffee or even hot beverages in general. Often, when looking at similar types of software there's some variation in the quality of these pieces of software. The software is a result of priorities made by the creators. If a software has - for example - poor user experience for Windows users, it suggests that Windows users weren't prioritized or even seen as a priority. It's not that the software is "poor quality", per se, but more that the creators had different priorities than what Windows users may have. Similarly, improving the Windows user experience could be improved by prioritizing it.
+
+I think this is a helpful re-framing of Weinberg's notion of quality, which I will mention was only one of several excellent ideas that Weinberg put together.
