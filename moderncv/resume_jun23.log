@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.12)  12 JUN 2023 12:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.12)  13 JUN 2023 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,25 +492,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--75
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--82
-
- []
-
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 86.
-
-Underfull \hbox (badness 1005) in paragraph at lines 86--86
-[]\T1/lmss/m/n/10.95 I am quite ac-tive on so-cial me-dia, in-clud-ing Twit-ter
- \T1/lmss/m/sl/10.95 @joshin4colours \T1/lmss/m/n/10.95 and Mastodon
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-87.
+82.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -521,14 +508,31 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87 
-     
+l.82 \newpage
+             
 ? 
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/202
 3/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 84--90
+
+ []
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 94.
+
+Underfull \hbox (badness 1005) in paragraph at lines 94--94
+[]\T1/lmss/m/n/10.95 I am quite ac-tive on so-cial me-dia, in-clud-ing Twit-ter
+ \T1/lmss/m/sl/10.95 @joshin4colours \T1/lmss/m/n/10.95 and Mastodon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+
+ []
+
 
 ! LaTeX Error: Undefined color `Blue'.
 
@@ -536,22 +540,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 \end{document}
+l.117 \end{document}
                     
 ? 
 [2] (./resume_jun23.aux)
 Package rerunfilecheck Info: File `resume_jun23.out' has not changed.
-(rerunfilecheck)             Checksum: 83BB008F483BBF932D089CDD5C89DFF5;583.
+(rerunfilecheck)             Checksum: D4260910437BBBC02AED6CC42E9B06C0;831.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 48 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9781 strings out of 476025
- 156451 string characters out of 5790017
- 1876388 words of memory out of 5000000
- 30074 multiletter control sequences out of 15000+600000
+ 9783 strings out of 476025
+ 156473 string characters out of 5790017
+ 1874388 words of memory out of 5000000
+ 30075 multiletter control sequences out of 15000+600000
  544889 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,76p,559b,1379s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -561,10 +565,10 @@ r/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/te
 xlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/20
 23/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2023/texmf-
 dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on resume_jun23.pdf (2 pages, 129575 bytes).
+Output written on resume_jun23.pdf (2 pages, 131679 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
