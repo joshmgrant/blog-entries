@@ -1,0 +1,125 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+% \moderncvtheme[green]{casual}                % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks,
+  citecolor=Violet,
+  linkcolor=Red,
+  urlcolor=Blue}
+\recomputelengths                             % required when changes are made to page layout lengths
+\usepackage{ifpdf}
+
+% personal data
+\firstname{Joshua}
+\familyname{Grant}
+%\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{29 Symons St}{Toronto, Ontario M8V 1T7}    % optional, remove the line if not wanted
+\mobile{Mobile: (647) 240-0961}                      % optional, remove the line if not wanted
+\email{joshua.m.grant@gmail.com}                      % optional, remove the line if not wanted
+\email{https://joshgrant.online}
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{my_photo_smaller}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{"A mathematician is a machine for turning coffee into theorems." -- Alfr\'ed R\'enyi}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Relevant Experience}
+\cventry{October 2022--May 2023}{Developer Advocate}{Code Intelligence}{Bonn/Remote}{Germany/Canada}{As a developer advocate at an early-stage start up, I focused on outreach and education, creating Java-based examples for CI Fuzz, a DAST fuzz testing tool.}                % arguments 3 to 6 are optional
+\cventry{April 2017--February 2018}{Test Developer}{JUICE Mobile}{Toronto}{Ontario}{I worked with a programmatic advertisting platform, primarily developing a service-level or API test framework. I worked on a team of 10 developers as an "embedded" test development specialist.}                % arguments 3 to 6 are optional
+\cventry{October 2010--October 2016}{Test Developer}{CaseWare International}{Toronto}{Ontario}{I worked primarily with the CaseWare Time product. I wrote and maintained automated regression and acceptance tests, emphasizing maintainability in my test code. This included working with Java-based Selenium tests for Time on the Go, Time's web-based version and SilkTest suites for Time, the primary desktop product.}                % arguments 3 to 6 are optional
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+\section{Education}
+\cventry{2007-2009}{MSc - Applied Mathematics}{The University of Western Ontario}{London}{Ontario}{Research area: Mathematical Biology}  % arguments 3 to 6 are optional
+\cventry{2003-2007}{BSc - Mathematics}{Trent University}{Peterborough}{Ontario}{Dean's Honour List, 2003-2007}  % arguments 
+
+\section{What I'm Looking For:}
+\cvlistitem{Test Automation and Architecture: I've worked at all levels of the test automation pyramid and would like to continue to do so}
+\cvlistitem{Java: I have worked on several projects using Java, becoming proficient with both Java language programming and the Java tool ecosystem}
+\cvlistitem{Application Security: Helping application developers and teams find and triage security issues quickly and as early as possible, and building the tools for developers to do so}
+\cvlistitem{Championing Quality: Working with and coding with other team members, between and within teams}
+\cvlistitem{Working with Systems at Scale: Scaling and maintaining large systems is an interest of mine from a quality point of view}
+%\section{Strengths and Skills}
+%\cvlistitem{Strong personal and technical communication skills}
+%\cvlistitem{Ability to interact and work in variety of settings and with various personalities}
+%\cvlistitem{Excellent problem solving skills}
+%\cvlistitem{Strengths in project planning and abstracting reasoning}
+%\cvlistitem{Experience with individual-based and Monte Carlo simulation}
+%\cvlistitem{Knowledge and experience in object-oriented programming}
+%\cvlistitem{Experience with statistical and data analysis in non-academic settings, including non-parametric statistics and stochastic processes}
+
+\section{Tools I Love} 
+\cvlistitem{Java, for professional software development}
+\cvlistitem{CI Fuzz, for cross-language fuzz testing}
+\cvlistitem{Postman, for API testing and exploration}
+\cvlistitem{Selenium, for automating web applications, for testing and otherwise}
+\cvlistitem{JetBrains, for Java development in IntelliJ}
+\cvlistitem{Camtasia, for creating captivating video content}
+\cvlistitem{Taking short walks along the lake, for excellent debugging}
+
+\newpage
+
+\section{What I've Done, in Chronological Order}
+\cvlistitem{Built and maintained a medium-large Java-based test framework for a project management web application of approximately 1000 tests. This framework used Selenium with TestNG and achieved partial parallelization.}
+\cvlistitem{Built a unit test suite for an open source project called Proselint, writing approximately 50 tests as a basis for testing in that project.}
+\cvlistitem{Built an API test framework for a programmatic ad platform product. This tested the API layer of the internal application using approximately 200 tests.}
+\cvlistitem{Contributed to example Java projects at both Sauce Labs and Code Intelligence}
+\cvlistitem{Designed and delivered a standard presentation on best practices in Continous Integration/Continous Deployment. This presentation was delivered as part of solution architech work to enterprise company customers such as Accenture and at tech conferences such as Targeting Quality by KWSQA.}
+\cvlistitem{Designed and delivered a presentation called "What the Fuzz? An Introduction to Fuzz Testing". This talk was delivered at multiple meetups including PyLadies Toronto and BSides Rochester.}
+
+\section{Interests}
+\cvline{Food}{I enjoy eating and cooking food of all kinds. Currently living in Toronto which an excellent food city overall.}
+\cvline{Art}{Current interests include work by Agnes Martin and Louis Kahn.}
+\cvline{Being Online}{I am quite active on social media, including Twitter \emph{@joshin4colours} and Mastodon \emph{mastodon.social/@joshin4colours} }
+
+% \section{References}
+% \cventry{Khaled Yakdan}{Co-Founder and Chief Scientist}{Code Intelligence}{yakdan@code-intelligence.com}
+% \cventry{Evelyn Coleman}{Manager, Implementation Engineering}{Sauce Labs}{coleve27@gmail.com}
+% \cventry{Marion Nehring}{Director, Developer Relations}{Code Intelligence}{marion.nehring@outlook.com} 
+% \cventry{Nikolay Advolodkin}{Senior Developer Advocate}{Sauce Labs}{nadvolod@gmail.com}
+%\cventry{$\cdot$}{Dr Marcus Pivato}{Professor}{Department of Mathematics}{Trent University}{(705) 748-1011 ext 7293}{pivato@xaravve.trentu.ca}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+\end{document}
+
+
+%% end of file `template_en.tex'.
