@@ -4,7 +4,17 @@ Years ago, I started watching a TV show called [Numb3rs](https://www.imdb.com/ti
 
 The fact a popular television program could centre around a professional mathematician and his work and the title of the program is _Numbers_ suggests that numbers are so heavily associated with mathematics that numbers _are_  mathematics. Are they?
 
-# We See Numbers Everywhere in Life
+## Numbers In Everyday Life
+
+It is 7:39 on the 16th of the month. What are you doing?
+
+The above sentence contains numbers, as in numeric characters. Likely, you'd understand in your head what the question was asking and maybe even answered that question. This didn't involve any higher mathematical thinking, or even basic calculation. But it did use numbers. 
+
+From a young age, we learn about numbers. Take a look down
+
+# How We Use Numbers
+
+Numbers are, strictly speaking, a representation of a position within a number system, which usually are associated with some concept of quantity. Similar to how counting does not necessarily lead to numbering, numbers are not needed for counting purposes. Numbers can quantify - there are 3 apples in the bowl, it is 22 degrees outside - but don't necessarily need to be used for this. 
 
 - We see numbers from an early age, reading 1, 2, 3
 - In school we see a lot of numbers
