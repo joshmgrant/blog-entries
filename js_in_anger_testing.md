@@ -1,0 +1,16 @@
+For the past number of years I've worked with a variety of NodeJS-based test frameworks. These frameworks include [Mocha](https://mochajs.org/), [Jasmine](https://jasmine.github.io/), and [Playwright](https://playwright.dev). Interestingly - to me at least - these frameworks tend to have patterns and constructs in common. While some of these patterns are good (using a `config` file by default, for example), there is one that I frankly hate: implementing a global test timeout, and that timeout is turned on by default. 
+
+Dear reader, I don't like this feature. Not in the slightest.
+
+The idea is straightforward: there is some timeout value - let's say 30 seconds - where if a test run's total execution time exceeds this timeout, the tests either fail or raise an error with a message along the lines of "your test run has exceeded 30 seconds". In many cases, this timeout is by default around 30-60 seconds. Having such a feature configured this way is, flatly, bonkers. 
+
+Test frameworks come in all shapes and sizes, just like software projects. Some are lean and mean, with a small number of relatively fast tests. Others are large and slow, with test code that is far from optimal. If you are creating a framework for test automation, you should anticipate each of these kinds of projects might use your tooling. For some, it may take 30 seconds to set up and connect to the system under test. Your test will fail out before it even gets started.
+
+Remembering the [power of defaults in software](https://www.johndcook.com/blog/2008/10/15/simple-legacy/#comment-15406), a default value can greatly influence how your tooling works. A failed test is a failed test, regardless of the reason. If the reason ends up being that someone on a different team years ago decided that 30 seconds is "too long" for a test run, then that can lead to some awkward conversations. Coding frameworks should help your team and work, not be a stumbling block. Having a test fail because it took longer than some unclear value seems like a violation of the design [principle of least astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment). 
+
+Of course there are cases where you can disable this timeout, but that just makes me wonder why it was enabled in the first place? For example, in Jasmine there is a [DEFAULT_TIMEOUT_INTERVAL](https://jasmine.github.io/api/5.2/jasmine) value that is the max time a spec can take before timing out and failing. But why not disable this by default? How long _should_ an arbitrary spec take to run? It's a completely open question based on context. These are questions and discussions that could be avoided simply by not allowing this feature to exist in the first place. 
+
+I will say I can see some good use cases for a global test timeout. In mature continuous delivery pipelines, tests that exceed some threshold of runtime could be taken out of the pipeline and re-evaluated, but this would require other pieces in place. A global timeout could also be a rough signal of performance problems, but again, other checks and balances would likely need to be in place for this work. 
+
+Having this timeouts like this enabled by default are something that do not spark joy in me, and I think this is the same for many teams working with JS testing for the first time.
+
