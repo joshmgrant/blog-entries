@@ -1,0 +1,9 @@
+I wake up one morning, and find my kids want to watch something on a streaming service. I go to that service on my television, and find the service has logged me out. Groggy and unsure of the password since it's under my partner's name and email, I think "I hate authentication".
+
+I start my day of work, noticing there's a meeting that's been added right at the beginning of the day. It seems urgent, and my boss organized the meeting. I try to open up the meeting the video conference app, and it requires Google Authentication, which in turn requires my Google password, which I keep in a password manager, that also requires a password. As I fumble around finding passwords and in turn being late to this meeting, I think "I hate authentication".
+
+As part of my work as a software developer, I research how to use a service's public API. I find exactly the endpoint I need, and even find some documented examples that line up with my use case. I am elated, until I notice that the API requires some kind of token in order to access it. As I enter my second hour of research to find what and where these tokens are, I think "I hate authentication".
+
+Late in the day, I want to login to a tool I use at work, when it prompts me "Password expired. Please update your old password with a new one". No other information is provided. As I notice I might be late for my train, I think "I hate authentication".
+
+At the end of a long day, I want to sit and enjoy a movie I've been looking forward to. I remember I still can't login to that streaming service from earlier, and my partner is out for the evening. As I crack open my beer, with a mixture of sadness and anger, I think "I hate authentication".
