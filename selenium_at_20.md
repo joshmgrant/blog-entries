@@ -1,0 +1,17 @@
+Selenium, the open source project that automates web browsers, has recently turned 20. What a wild ride. For me, [Selenium](www.selenium.dev) has been particularly important, since I came into the test automation world in 2010, not long after the Selenium project merged with the WebDriver project to create the beloved Selenium WebDriver in 2009.
+
+I won't say that I grew up wishing to get away from my small town in order to live a glamourous life of writing test automation in the big city, but I can say that I fell into software testing accidentally like many other testers I've met. When I first tried out [Selenium RC](https://www.selenium.dev/documentation/legacy/selenium_1/) - which was the current available version of Selenium at the time - I knew this was going to be a big deal in the software world. When I was able to get ahold of [Selenium 2.0](https://www.selenium.dev/documentation/legacy/selenium_2/), with a vastly improved design, it was off to the races. 
+
+I was fortunate in my early career to dig into Selenium and learn how it works. I was able to write a whole browser testing framework in Java, getting to know the nuts and bolts of how the WebDriver worked. I also had the pleasure of working with test automation tools for desktop application automation, which provided me a nice contrast between different kinds of tooling. Selenium had several advantages over other tools at the time: 
+
+- _Free open source_ meant that anyone (anyone!) could use the WebDriver and related tools like the Selenium Grid, whether a single developer or a large software company. This was a big improvement over closed source propriarty tools that were often expensive and restricted by licensing.
+- _Cross-browser support_ saw that the WebDriver worked with major browsers but potentially new browsers as well, and wasn't restricted to a single ecosystem. You could test on Firefox and Internet Explorer at the same time!
+- _Adhering to web standards_ meant that even if all members of the Selenium project were killed in a [bizarre gardening accident](https://youtu.be/tZrqC5LL_oo?si=PUOXkCQEJigEg_L3), other browser automation tools and projects could be developed. 
+
+Since then, both Selenium and myself have seen some success. I've had a successful career as a test automation specialist, including spending some time at [Sauce Labs](https://saucelabs.com/) as a solution architect, and Selenium has grown in usage and prominence. Selenium has been so successful that it has spurred the development of other browser automation tools such as Playwright and mobile automation tools such as Appium. Several of these tools also followed in the footsteps of Selenium by building in cross-browser support and being open sourced. Even folks who dislike Selenium for whatever reason can see the impact the project has had over the past two decades in the web development world.
+
+Cheers to Selenium, and let's see what the next twenty years bring!
+
+-------
+
+Josh Grant is a test automation professional with over thirteen years experience. He has worked up and down the test automation pyramid, and his language of choice is Python. He currently resides in Toronto, Ontario, Canada, where he enjoys art in his spare time.

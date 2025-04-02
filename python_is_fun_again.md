@@ -1,0 +1,13 @@
+This past weekend, I had the distinct pleasure of attending [PyBay](https://pybay.org), a Python conference in the Bay Area. PyBay is always good, with excellent speakers and an even better community of people who come together to geek out over Python.
+
+One thing that I took away from this year's PyBay was the idea of having fun - and only fun - with programming. This is something I've been thinking about for the past year or two. I've been getting into [making](https://mastodon.art/@joshin4colours/media) [art](https://www.instagram.com/fourcoloursart/) by painting over the past two years or so, in part because painting does not make use of computers. I realized over the years that I associate computers generally with "professional" activities, and not "artistic" activities. This distinction has worked well for me (hello test automation) but I'm learning that computers can be used for fun things in addition to professional business things.
+
+This past week at PyBay had two presentations that showed how you can use computers - with some Python, incidentally - for fun. The first talk was _Playing Improv ...with Python!_ by the wonderful [Pamela Fox](https://blog.pamelafox.org/). This talk effectively showed how to play improv games with either human players or learning model players. On top of being a nice introduction to chat-based LLMs, Pamela also showed that LLMs can be used for fun and silly things. It was a great talk.
+
+Another talk that got me thinking of play was _Scrolling Animated ASCII Art in Python_ by the enjoyable Al Sweigart. Al showed various example of "scroll art", which is ASCII-generated code printed to a console line-by-line. Partly animation, partly word art, [scroll art](https://scrollart.org) is totally cool. Al also memtioned that new forms are art are always being created, and that scroll art is a straightforward approach to teaching programming on virtually any computing device, which ties in nicely with the low-fi artistic aspect.
+
+In both cases, the goal of programming or using software was to _have fun_. In particular, scroll art is based on barebones programming constructs: only loops, conditionals, variables, and ASCII or Unicode characters are used to create scroll art programs. The goal is to create something aestetic and enjoyable. Computers can do that.
+
+As a test developer, I've often been on the other end of computers, working to make sure that programs function properly for mostly commercial customers. Like other programmers, I learn specific tools, languages, and frameworks in order to solve business problems. I enjoy this as a career and frankly it's a pretty good one. But that doesn't mean computers are always for work; they can be for fun, too.
+
+
