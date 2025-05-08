@@ -1,0 +1,13 @@
+Lately I've been thinking about software quality, and in particular software product quality versus software technical quality. I might expand on this difference but for now I want to focus on software product quality.
+
+Years ago, the insightful Cory Doctorow coined the term ["enshitification"](https://doctorow.medium.com/social-quitting-1ce85b67b456) to describe the process of a software product having its quality decline over a period of time. There's now a [Wikipedia](https://en.wikipedia.org/wiki/Enshittification) entry for Enshitification so if you're curious you can get more details there. The main idea behind enshitification is that there are factors (typically business-driven) that drive down a software product's quality over time. This may apply to non-software products, but typically it focuses on software. There are many examples out there, such as X/Twitter. To me personally, this platform has gradually had quality erode to the point where I really do not use it anymore. 
+
+One of the assumptions of the enshitifcation theory is that a piece of software has a relatively high level of quality and in turn that quality can be reduced in terms of trade-offs for other aspects of the product. For example, Google [made its search worse to raise its ad business](https://www.404media.co/google-search-really-has-gotten-worse-researchers-find/). Even in doing this, lots of people still use Google search, perhaps not even being aware in the reduction of quality. 
+
+This is where I make a claim: software quality can be lowered or traded-off but still has a quality floor that once passed means that users and customers will no longer use or buy the software product. 
+
+There is some economic theory to back up such claims, but typically those are stated in terms of supply and demand of a good, not really in terms of quality. But I think it's still true when quality is taken into consideration.
+
+Going back to my example of X/Twitter, some product quality decisions gradually caused me to stop using the product. The appearance of obvious spam accounts, excessive and deceptive advertisting tweets, and pushy paid service offerings caused me to decline is using X/Twitter and eventually causing me to basically leave the platform. The quality of the product is simply too low for me to continue to be interested in using.
+
+I think this is an important aspect of product quality. We tend to think of product quality in terms of "delighting" users and customers, increasing quality or at least keeping a consistent experience. However, there can be a cost to reducing quality, direct or not.
