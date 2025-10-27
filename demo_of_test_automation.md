@@ -1,0 +1,1 @@
+This past week, I had the pleasure of attending Targeting Quality 2025 organized by the lovely people

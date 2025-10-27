@@ -1,0 +1,15 @@
+Agnes Martin was a mysterious figure, but she also produced a wealth of art. From the 1960s on, Martin focused almost completely on grid and stripe forms in her artwork. She painted tight and perfectly aligned grids while living in New York City in the 1960s, and after a hiatus from art, returned to making grid forms in the beloved work [On A Clear Day](https://www.gallery.ca/collection/artwork/on-a-clear-day).
+
+<images of her art>
+
+Martin's grid work appears simple, even easy. However, painting such tight lines creating a grid of small rectangles was a labour intensitve process. Each vertical line was parallel to every other vertical line, and the same with horizontal lines. Graphite pencil scored through oil or acrylic created these lines, and in turn generated the grids we see. Martin was also known to destroy paintings that she felt were not quite right, instead of simply painting over the canvas. In a way, this process of destorying drafts increased Martin's workload.
+
+Pieces such as [White Stone](https://www.guggenheim.org/artwork/2804) show narrow grids with nominal colouring, providing an almost serene appearance despite requiring much effort. This approach would continue for the rest of Martin's career, even as she left a two-dimensional grid pattern for horizontal -- and in rare cases, vertical -- bands on a square background. Maintaining perfectly parallel linear forms while applying colour neccessatates focus and, in turn, labour. In many ways, one feels the work Martin put into her artwork upon careful inspection. One of the reasons Martin moved away from two-dimensional grids to lone-dimensional bands may be that constructing such grids was too labourous even for her. It takes a lot of work to get something precise to be perfect. 
+
+Overall Martin was a determined individual. Even before leaving New York City to live in a highly self sufficient manner in the dessert of New Mexico, Martin was known to have a competitive demeanour. Being a fine artist was a lifelong goal, and even when Martin credibly achieved this, she continued living alone and producing art in the dessert. She was totally committed to a life of art. Hard work defined Martin, and thus she worked hard for most of her life.
+
+Other artists have taken inspiration from Agnes Martin, taking up artistic pratcies that are premised on labour intensive work. Susan York [constructs sculptures of graphite], requiring dedication and focus. Tammi Campbell [creates conceptual pieces](https://www.blouin-division.com/en/artists/tammi-campbell) calling back other artists and pieces in a manner that is labour intensive. These artists, like Martin, do not simply "make" art but purposely choose projects for themselves that are labourious. Art like this is the very opposite of the term "low-effort". Great art doesn't necessetate extensive labour but may well benefit from it, and depending on the artist, labourious projects may provide inspiration because of the extensive work placed on creation.
+
+## Microsoft's Vibe Working - The Opposite of Labour
+
+Recently, in one of a long series of artificial intelligence
