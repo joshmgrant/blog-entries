@@ -1,0 +1,19 @@
+## The Labour of Labour
+
+In a previous article, I wrote about the contrast between the [urgency of art versus the seemingly lack of urgency of AI-powered office software]. Some artists that I mentioned drew upon practices based in a desire - or urgency - for particular artwork to exist. I've seen this reflected in other artists when they discuss why they create art or why they became professional artists. There is often a sense that art _must_ exist and there is a urgency to create that art.
+
+However, in addition to this, I've also been thinking a lot about the nature of work, value and the labour of creating artwork. In some cases, labour may be the most important ingredient to creating some pieces of art. The importance of the result isn't the aesthetic, or skill, or even subject matter, but the sheer effort put in to make a thing exist in the first place.
+
+< picture of Agnes Martin's The Rose>
+
+One of the artists who I think embodies this view well is [Sean Weisgerber](https://www.blouin-division.com/en/artists/sean-weisgerber). In much of his art, Weisgerber reproduces price tags in acrylic, placing each one in a tiny section of a canvas. Taken together, these tiny paintings create colourful patterns following a tight structure. Creating small painting marks along a grid with perfect alignment is a labourious process, not to mention choosing colours and prices that line up with the overall appearance of each painting. There is an element of planning-plus-execution to these works, but they still require a dedication to putting in the time and work.
+
+< Sean Weisgerber example >
+
+Weisgerber's price tag work also alludes to the relationship between labour and value. In many of his works, the total of the price tags turns out to be the price at which the work is being sold. The meticulous effort put into to planning and painting these paintings also provide some clue to the value that the artist (and others) put onto this work. Knowing this relates the viewer, the artist, and the economics of fine art in a direct way. His labour is something valued in a tangible way.
+
+Other artists have also followed similar paths to create art through labourious means. Quebecois artist Mark-Antoine K Phaneuf created a on-site installation piece calling back to a Jean-Paul Riopelle that [consisted entirely of hockey trading cards](https://www.flickr.com/photos/136891509@N07/53628428646/). This isn't simply a great remix of one Canadian artist to another, but one that would take painstaking planning, research and setup work. On the West Coast, Hannah Sur also shows work that is arduous, using [paining and sketching techniques](https://hanna-hur.com/example-gallery) over large surfaces. A more mathematical example is the work of [constructing partial cubes by Sol Lewitt](https://youtu.be/_BrFKp-U8GI?si=ps6PVhAS7EoHiJcL), a process that may have taken more effort to plan and devise than to actually construct.
+
+In all of these cases, both planning the artwork and creating the artwork were labour-intensive tasks, even if the concepts themselves were straightforward. This is true of traditional art forms such as oil paint portraiture, which does require canvas preparation and painterly effort. However the work of artists from Agnes Martin to Sean Weisgerber show a focus on the work aspect of artwork. It may be the case that the purpose of such approaches to art is to _provide_ work for the artist. Drawing a straight line or perfecting the art of recreating a label may in isolation be simple, but making a concerted effort to scale such work with strong precision is not.
+
+Works such as these remind us that art is the product of labour, requiring the sweat of the brow. Even art that moves us deeply still requires the effort of an artist.
