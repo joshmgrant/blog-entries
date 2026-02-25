@@ -1,0 +1,13 @@
+In my previous post, I mused about the [differences between professional and hobby coding](). Basically, one kind of difference is the care taken to make sure the code does what it is supposed to do (testing) and has harnesses to make sure code is released in a particular way (CI and related tools).
+
+Thinking about this further, I came to a realization about legacy production code: it's code you really cannot delete. As much as folks might want to remove, refactor or even simply ignore it, legacy production code is there precisely because it can't be removed.
+
+As a contrast, test code is very deletable. A single developer could remove entire directories of test code, commit the change, and go about with their day. Customers wouldn't notice, production systems would still (likely) run without any changes, and even CI failures could be updated and safely ignored. Of course this is an extreme example but removing tests is generally low impact, at least in the short term.
+
+I think this may also be true for operations based on the infrastructure-as-code design. Once deployed, infrastructural operations will run as configured. Some setups may also allow for some kind of redundancy or resilience, where specific hosts or instances will "self-heal" and come back after being down or acting unusually. While I'm no SRE, I feel like it may be possible remove or massively rework code to deploy infrastructure without directly impacting running production systems, again at least in the short run.
+
+Data layers - such as SQL or NoSQL databases - can be archived, cloned and removed. Resilience is almost fundamental to data layers.
+
+However, you can't really safely remove production code. Even code that has been deeply vetted and found to be no longer in use by end users may still not be easily deleted. And sometimes even a small number of active users cannot be ignored for a variety of reasons. Placing enterprise software into end-of-life states can take years of effort and coordination and still be abandoned due to unforeseen complexity. This doesn't even get into spaghetti code scenarios where undesirable code has dependencies and links to other code. Often legacy code exists mostly due to institutional inertia. See also: the notion that code is a liability, not an asset.
+
+I've heard variations of defining legacy code as "old code that makes money". Legacy code may also be the one thing you can't really get rid of.
