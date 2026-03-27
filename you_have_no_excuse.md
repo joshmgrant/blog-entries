@@ -1,0 +1,11 @@
+If you're not writing automated tests for your production software, stop reading this and write some. You have no excuse.
+
+Obviously AI is blowing up the software engineering world at the moment. One topic that has come up, among _many_, is whether using LLMs to generate automated tests is a good idea or not. Pamela Fox of Microsoft has some [great thoughts](https://pamelafox.github.io/my-py-talks/ai-assisted-testing-pybay/) on this that mostly mirror my own: using LLMs to help generate automated tests based on existing code can be helpful for getting started, but you still need some human judgment to get the most out of the tests. Even as LLMs improve and become more coding-centric, there's a big difference between writing automated tests and writing _good_ automated tests. 
+
+But you still need to write automated tests. Generate them using AI if you must, but you still need to have them. Again, you have no excuse.
+
+In the past, I've worked with developers who avoid or even outright do not write tests. The typical reasons are that writing tests slows down writing production code, or that automated tests are useless. Since you can now generate tests within seconds, these arguments don't hold water: writing tests is fast, and you can determine whether these tests are good or not rather quickly.
+
+If you're a fan of TDD, AI-assistance can help you further, as veteran software developer Jason Gorman discusses in [a recent blog post](https://codemanship.wordpress.com/2026/03/18/the-ai-ready-software-developer-22-test-your-tests/). You could generate tests using LLMs, but you can also interrogate your tests using LLMs as well. If you're not a fan of TDD, or perhaps you simply don't have an opinion on TDD, there's never been a better time to try it out. Your favourite coding assistant can write unit tests along with application code. 
+
+Of course you could still write automated tests the old fashioned way: directly by hand. But if you're writing code for professional purposes, you no longer have any reason not to write automated tests.
